@@ -81,7 +81,7 @@ I aim to advance the field by developing robots that can understand and adapt to
 - Frist prize of Zhejiang Physics Innovation Competition, *Dec. 2020*
 - Zhejiang Provincial Government Scholarship, *2020*
 - Zhejiang University Scholarship - Second Prize, *2020*
-- Hong huang and Xiaobei Wu's Scholarship, *2020*
+- Hong Huang and Xiaobei Wu's Scholarship, *2020*
 - Zhejiang University Academic Excellence Award, *2019 - 2020*
 - Zhejiang University Artistic and Athletic Achievement Award, *2019 - 2020*
 
