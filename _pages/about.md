@@ -74,7 +74,7 @@ I aim to advance the field by developing robots that can understand and adapt to
     </div>
 </div>
 
-# 🎖️ Honors and Awards
+# 🎖️ Awards
 - The 2nd winner of the International Design Contest (IDC RoboCon), *Aug. 2022*
 - Frist prize of China Univeristy Robot Competition (ROBOMASTER), *Aug. 2021*
 - Frist prize of Chinese Mathematics Competition (CMC) in Zhejiang Province, *Dec. 2020*
