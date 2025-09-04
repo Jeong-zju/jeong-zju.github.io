@@ -6,9 +6,9 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-title                    : "Hanqing Tao (陶汉清)"
-description              : "Undergraduate @ ZJU ISEE"
-repository               : "hanqing2/hanqing2.github.io"
+title                    : "Zihao Li (李子豪)"
+description              : "M.S. Student @ ZJU ISEE"
+repository               : "jeong-zju/jeong-zju.github.io"
 google_scholar_stats_use_cdn : false
 
 # google analytics
@@ -21,15 +21,15 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 
 # Site Author
 author:
-  name             : "Hanqing Tao (陶汉清)"
+  name             : "Zihao Li (李子豪)"
   avatar           : "images/my_photo.jpg"
   bio              : "Zhejiang University"
-  location         : "Notre Dame, IN"
+  location         : # "Notre Dame, IN"
   employer         : 
   pubmed           : 
-  googlescholar    : 
-  email            : "htao@nd.edu"
-  researchgate     :  # e.g., "https://www.researchgate.net/profile/yourprofile"
+  googlescholar    : "https://scholar.google.com/citations?user=KNMrDtcAAAAJ"
+  email            : "lzh_jeong@zju.edu.cn"
+  researchgate     : # e.g., "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
   codepen          :
@@ -37,13 +37,13 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : # e.g., "github username"
+  github           : "jeong-zju" # e.g., "github username"
   google_plus      :
   keybase          :
   instagram        :
   impactstory      : # e.g., "https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         : "hanqing-tao-455758366"
+  linkedin         : # "hanqing-tao-455758366"
   dblp             : # e.g., "https://dblp.org/pid/xx/xxxx.html"
   orcid            : # e.g., "https://orcid.org/xxxx"
   pinterest        :
