@@ -38,7 +38,18 @@ I aim to advance the field by developing robots that can understand and adapt to
         <h3 style="margin: 0;"><a href="https://crl.ethz.ch/index.html" style="text-decoration: none; color: inherit;">CRL Lab</a>, ETH Zurich</h3>
         <p style="margin: 0;">Research Intern, <em>Jun. 2024 - Present</em></p>
         <p style="margin: 0;">Research Focus: task and motion planning(TAMP) strategies for autonomous scaffolding assembly utilizing mobile manipulators</p>
-        <p style="margin: 0;">Mentor: <a href="https://yijiangh.github.io/" target="_blank">Yijiang Huang</a></p>
+        <p style="margin: 0;">Advisor: <a href="https://crl.ethz.ch/people/coros/index.html" target="_blank">Prof. Dr. Stelian Coros</a></p>
+        <p style="margin: 0;">Mentor: <a href="https://yijiangh.github.io/" target="_blank">Dr. Yijiang Huang</a></p>
+    </div>
+</div>
+
+<div style="display: flex; align-items: center; margin-bottom: 10px;">
+    <img src="images/zju_logo.png" alt="School Logo" style="width: 100px; height: auto; margin-right: 20px;">
+    <div style="margin: 0;">
+        <h3 style="margin: 0;"><a href="https://github.com/ZJU-Biorobotics" style="text-decoration: none; color: inherit;">ZJU-Biorobotics</a>, Zhejiang University</h3>
+        <p style="margin: 0;">Undergraduate Research Intern, <em>Oct. 2021 - May. 2022</em></p>
+        <p style="margin: 0;">Research Focus: Mechanical design and locomotion control of bio-inspired snake-like robots</p>
+        <p style="margin: 0;">Advisor: <a href="https://person.zju.edu.cn/en/0008668" target="_blank">Prof. Qinyuan Ren</a></p>
     </div>
 </div>
 
@@ -46,9 +57,9 @@ I aim to advance the field by developing robots that can understand and adapt to
     <img src="images/rm_logo.png" alt="RM Logo" style="width: 100px; height: auto; margin-right: 20px;">
     <div style="margin: 0;">
         <h3 style="margin: 0;"><a href="https://www.robomaster.com/en-US" style="text-decoration: none; color: inherit;">ROBOMASTER</a>, Shenzhen Dajiang Innovation Technology Co., Ltd</h3>
-        <p style="margin: 0;">Intern Developer, <em>Sep. 2020 - Aug. 2021</em></p>
+        <p style="margin: 0;">Developer, <em>Sep. 2020 - Aug. 2021</em></p>
         <p style="margin: 0;">Focus: Electrical design and embedded algorithm development of engineering robots</p>
-        <p style="margin: 0;">Mentor: <a href="https://ieeexplore.ieee.org/author/37089021960" target="_blank">Pujing Lin</a></p>
+        <p style="margin: 0;">Mentor: <a href="https://ieeexplore.ieee.org/author/37089021960" target="_blank">Dr. Pujing Lin</a></p>
     </div>
 </div>
 
@@ -58,8 +69,8 @@ I aim to advance the field by developing robots that can understand and adapt to
         <h3 style="margin: 0;"><a href="https://www.researchgate.net/lab/Robotics-Machine-Intelligence-Lab-ZJU-Qiuguo-Zhu" style="text-decoration: none; color: inherit;">Robotics & Machine Intelligence Lab</a>, Zhejiang University</h3>
         <p style="margin: 0;">Undergraduate Research Intern, <em>Jul. 2020 - Aug. 2020</em></p>
         <p style="margin: 0;">Research Focus: Locomotion of legged robots</p>
-        <p style="margin: 0;">Advisors: <a href="https://person.zju.edu.cn/en/0011353" target="_blank">Prof. Qiuguo Zhu</a></p>
-        <p style="margin: 0;">Mentor: <a href="https://wang-zhicheng.github.io/" target="_blank">Zhicheng Wang</a></p>
+        <p style="margin: 0;">Advisor: <a href="https://person.zju.edu.cn/en/0011353" target="_blank">Prof. Qiuguo Zhu</a></p>
+        <p style="margin: 0;">Mentor: <a href="https://wang-zhicheng.github.io/" target="_blank">Dr. Zhicheng Wang</a></p>
     </div>
 </div>
 
