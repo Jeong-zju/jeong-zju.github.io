@@ -33,13 +33,12 @@ I aim to advance the field by developing robots that can understand and adapt to
 
 # 🔎 Experience
 <div style="display: flex; align-items: center; margin-bottom: 10px;">
-    <img src="images/nd_logo.jpg" alt="School Logo" style="width: 100px; height: auto; margin-right: 20px;">
+    <img src="images/crl_logo.png" alt="Lab Logo" style="width: 100px; height: auto; margin-right: 20px;">
     <div style="margin: 0;">
-        <h3 style="margin: 0;"><a href="https://csirlab.nd.edu/" style="text-decoration: none; color: inherit;">CSIR Lab</a>, University of Notre Dame</h3>
-        <p style="margin: 0;">Undergraduate Research Intern, <em>Jul. 2025 - Present</em></p>
-        <p style="margin: 0;">Research Focus: Compute-in-memory benchmark simulator for probabilistic AI workloads</p>
-        <p style="margin: 0;">Advisor: <a href="https://engineering.nd.edu/faculty/ningyuan-cao/" target="_blank">Prof. Ningyuan Cao</a></p>
-        <p style="margin: 0;">Mentor: <a href="https://scholar.google.com/citations?user=HW-rGPQAAAAJ" target="_blank">Likai Pei</a></p>
+        <h3 style="margin: 0;"><a href="https://crl.ethz.ch/index.html" style="text-decoration: none; color: inherit;">CRL Lab</a>, ETH Zurich</h3>
+        <p style="margin: 0;">Research Intern, <em>Jun. 2024 - Present</em></p>
+        <p style="margin: 0;">Research Focus: task and motion planning(TAMP) strategies for autonomous scaffolding assembly utilizing mobile manipulators</p>
+        <p style="margin: 0;">Mentor: <a href="https://yijiangh.github.io/" target="_blank">Yijiang Huang</a></p>
     </div>
 </div>
 
