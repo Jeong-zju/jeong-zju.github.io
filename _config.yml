@@ -22,7 +22,7 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 # Site Author
 author:
   name             : "Zihao Li (李子豪)"
-  avatar           : "images/lzh.jpg"
+  avatar           : "images/lzh.png"
   bio              : "Zhejiang University"
   location         : # "Notre Dame, IN"
   employer         : 
