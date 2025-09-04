@@ -17,21 +17,26 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-I am a junior undergraduate student majoring in microelectronics at the [College of Information Science and Electronic Engineering](http://www.isee.zju.edu.cn/iseenglish/), [Zhejiang University](https://www.zju.edu.cn/english/).
+I am currently a Master's student in Control Science and Engineering at Zhejiang University, advised by [Prof. Qinyuan Ren](https://person.zju.edu.cn/en/0008668). I am passionate about robotics, with a focus on making robots robust in dynamic, unstructured environments. My research combines control, planning, and reinforcement learning to enable autonomous systems that work reliably in the real world.
 
-I am currently a research intern at [CSIR Lab](https://csirlab.nd.edu/), advised by [Prof. Ningyuan Cao](https://engineering.nd.edu/faculty/ningyuan-cao/). I am very fortunate to be advised and mentored by [Prof. Xunzhao Yin](https://scholar.google.com/citations?user=snOTdoIAAAAJ) and Ph.D. candidate [Yu Qian](https://jerry-chandler.github.io/) from Zhejiang University.
+My work emphasizes cross-disciplinary collaboration, as seen in my internship at ETH Zurich's [Computational Robotics Lab](https://crl.ethz.ch/index.html)(CRL) with [Dr. Yijiang Huang](https://yijiangh.github.io/). I thrive in environments that mix mechanical design, control, and AI, and I'm passionate about mentoring juniors and fostering inclusive academic spaces. I'm applying to PhD programs to advance reliable robotic systems for dynamic, unstructured environments.
 
-My research interests lie in AI hardware and in-memory computing, focusing on (1) circuit and architecture design with both CMOS and emerging technologies, (2) chip design and tape-out, and (3) the design and development of cross-layer benchmark simulators spanning devices, circuits, architectures, algorithms, and applications.
+Feel free to contact me through email!
 
-Feel free to contact me at htao@nd.edu or hqtao@zju.edu.cn if you'd like to chat!
+# 📚 Research Interests
+My current research focuses on developing reliable robotic systems capable of operating in cluttered environments and adapting to changes in real-time. Specifically, I am interested in the intersection of:
+- 🤖 **Robotics**: Autonomous manipulation, task-and-motion planning, mobile robots, legged robots
+- 🏗️ **Control Systems**: Hybrid force-position control, human-robot interaction
+- 🧠 **Machine Learning**: Reinforcement learning, imitation learning, data-driven control
 
+I aim to advance the field by developing robots that can understand and adapt to dynamic environments, including human-robot interaction in assistive living, sports, and construction applications.
 
-# 🔥 News
+# 🔥 News TODO
 - *Jun. 2025*: &nbsp; I will join the [Department of Electronic and Computer Engineering](https://ece.hkust.edu.hk/) at [The Hong Kong University of Science and Technology](https://hkust.edu.hk/) as an Undergraduate Visiting Internship Student in Fall 2025, advised by [Prof. Chi-Ying Tsui](https://facultyprofiles.hkust.edu.hk/profiles.php?profile=chi-ying-tsui-eetsui).
 - *Mar. 2025*: &nbsp; I will participate in the [iSURE program](https://ndi-sa.nd.edu/index.cfm?FuseAction=Programs.ViewProgramAngular&id=10096) at the [University of Notre Dame](https://www.nd.edu/) in Summer 2025, advised by [Prof. Ningyuan Cao](https://engineering.nd.edu/faculty/ningyuan-cao/).
 - *Nov. 2024*: &nbsp;🎉 I am awarded Zhejiang Provincial Government Scholarship!
 
-# 🔎 Experience
+# 🔎 Experience TODO
 <div style="display: flex; align-items: center; margin-bottom: 10px;">
     <img src="images/nd_logo.jpg" alt="School Logo" style="width: 100px; height: auto; margin-right: 20px;">
     <div style="margin: 0;">
@@ -54,7 +59,7 @@ Feel free to contact me at htao@nd.edu or hqtao@zju.edu.cn if you'd like to chat
     </div>
 </div>
 
-# 🎖️ Honors and Awards
+# 🎖️ Honors and Awards TODO
 - Zhejiang Provincial Government Scholarship, *2024*
 - Zhejiang University Scholarship - Second Prize, *2024*
 - Outstanding students of Zhejiang University, *2023-2024*
@@ -63,9 +68,9 @@ Feel free to contact me at htao@nd.edu or hqtao@zju.edu.cn if you'd like to chat
 - Zhejiang University Scholarship - Third Prize, *2023*
 
 # 🎓 Education
-- *Aug. 2022 - Jun. 2026 (expected)*, B.Eng. in Microelectronic Science and Engineering, Zhejiang University, Hangzhou, Zhejiang, P.R.C.
-- *Jul. 2025 - Aug. 2025*, International Summer Undergraduate Research Experience (iSURE) Program, University of Notre Dame, Notre Dame, IN, U.S.
+- **Master's Degree in Control Science and Engineering**, [College of Control Science and Engineering](http://www.cse.zju.edu.cn/cseenglish/main.htm), [Zhejiang University](https://www.zju.edu.cn/english/), Hangzhou, China, Advisor: Prof. Qinyuan Ren. (Ongoing; Thesis: *Multi-modal Perception and Control Strategy for Unlocking Tasks Utilizing Manipulators*)
+- **Bachelor's Degree in Mechatronics Engineering (Honors Program)** and **Bachelor's Degree in Automation(Control)**, [School of Mechanical Engineering](http://me.zju.edu.cn/meenglish/main.psp), [Zhejiang University](https://www.zju.edu.cn/english/), Hangzhou, China.
 
-# 🎽 Specialties and Hobbies
+# 🎽 Specialties and Hobbies TODO
 - I love soccer⚽, badminton🏸, running🏃 and so much more.
 - As a nationally certified second-class soccer referee, I really enjoy refereeing games!
