@@ -81,7 +81,7 @@ I aim to advance the field by developing robots that can understand and adapt to
 - Frist prize of Zhejiang Physics Innovation Competition, *Dec. 2020*
 - Zhejiang Provincial Government Scholarship, *2020*
 - Zhejiang University Scholarship - Second Prize, *2020*
-- Hong huang & Xiaobei Wu's Scholarship, *2020*
+- Hong huang \& Xiaobei Wu's Scholarship, *2020*
 - Zhejiang University Academic Excellence Award, *2019 - 2020*
 - Zhejiang University Artistic and Athletic Achievement Award, *2019 - 2020*
 
@@ -89,6 +89,6 @@ I aim to advance the field by developing robots that can understand and adapt to
 - **Master's Degree in Control Science and Engineering**, [College of Control Science and Engineering](http://www.cse.zju.edu.cn/cseenglish/main.htm), [Zhejiang University](https://www.zju.edu.cn/english/), Hangzhou, China, Advisor: Prof. Qinyuan Ren. (Ongoing; Thesis: *Multi-modal Perception and Control Strategy for Unlocking Tasks Utilizing Manipulators*)
 - **Bachelor's Degree in Mechatronics Engineering (Honors Program)** and **Bachelor's Degree in Automation(Control)**, [School of Mechanical Engineering](http://me.zju.edu.cn/meenglish/main.psp), [Zhejiang University](https://www.zju.edu.cn/english/), Hangzhou, China.
 
-# 🎽 Specialties and Hobbies TODO
-- I love soccer⚽, badminton🏸, running🏃 and so much more.
-- As a nationally certified second-class soccer referee, I really enjoy refereeing games!
+# 🎽 Specialties and Hobbies
+- I love basketball🏀, badminton🏸, swimming🏊‍ and so much more.
+- I enjoy video games like Hollow Knight and God of War.
