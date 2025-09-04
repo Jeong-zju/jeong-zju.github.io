@@ -25,18 +25,13 @@ Feel free to contact me through email!
 
 # 📚 Research Interests
 My current research focuses on developing reliable robotic systems capable of operating in cluttered environments and adapting to changes in real-time. Specifically, I am interested in the intersection of:
-- 🤖 **Robotics**: Autonomous manipulation, task-and-motion planning, mobile robots, legged robots
-- 🏗️ **Control Systems**: Hybrid force-position control, human-robot interaction
-- 🧠 **Machine Learning**: Reinforcement learning, imitation learning, data-driven control
+- 🤖 **Robotics**: &nbsp; Autonomous manipulation, task-and-motion planning, mobile robots, legged robots
+- 🏗️ **Control Systems**: &nbsp; Hybrid force-position control, human-robot interaction
+- 🧠 **Machine Learning**: &nbsp; Reinforcement learning, imitation learning, data-driven control
 
 I aim to advance the field by developing robots that can understand and adapt to dynamic environments, including human-robot interaction in assistive living, sports, and construction applications.
 
-# 🔥 News TODO
-- *Jun. 2025*: &nbsp; I will join the [Department of Electronic and Computer Engineering](https://ece.hkust.edu.hk/) at [The Hong Kong University of Science and Technology](https://hkust.edu.hk/) as an Undergraduate Visiting Internship Student in Fall 2025, advised by [Prof. Chi-Ying Tsui](https://facultyprofiles.hkust.edu.hk/profiles.php?profile=chi-ying-tsui-eetsui).
-- *Mar. 2025*: &nbsp; I will participate in the [iSURE program](https://ndi-sa.nd.edu/index.cfm?FuseAction=Programs.ViewProgramAngular&id=10096) at the [University of Notre Dame](https://www.nd.edu/) in Summer 2025, advised by [Prof. Ningyuan Cao](https://engineering.nd.edu/faculty/ningyuan-cao/).
-- *Nov. 2024*: &nbsp;🎉 I am awarded Zhejiang Provincial Government Scholarship!
-
-# 🔎 Experience TODO
+# 🔎 Experience
 <div style="display: flex; align-items: center; margin-bottom: 10px;">
     <img src="images/nd_logo.jpg" alt="School Logo" style="width: 100px; height: auto; margin-right: 20px;">
     <div style="margin: 0;">
@@ -49,13 +44,23 @@ I aim to advance the field by developing robots that can understand and adapt to
 </div>
 
 <div style="display: flex; align-items: center; margin-bottom: 10px;">
+    <img src="images/rm_logo.png" alt="RM Logo" style="width: 100px; height: auto; margin-right: 20px;">
+    <div style="margin: 0;">
+        <h3 style="margin: 0;"><a href="https://www.robomaster.com/en-US" style="text-decoration: none; color: inherit;">ROBOMASTER</a>, Shenzhen Dajiang Innovation Technology Co., Ltd</h3>
+        <p style="margin: 0;">Intern Developer, <em>Sep. 2020 - Aug. 2021</em></p>
+        <p style="margin: 0;">Focus: Electrical design and embedded algorithm development of engineering robots</p>
+        <p style="margin: 0;">Mentor: <a href="https://ieeexplore.ieee.org/author/37089021960" target="_blank">Pujing Lin</a></p>
+    </div>
+</div>
+
+<div style="display: flex; align-items: center; margin-bottom: 10px;">
     <img src="images/zju_logo.png" alt="School Logo" style="width: 100px; height: auto; margin-right: 20px;">
     <div style="margin: 0;">
-        <h3 style="margin: 0;"><a href="https://zju-idea.github.io/" style="text-decoration: none; color: inherit;">IDEA Lab</a>, Zhejiang University</h3>
-        <p style="margin: 0;">Undergraduate Research Intern, <em>Aug. 2024 - Mar. 2025</em></p>
-        <p style="margin: 0;">Research Focus: Ferroelectric ternary content-addressable memory</p>
-        <p style="margin: 0;">Advisors: <a href="https://scholar.google.com/citations?user=snOTdoIAAAAJ" target="_blank">Prof. Xunzhao Yin</a> and <a href="https://scholar.google.com/citations?user=-XSbEFAAAAAJ" target="_blank">Prof. Cheng Zhuo</a></p>
-        <p style="margin: 0;">Mentor: <a href="https://jerry-chandler.github.io/" target="_blank">Yu Qian</a></p>
+        <h3 style="margin: 0;"><a href="https://www.researchgate.net/lab/Robotics-Machine-Intelligence-Lab-ZJU-Qiuguo-Zhu" style="text-decoration: none; color: inherit;">Robotics & Machine Intelligence Lab</a>, Zhejiang University</h3>
+        <p style="margin: 0;">Undergraduate Research Intern, <em>Jul. 2020 - Aug. 2020</em></p>
+        <p style="margin: 0;">Research Focus: Locomotion of legged robots</p>
+        <p style="margin: 0;">Advisors: <a href="https://person.zju.edu.cn/en/0011353" target="_blank">Prof. Qiuguo Zhu</a></p>
+        <p style="margin: 0;">Mentor: <a href="https://wang-zhicheng.github.io/" target="_blank">Zhicheng Wang</a></p>
     </div>
 </div>
 
