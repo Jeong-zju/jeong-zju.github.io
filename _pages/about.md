@@ -38,7 +38,7 @@ I aim to advance the field by developing robots that can understand and adapt to
         <h3 style="margin: 0;"><a href="https://crl.ethz.ch/index.html" style="text-decoration: none; color: inherit;">CRL Lab</a>, ETH Zurich</h3>
         <p style="margin: 0;">Research Intern, <em>Jun. 2024 - Present</em></p>
         <p style="margin: 0;">Research Focus: task and motion planning(TAMP) strategies for autonomous scaffolding assembly utilizing mobile manipulators</p>
-        <p style="margin: 0;">Advisor: <a href="https://crl.ethz.ch/people/coros/index.html" target="_blank">Prof. Dr. Stelian Coros</a></p>
+        <!-- <p style="margin: 0;">Advisor: <a href="https://crl.ethz.ch/people/coros/index.html" target="_blank">Prof. Dr. Stelian Coros</a></p> -->
         <p style="margin: 0;">Mentor: <a href="https://yijiangh.github.io/" target="_blank">Dr. Yijiang Huang</a></p>
     </div>
 </div>
