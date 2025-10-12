@@ -76,12 +76,13 @@ I aim to advance the field by developing robots that can understand and adapt to
 
 # 🏆 Honors and Awards
 - The 2nd winner of the International Design Contest (IDC RoboCon), *Aug. 2022*
+- Arawana's Scholarship of Yihai Kerry Arawana Holdings Co., Ltd, *2022*
 - Frist prize of China Univeristy Robot Competition (ROBOMASTER), *Aug. 2021*
+- Hong Huang and Xiaobei Wu's Scholarship, *2021*
 - Frist prize of Chinese Mathematics Competition (CMC) in Zhejiang Province, *Dec. 2020*
 - Frist prize of Zhejiang Physics Innovation Competition, *Dec. 2020*
 - Zhejiang Provincial Government Scholarship, *2020*
 - Zhejiang University Scholarship - Second Prize, *2020*
-- Hong Huang and Xiaobei Wu's Scholarship, *2020*
 - Zhejiang University Academic Excellence Award, *2019 - 2020*
 - Zhejiang University Artistic and Athletic Achievement Award, *2019 - 2020*
 
