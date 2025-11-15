@@ -94,59 +94,7 @@ I aim to advance the field by developing robots that can understand and adapt to
 <p align="center" style="font-family: 'Times New Roman', Times, serif; color: blue; font-weight: bold;">
   Below is an overview of the R&amp;D work on industry-grade robotic products that I have led or participated in.
 </p>
-
-<!-- <div style="display: flex; align-items: center; margin-bottom: 10px;">
-    <div style="margin: 0;">
-        <h3 style="margin: 1; font-size: 1.6em;">
-            <a href="https://www.aitenrobot.com/" style="text-decoration: none; color: inherit;">
-                AiTEN Robotics
-            </a>
-        </h3>
-        <img src="../images/aiten.png" alt="Aiten Logo" style="width: 150px; height: auto; margin-right: 20px;">
-    </div>
-    <div style="margin: 0;">
-        <div style="margin: 0; text-align: center;">
-            <img src="../images/aiten-tt15.png" alt="Aiten TT15" style="width: 150px; height: auto; margin-right: 20px;">
-            <p style="margin: 0; font-style: italic;">TT15</p>
-        </div>
-    </div>
-    <div style="margin: 0; text-align: center;">
-        <img src="../images/aiten-ape15.png" alt="Aiten APE15" style="width: 150px; height: auto; margin-right: 20px;">
-        <p style="margin: 0; font-style: italic; font-size: 1em;">APe15</p>
-    </div>
-</div>
-
-<div style="display: flex; align-items: center; margin-bottom: 10px;">
-    <div style="margin: 0;">
-        <h3 style="margin: 1; font-size: 1.6em;">
-            IOULUO Robot
-        </h3>
-        <img src="../images/iouluo.png" alt="IOULUO Logo" style="width: 150px; height: auto; margin-right: 20px;">
-    </div>
-    <div style="margin: 0;">
-        <div style="margin: 0; text-align: center;">
-            <img src="../images/iouluo-robot.png" alt="iouluo robot" style="width: auto; height: 125; margin-right: 20px;">
-        </div>
-    </div>
-</div>
-
-<div style="display: flex; align-items: center; margin-bottom: 10px;">
-    <div style="margin: 0;">
-        <h3 style="margin: 1; font-size: 1.6em;">
-            ELU.AI
-        </h3>
-        <img src="../images/elu.png" alt="ELU Logo" style="width: 150px; height: auto; margin-right: 20px;">
-    </div>
-    <div style="margin: 0;">
-        <div style="margin: 0; text-align: center;">
-            <img src="../images/elu-robot.png" alt="elu robot" style="width: auto; height: 125; margin-right: 20px;">
-            <p style="margin: 0; font-size: 1em;">FORCE-02</p>
-        </div>
-    </div>
-</div> -->
-
-<!-- AiTEN Robotics -->
-<div style="display: flex; align-items: center; margin-bottom: 20px;">
+<!-- <div style="display: flex; align-items: center; margin-bottom: 20px;">
     <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; margin-right: 40px; min-width: 180px; text-align: center;">
         <a href="https://www.aitenrobot.com/" style="text-decoration: none; color: inherit;">
             <img src="../images/aiten.png" alt="Aiten Logo" style="width: 150px; height: auto;">
@@ -163,8 +111,6 @@ I aim to advance the field by developing robots that can understand and adapt to
         </div>
     </div>
 </div>
-
-<!-- IOULUO Robot -->
 <div style="display: flex; align-items: center; margin-bottom: 20px;">
     <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; margin-right: 40px; min-width: 180px; text-align: center;">
         <a href="https://baike.baidu.com/item/%E6%9D%AD%E5%B7%9E%E5%9F%83%E6%AC%A7%E7%8F%9E%E6%9C%BA%E5%99%A8%E4%BA%BA%E7%A7%91%E6%8A%80%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8/61742729" style="text-decoration: none; color: inherit;">
@@ -177,8 +123,6 @@ I aim to advance the field by developing robots that can understand and adapt to
         </div>
     </div>
 </div>
-
-<!-- ELU.AI -->
 <div style="display: flex; align-items: center; margin-bottom: 20px;">
     <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; margin-right: 40px; min-width: 180px; text-align: center;">
         <a href="https://elu-ai.com/" style="text-decoration: none; color: inherit;">
@@ -191,7 +135,100 @@ I aim to advance the field by developing robots that can understand and adapt to
             <p style="margin: 0; font-size: 1em;">FORCE-02</p>
         </div>
     </div>
+</div> -->
+
+<!-- AiTEN Robotics -->
+<div style="display: flex; align-items: center; margin-bottom: 20px;">
+    <!-- 公司列（固定宽度） -->
+    <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; margin-right: 40px; width: 260px; flex-shrink: 0; text-align: center;">
+        <a href="https://www.aitenrobot.com/" style="text-decoration: none; color: inherit;">
+            <img src="../images/aiten.png" alt="Aiten Logo" style="width: 150px; height: auto;">
+        </a>
+        <p style="margin: 8px 0 0 0; font-size: 0.95em;">
+            <strong>Position:</strong> Electrical Engineer<br>
+            <strong>Main work:</strong> Designing circuit boards, developing embedded programs, and building Python backends
+        </p>
+    </div>
+    <!-- 产品列（固定宽度） -->
+    <div style="display: flex; flex-direction: column; align-items: center; width: 200px; flex-shrink: 0; margin-right: 16px;">
+        <div style="text-align: center; margin-bottom: 12px;">
+            <img src="../images/aiten-tt15.png" alt="Aiten TT15" style="width: 150px; height: auto; display: block; margin-bottom: 4px;">
+            <p style="margin: 0; font-size: 1em;">TT15</p>
+        </div>
+        <div style="text-align: center;">
+            <img src="../images/aiten-ape15.png" alt="Aiten APE15" style="width: 150px; height: auto; display: block; margin-bottom: 4px;">
+            <p style="margin: 0; font-size: 1em;">APe15</p>
+        </div>
+    </div>
+    <!-- 描述列（文本单独一栏，对齐） -->
+    <div style="display: flex; flex-direction: column; gap: 12px; flex: 1;">
+        <p style="margin: 0; font-size: 0.95em;">
+            Autonomous navigation and flexible operation; equipped with SLAM laser technology for intelligent path planning; efficient operation in warehouses and other complex industrial environments; optimizes production efficiency and reduces labor costs.
+        </p>
+        <!-- <p style="margin: 0; font-size: 0.95em;">
+            Main responsibilities: [Your main responsibilities on APe15]
+        </p> -->
+    </div>
 </div>
+<!-- IOULUO Robot -->
+<div style="display: flex; align-items: center; margin-bottom: 20px;">
+    <!-- 公司列（固定宽度） -->
+    <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; margin-right: 40px; width: 260px; flex-shrink: 0; text-align: center;">
+        <a href="https://baike.baidu.com/item/%E6%9D%AD%E5%B7%9E%E5%9F%83%E6%AC%A7%E7%8F%9E%E6%9C%BA%E5%99%A8%E4%BA%BA%E7%A7%91%E6%8A%80%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8/61742729" style="text-decoration: none; color: inherit;">
+            <img src="../images/iouluo.png" alt="IOULUO Logo" style="width: 150px; height: auto;">
+        </a>
+        <p style="margin: 8px 0 0 0; font-size: 0.95em;">
+            <strong>Position:</strong> Intern<br>
+            <strong>Main work:</strong> Developing control algorthms
+        </p>
+    </div>
+    <!-- 产品列（固定宽度） -->
+    <div style="display: flex; flex-direction: column; align-items: center; width: 200px; flex-shrink: 0; margin-right: 16px;">
+        <div style="text-align: center;">
+            <img src="../images/iouluo-robot.png" alt="iouluo robot" style="width: auto; height: 125px; display: block;">
+        </div>
+    </div>
+    <!-- 描述列 -->
+    <div style="display: flex; flex-direction: column; flex: 1;">
+        <p style="margin: 0; font-size: 0.95em;">
+            Cleaning of glass curtain walls and photovoltaic surfaces; autonomous perception with intelligent path planning and automatic obstacle avoidance.
+        </p>
+        <!-- <p style="margin: 0; font-size: 0.95em;">
+            Main responsibilities: [Your main responsibilities on IOULUO robot project]
+        </p> -->
+    </div>
+</div>
+<!-- ELU.AI -->
+<div style="display: flex; align-items: center; margin-bottom: 20px;">
+    <!-- 公司列（固定宽度） -->
+    <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; margin-right: 40px; width: 260px; flex-shrink: 0; text-align: center;">
+        <a href="https://elu-ai.com/" style="text-decoration: none; color: inherit;">
+            <img src="../images/elu.png" alt="ELU Logo" style="width: 150px; height: auto;">
+        </a>
+        <p style="margin: 8px 0 0 0; font-size: 0.95em;">
+            <strong>Position:</strong> Project leader<br>
+            <strong>Main work:</strong> Leading the development and designing control algorithms
+        </p>
+    </div>
+    <!-- 产品列（固定宽度） -->
+    <div style="display: flex; flex-direction: column; align-items: center; width: 200px; flex-shrink: 0; margin-right: 16px;">
+        <div style="text-align: center;">
+            <img src="../images/elu-robot.png" alt="elu robot" style="width: auto; height: 125px; display: block; margin-bottom: 4px;">
+            <p style="margin: 0; font-size: 1em;">FORCE-02</p>
+        </div>
+    </div>
+    <!-- 描述列 -->
+    <div style="display: flex; flex-direction: column; flex: 1;">
+        <p style="margin: 0; font-size: 0.95em;">
+            Fully automated charging process; unmanned, high-efficiency scheduling system; autonomously adapts to complex charging environments to maximize charging efficiency and resource utilization.
+        </p>
+        <!-- <p style="margin: 0; font-size: 0.95em;">
+            Main responsibilities: [Your main responsibilities on FORCE-02]
+        </p> -->
+    </div>
+</div>
+
+
 
 # 📝 Selected Publications
 
