@@ -89,7 +89,7 @@ I aim to advance the field by developing robots that can understand and adapt to
     </div>
 </div>
 
-# 🏗 Industrial Partnerships
+# 🛠️ Professional Experience
 
 <p align="center" style="font-family: 'Times New Roman', Times, serif; color: blue; font-weight: bold;">
   Below is an overview of the R&amp;D work on industry-grade robotic products that I have led or participated in.
