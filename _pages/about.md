@@ -194,7 +194,7 @@ I aim to advance the field by developing robots that can understand and adapt to
 <div style="display: flex; align-items: center; margin-bottom: 16px;">
     <img src="../images/icca.png"
          alt="Pub 1"
-         style="width: 500px; height: auto; margin-right: 16px;">
+         style="width: 350px; height: auto; margin-right: 16px;">
     <div style="font-family: 'Times New Roman', Times, serif; font-size: 1.1rem;">
         <strong style="font-size: 1.4rem;">
             Vision-Force Guided Robotic EV Charging: Learning-Based Localization and 6-DoF Hybrid Compliance Control for High-Precision Insertion
@@ -211,7 +211,7 @@ I aim to advance the field by developing robots that can understand and adapt to
 <div style="display: flex; align-items: center; margin-bottom: 16px;">
     <img src="../images/tie.png"
          alt="Pub 1"
-         style="width: 500px; height: auto; margin-right: 16px;">
+         style="width: 350px; height: auto; margin-right: 16px;">
     <div style="font-family: 'Times New Roman', Times, serif; font-size: 1.1rem;">
         <strong style="font-size: 1.4rem;">
             A Motion Control Approach for Physical Human–Robot-Environment Interaction via Operational Behaviors Inference
@@ -228,7 +228,7 @@ I aim to advance the field by developing robots that can understand and adapt to
 <div style="display: flex; align-items: center; margin-bottom: 16px;">
     <img src="../images/icml.png"
          alt="Pub 1"
-         style="width: 500px; height: auto; margin-right: 16px;">
+         style="width: 350px; height: auto; margin-right: 16px;">
     <div style="font-family: 'Times New Roman', Times, serif; font-size: 1.1rem;">
         <strong style="font-size: 1.4rem;">
             Meta-reinforcement Learning Robust to Distributional Shift via Performing Lifelong In-context Learning
@@ -245,7 +245,7 @@ I aim to advance the field by developing robots that can understand and adapt to
 <div style="display: flex; align-items: center; margin-bottom: 16px;">
     <img src="../images/iciea.png"
          alt="Pub 1"
-         style="width: 500px; height: auto; margin-right: 16px;">
+         style="width: 350px; height: auto; margin-right: 16px;">
     <div style="font-family: 'Times New Roman', Times, serif; font-size: 1.1rem;">
         <strong style="font-size: 1.4rem;">
             A Head Stabilizer of A Snake Robot Crawling in Serpentine Locomotion
