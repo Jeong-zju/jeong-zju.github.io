@@ -68,7 +68,7 @@ I aim to advance the field by developing robots that can understand and adapt to
     </div>
 </div>
 
-<!-- <div style="display: flex; align-items: center; margin-bottom: 10px;">
+<div style="display: flex; align-items: center; margin-bottom: 10px;">
     <img src="../images/rm_logo.png" alt="RM Logo" style="width: 100px; height: auto; margin-right: 20px;">
     <div style="margin: 0;">
         <h3 style="margin: 0;"><a href="https://www.robomaster.com/en-US" style="text-decoration: none; color: inherit;">ROBOMASTER</a>, Shenzhen Dajiang Innovation Technology Co., Ltd</h3>
@@ -76,7 +76,7 @@ I aim to advance the field by developing robots that can understand and adapt to
         <p style="margin: 0;">Focus: Electrical design and embedded algorithm development of engineering robots</p>
         <p style="margin: 0;">Mentor: <a href="https://ieeexplore.ieee.org/author/37089021960" target="_blank">Dr. Pujing Lin</a></p>
     </div>
-</div> -->
+</div>
 
 <div style="display: flex; align-items: center; margin-bottom: 10px;">
     <img src="../images/zju_logo.png" alt="School Logo" style="width: 100px; height: auto; margin-right: 20px;">
