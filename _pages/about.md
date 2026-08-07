@@ -17,9 +17,9 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-I am currently a Master's student in Control Science and Engineering at Zhejiang University, advised by [Prof. Qinyuan Ren](https://person.zju.edu.cn/en/0008668). I am passionate about robotics, with a focus on making robots robust in dynamic, unstructured environments. My research combines control, planning, and reinforcement learning to enable autonomous systems that work reliably in the real world.
+I am currently a PhD student in Computer Science at [The University of Sydney](https://www.sydney.edu.au/), advised by [Prof. Weiming (William) Zhi](https://www.weimingzhi.com/). I am passionate about robotics, with a focus on making robots robust in dynamic, unstructured environments. My research combines control, planning, and reinforcement learning to enable autonomous systems that work reliably in the real world.
 
-My work emphasizes cross-disciplinary collaboration, as seen in my internship at ETH Zurich's [Computational Robotics Lab](https://crl.ethz.ch/index.html)(CRL) with [Dr. Yijiang Huang](https://yijiangh.github.io/). I thrive in environments that mix mechanical design, control, and AI, and I'm passionate about mentoring juniors and fostering inclusive academic spaces. I'm applying to PhD programs to advance reliable robotic systems for dynamic, unstructured environments.
+My work emphasizes cross-disciplinary collaboration, including my internship at ETH Zurich's [Computational Robotics Lab](https://crl.ethz.ch/index.html) (CRL) with [Dr. Yijiang Huang](https://yijiangh.github.io/). I thrive in environments that mix mechanical design, control, and AI, and I'm passionate about mentoring juniors and fostering inclusive academic spaces. Through my PhD, I aim to advance reliable robotic systems for dynamic, unstructured environments.
 
 Feel free to contact me!
 
@@ -32,8 +32,9 @@ My current research focuses on developing reliable robotic systems capable of op
 I aim to advance the field by developing robots that can understand and adapt to dynamic environments, including human-robot interaction in assistive living, sports, and construction applications.
 
 # 🎓 Education
-- **Master's Degree in Control Science and Engineering**, [College of Control Science and Engineering](http://www.cse.zju.edu.cn/cseenglish/main.htm), [Zhejiang University](https://www.zju.edu.cn/english/), Hangzhou, China, Advisor: Prof. Qinyuan Ren. (Ongoing; Thesis: *Multi-modal Perception and Control Strategy for Unlocking Tasks Utilizing Manipulators*)
-- **Bachelor's Degree in Mechatronics Engineering (Chu Kochen Honors Program)** and **Bachelor's Degree in Automation(Control)**, [School of Mechanical Engineering](http://me.zju.edu.cn/meenglish/main.psp), [Zhejiang University](https://www.zju.edu.cn/english/), Hangzhou, China.
+- **PhD in Computer Science**, [School of Computer Science](https://www.sydney.edu.au/engineering/schools/school-of-computer-science.html), [The University of Sydney](https://www.sydney.edu.au/), Sydney, Australia, Advisor: [Prof. Weiming (William) Zhi](https://www.weimingzhi.com/). (*Jul. 2026 - Present*)
+- **Master's Degree in Control Science and Engineering**, [College of Control Science and Engineering](http://www.cse.zju.edu.cn/cseenglish/main.htm), [Zhejiang University](https://www.zju.edu.cn/english/), Hangzhou, China, Advisor: Prof. Qinyuan Ren. (Completed; Thesis: *Multi-modal Perception and Control Strategy for Unlocking Tasks Utilizing Manipulators*)
+- **Bachelor's Degree in Mechatronics Engineering (Chu Kochen Honors Program)** and **Bachelor's Degree in Automation (Control)**, [School of Mechanical Engineering](http://me.zju.edu.cn/meenglish/main.psp), [Zhejiang University](https://www.zju.edu.cn/english/), Hangzhou, China.
 
 # 🔎 Research Experience
 
@@ -43,7 +44,6 @@ I aim to advance the field by developing robots that can understand and adapt to
         <h3 style="margin: 0;">Zeno AI</h3>
         <p style="margin: 0;">Embodied AI Researcher, <em>Nov. 2025 - Present</em></p>
         <p style="margin: 0;">Research Focus: Whole-body teleoperation and embodied AI</p>
-        <p style="margin: 0;">Advisor: <a href="https://www.weimingzhi.com/" target="_blank">Prof. William Zhi</a></p>
     </div>
 </div>
 
@@ -51,7 +51,7 @@ I aim to advance the field by developing robots that can understand and adapt to
     <img src="../images/crl_logo.png" alt="Lab Logo" style="width: 100px; height: auto; margin-right: 20px;">
     <div style="margin: 0;">
         <h3 style="margin: 0;"><a href="https://crl.ethz.ch/index.html" style="text-decoration: none; color: inherit;">CRL Lab</a>, ETH Zurich</h3>
-        <p style="margin: 0;">Research Intern, <em>Jun. 2024 - Present</em></p>
+        <p style="margin: 0;">Research Intern, <em>Jun. 2024 - Feb. 2026</em></p>
         <p style="margin: 0;">Research Focus: task and motion planning (TAMP) strategies for autonomous scaffolding assembly utilizing mobile manipulators</p>
         <!-- <p style="margin: 0;">Advisor: <a href="https://crl.ethz.ch/people/coros/index.html" target="_blank">Prof. Dr. Stelian Coros</a></p> -->
         <p style="margin: 0;">Mentor: <a href="https://yijiangh.github.io/" target="_blank">Dr. Yijiang Huang</a></p>
@@ -232,6 +232,47 @@ I aim to advance the field by developing robots that can understand and adapt to
 
 # 📝 Selected Publications
 
+<div style="margin-bottom: 20px; padding-bottom: 16px; border-bottom: 1px solid #e5e7eb; font-family: 'Times New Roman', Times, serif; font-size: 1.1rem;">
+    <strong style="font-size: 1.4rem;">
+        <a href="https://doi.org/10.1007/s41693-026-00191-3" target="_blank" style="text-decoration: none; color: inherit;">A robot-friendly scaffolding system with passive error correction using tapered screw connectors</a>
+    </strong><br><br>
+    <span style="font-size: 1.15rem;">Pok Yin Victor Leung, Yijiang Huang, Yen-Ting Liu, Jakob Genhart, <strong>Zihao Li</strong>, Caelan Garrett, Stelian Coros</span><br><br>
+    <em style="font-size: 1.15rem;">Construction Robotics, 2026</em>
+</div>
+
+<div style="margin-bottom: 20px; padding-bottom: 16px; border-bottom: 1px solid #e5e7eb; font-family: 'Times New Roman', Times, serif; font-size: 1.1rem;">
+    <strong style="font-size: 1.4rem;">
+        <a href="https://arxiv.org/abs/2606.16490" target="_blank" style="text-decoration: none; color: inherit;">Robots that Collaborate: Sequential Asymmetric Imitation for Learning Coupled Robot Policies</a>
+    </strong><br><br>
+    <span style="font-size: 1.15rem;">Yincong Chen, Ranpeng Qiu, <strong>Zihao Li</strong>, Yanan Zhou, Guoqiang Ren, Weiming Zhi</span><br><br>
+    <em style="font-size: 1.15rem;">arXiv preprint arXiv:2606.16490, 2026</em>
+</div>
+
+<div style="margin-bottom: 20px; padding-bottom: 16px; border-bottom: 1px solid #e5e7eb; font-family: 'Times New Roman', Times, serif; font-size: 1.1rem;">
+    <strong style="font-size: 1.4rem;">
+        <a href="https://arxiv.org/abs/2606.14551" target="_blank" style="text-decoration: none; color: inherit;">TRACE: Trajectory-Routed Causal Memory for Delayed-Evidence Visuomotor Imitation</a>
+    </strong><br><br>
+    <span style="font-size: 1.15rem;"><strong>Zihao Li</strong>, Ranpeng Qiu, Yincong Chen, Guoqiang Ren, Weiming Zhi</span><br><br>
+    <em style="font-size: 1.15rem;">arXiv preprint arXiv:2606.14551, 2026</em>
+</div>
+
+<div style="margin-bottom: 20px; padding-bottom: 16px; border-bottom: 1px solid #e5e7eb; font-family: 'Times New Roman', Times, serif; font-size: 1.1rem;">
+    <strong style="font-size: 1.4rem;">
+        <a href="https://arxiv.org/abs/2602.09888" target="_blank" style="text-decoration: none; color: inherit;">TriPilot-FF: Coordinated Whole-Body Teleoperation with Force Feedback</a>
+    </strong><br><br>
+    <span style="font-size: 1.15rem;"><strong>Zihao Li</strong>, Yanan Zhou, Ranpeng Qiu, Hangyu Wu, Guoqiang Ren, Weiming Zhi</span><br><br>
+    <em style="font-size: 1.15rem;">arXiv preprint arXiv:2602.09888, 2026</em>
+</div>
+
+<div style="margin-bottom: 20px; padding-bottom: 16px; border-bottom: 1px solid #e5e7eb; font-family: 'Times New Roman', Times, serif; font-size: 1.1rem;">
+    <strong style="font-size: 1.4rem;">
+        <a href="https://arxiv.org/abs/2511.05052" target="_blank" style="text-decoration: none; color: inherit;">TAPOM: Task-Space Topology-Guided Motion Planning for Manipulating Elongated Object in Cluttered Environments</a>
+    </strong><br><br>
+    <span style="font-size: 1.15rem;"><strong>Zihao Li</strong>, Yiming Zhu, Zhe Zhong, Qinyuan Ren, Yijiang Huang</span><br><br>
+    <em style="font-size: 1.15rem;">arXiv preprint arXiv:2511.05052, 2025</em>
+</div>
+
+
 <div style="display: flex; align-items: center; margin-bottom: 16px;">
     <img src="../images/icca.png"
          alt="Pub 1"
@@ -300,7 +341,7 @@ I aim to advance the field by developing robots that can understand and adapt to
     </div>
 </div>
 
-**For more details, please visit: [Zihao Li](https://scholar.google.com/citations?view_op=list_works&hl=zh-CN&hl=zh-CN&user=KNMrDtcAAAAJ&sortby=pubdate)**
+**For more details, please visit: [Zihao Li](https://scholar.google.com/citations?user=KNMrDtcAAAAJ)**
 
 # 🏆 Honors and Awards
 - The 2nd winner of the International Design Contest (IDC RoboCon), *Aug. 2022*
