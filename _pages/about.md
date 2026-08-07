@@ -3,358 +3,259 @@ permalink: /
 title: ""
 excerpt: ""
 author_profile: true
-redirect_from: 
+redirect_from:
   - /about/
   - /about.html
 ---
 
-{% if site.google_scholar_stats_use_cdn %}
-{% assign gsDataBaseUrl = "https://cdn.jsdelivr.net/gh/" | append: site.repository | append: "@" %}
-{% else %}
-{% assign gsDataBaseUrl = "https://raw.githubusercontent.com/" | append: site.repository | append: "/" %}
-{% endif %}
-{% assign url = gsDataBaseUrl | append: "google-scholar-stats/gs_data_shieldsio.json" %}
+<span class="anchor" id="about-me"></span>
 
-<span class='anchor' id='about-me'></span>
+<section class="intro-card">
+  <p class="intro-kicker">PhD Student · The University of Sydney</p>
+  <h1 class="intro-title">Building intelligent robots for the real world.</h1>
+  <p class="intro-lead">
+    I am currently a PhD student in Computer Science at <a href="https://www.sydney.edu.au/">The University of Sydney</a>, advised by <a href="https://www.weimingzhi.com/">Prof. Weiming (William) Zhi</a>. My research focuses on robot manipulation and embodied intelligence, enabling robots to perceive, reason, and act in complex real-world environments.
+  </p>
+  <p>
+    I explore Vision-Language-Action (VLA) models, multimodal learning, imitation learning, and reinforcement learning to develop generalizable robot policies. My background spans mechanical design, control, planning, and AI, including research at ETH Zurich's <a href="https://crl.ethz.ch/index.html">Computational Robotics Lab</a> with <a href="https://yijiangh.github.io/">Dr. Yijiang Huang</a>.
+  </p>
+  <div class="intro-tags" aria-label="Research themes">
+    <span>Robot Manipulation</span>
+    <span>Embodied Intelligence</span>
+    <span>Vision-Language-Action</span>
+  </div>
+</section>
 
-I am currently a PhD student in Computer Science at [The University of Sydney](https://www.sydney.edu.au/), advised by [Prof. Weiming (William) Zhi](https://www.weimingzhi.com/). I am passionate about robot manipulation and embodied intelligence, with a focus on enabling robots to perceive, reason, and act in complex real-world environments. My research explores Vision-Language-Action (VLA) models, multimodal learning, imitation learning, and reinforcement learning to develop generalizable robot policies.
+<span class="anchor" id="research-interests"></span>
+# Research Interests
 
-My work emphasizes cross-disciplinary collaboration, including my internship at ETH Zurich's [Computational Robotics Lab](https://crl.ethz.ch/index.html) (CRL) with [Dr. Yijiang Huang](https://yijiangh.github.io/). I thrive in environments that mix mechanical design, control, and AI, and I'm passionate about mentoring juniors and fostering inclusive academic spaces. Through my PhD, I aim to develop generalizable and adaptive embodied agents for real-world manipulation.
-
-Feel free to contact me!
-
-# 📚 Research Interests
-My current research focuses on robot manipulation and embodied intelligence, with an emphasis on learning generalizable robot policies from multimodal data. Specifically, I am interested in:
-- 🤖 **Robot Manipulation**: &nbsp; Dexterous and mobile manipulation, long-horizon tasks, task-and-motion planning
-- 🧠 **Embodied Intelligence**: &nbsp; Visuomotor policy learning, imitation and reinforcement learning, generalization and adaptation
-- 🌐 **Vision-Language-Action Models**: &nbsp; Multimodal representation learning, language-conditioned control, foundation models for robotics
-
-I aim to build embodied agents that can understand multimodal instructions, reason about their environments, and perform complex manipulation tasks robustly in the real world.
-
-# 🎓 Education
-- **PhD in Computer Science**, [School of Computer Science](https://www.sydney.edu.au/engineering/schools/school-of-computer-science.html), [The University of Sydney](https://www.sydney.edu.au/), Sydney, Australia, Advisor: [Prof. Weiming (William) Zhi](https://www.weimingzhi.com/). (*Jul. 2026 - Present*)
-- **Master's Degree in Control Science and Engineering**, [College of Control Science and Engineering](http://www.cse.zju.edu.cn/cseenglish/main.htm), [Zhejiang University](https://www.zju.edu.cn/english/), Hangzhou, China, Advisor: Prof. Qinyuan Ren. (Completed; Thesis: *Multi-modal Perception and Control Strategy for Unlocking Tasks Utilizing Manipulators*)
-- **Bachelor's Degree in Mechatronics Engineering (Chu Kochen Honors Program)** and **Bachelor's Degree in Automation (Control)**, [School of Mechanical Engineering](http://me.zju.edu.cn/meenglish/main.psp), [Zhejiang University](https://www.zju.edu.cn/english/), Hangzhou, China.
-
-# 🔎 Research Experience
-
-<div style="display: flex; align-items: center; margin-bottom: 10px;">
-    <img src="../images/zeno.png" alt="Zeno Logo" style="width: 100px; height: auto; margin-right: 20px;">
-    <div style="margin: 0;">
-        <h3 style="margin: 0;">Zeno AI</h3>
-        <p style="margin: 0;">Embodied AI Researcher, <em>Nov. 2025 - Present</em></p>
-        <p style="margin: 0;">Research Focus: Whole-body teleoperation and embodied AI</p>
-    </div>
+<div class="interest-grid">
+  <article class="interest-card">
+    <span class="interest-icon" aria-hidden="true">🤖</span>
+    <h3>Robot Manipulation</h3>
+    <p>Dexterous and mobile manipulation, long-horizon tasks, and task-and-motion planning.</p>
+  </article>
+  <article class="interest-card">
+    <span class="interest-icon" aria-hidden="true">🧠</span>
+    <h3>Embodied Intelligence</h3>
+    <p>Visuomotor policy learning, imitation and reinforcement learning, generalization, and adaptation.</p>
+  </article>
+  <article class="interest-card">
+    <span class="interest-icon" aria-hidden="true">🌐</span>
+    <h3>Vision-Language-Action</h3>
+    <p>Multimodal representation learning, language-conditioned control, and foundation models for robotics.</p>
+  </article>
 </div>
 
-<div style="display: flex; align-items: center; margin-bottom: 10px;">
-    <img src="../images/crl_logo.png" alt="Lab Logo" style="width: 100px; height: auto; margin-right: 20px;">
-    <div style="margin: 0;">
-        <h3 style="margin: 0;"><a href="https://crl.ethz.ch/index.html" style="text-decoration: none; color: inherit;">CRL Lab</a>, ETH Zurich</h3>
-        <p style="margin: 0;">Research Intern, <em>Jun. 2024 - Feb. 2026</em></p>
-        <p style="margin: 0;">Research Focus: task and motion planning (TAMP) strategies for autonomous scaffolding assembly utilizing mobile manipulators</p>
-        <!-- <p style="margin: 0;">Advisor: <a href="https://crl.ethz.ch/people/coros/index.html" target="_blank">Prof. Dr. Stelian Coros</a></p> -->
-        <p style="margin: 0;">Mentor: <a href="https://yijiangh.github.io/" target="_blank">Dr. Yijiang Huang</a></p>
-    </div>
+<span class="anchor" id="education"></span>
+# Education
+
+<div class="timeline-list">
+  <article class="timeline-item">
+    <span class="timeline-date">Jul. 2026 – Present</span>
+    <h3>PhD in Computer Science</h3>
+    <p><a href="https://www.sydney.edu.au/engineering/schools/school-of-computer-science.html">School of Computer Science</a>, <a href="https://www.sydney.edu.au/">The University of Sydney</a></p>
+    <p class="item-note">Advisor: <a href="https://www.weimingzhi.com/">Prof. Weiming (William) Zhi</a></p>
+  </article>
+  <article class="timeline-item">
+    <span class="timeline-date">Completed</span>
+    <h3>Master's Degree in Control Science and Engineering</h3>
+    <p><a href="http://www.cse.zju.edu.cn/cseenglish/main.htm">College of Control Science and Engineering</a>, <a href="https://www.zju.edu.cn/english/">Zhejiang University</a></p>
+    <p class="item-note">Advisor: Prof. Qinyuan Ren · Thesis: <em>Multi-modal Perception and Control Strategy for Unlocking Tasks Utilizing Manipulators</em></p>
+  </article>
+  <article class="timeline-item">
+    <span class="timeline-date">Bachelor's</span>
+    <h3>Mechatronics Engineering &amp; Automation (Control)</h3>
+    <p>Chu Kochen Honors Program, <a href="http://me.zju.edu.cn/meenglish/main.psp">School of Mechanical Engineering</a>, <a href="https://www.zju.edu.cn/english/">Zhejiang University</a></p>
+  </article>
 </div>
 
-<div style="display: flex; align-items: center; margin-bottom: 10px;">
-    <img src="../images/zju_logo.png" alt="School Logo" style="width: 100px; height: auto; margin-right: 20px;">
-    <div style="margin: 0;">
-        <h3 style="margin: 0;"><a href="https://github.com/ZJU-Biorobotics" style="text-decoration: none; color: inherit;">ZJU-Biorobotics</a>, Zhejiang University</h3>
-        <p style="margin: 0;">Undergraduate Research Intern, <em>Mar. 2021 - May. 2022</em></p>
-        <p style="margin: 0;">Research Focus: Mechanical design and locomotion control of bio-inspired snake-like robots</p>
-        <p style="margin: 0;">Advisor: <a href="https://person.zju.edu.cn/en/0008668" target="_blank">Prof. Qinyuan Ren</a></p>
+<span class="anchor" id="experience"></span>
+# Research Experience
+
+<div class="experience-grid">
+  <article class="experience-card">
+    <div class="experience-logo"><img src="../images/zeno.png" alt="Zeno AI logo"></div>
+    <div class="experience-body">
+      <span class="experience-date">Nov. 2025 – Present</span>
+      <h3>Zeno AI</h3>
+      <p class="experience-role">Embodied AI Researcher</p>
+      <p>Whole-body teleoperation and embodied AI.</p>
     </div>
+  </article>
+
+  <article class="experience-card">
+    <div class="experience-logo"><img src="../images/crl_logo.png" alt="Computational Robotics Lab logo"></div>
+    <div class="experience-body">
+      <span class="experience-date">Jun. 2024 – Feb. 2026</span>
+      <h3><a href="https://crl.ethz.ch/index.html">Computational Robotics Lab</a></h3>
+      <p class="experience-role">Research Intern · ETH Zurich</p>
+      <p>Task-and-motion planning strategies for autonomous scaffolding assembly using mobile manipulators.</p>
+      <p class="item-note">Mentor: <a href="https://yijiangh.github.io/">Dr. Yijiang Huang</a></p>
+    </div>
+  </article>
+
+  <article class="experience-card">
+    <div class="experience-logo"><img src="../images/zju_logo.png" alt="Zhejiang University logo"></div>
+    <div class="experience-body">
+      <span class="experience-date">Mar. 2021 – May 2022</span>
+      <h3><a href="https://github.com/ZJU-Biorobotics">ZJU-Biorobotics</a></h3>
+      <p class="experience-role">Undergraduate Research Intern · Zhejiang University</p>
+      <p>Mechanical design and locomotion control of bio-inspired snake-like robots.</p>
+      <p class="item-note">Advisor: <a href="https://person.zju.edu.cn/en/0008668">Prof. Qinyuan Ren</a></p>
+    </div>
+  </article>
+
+  <article class="experience-card">
+    <div class="experience-logo"><img src="../images/rm_logo.png" alt="RoboMaster logo"></div>
+    <div class="experience-body">
+      <span class="experience-date">Sep. 2020 – Aug. 2021</span>
+      <h3><a href="https://www.robomaster.com/en-US">RoboMaster</a></h3>
+      <p class="experience-role">Developer · DJI</p>
+      <p>Electrical design and embedded algorithm development for engineering robots.</p>
+      <p class="item-note">Mentor: <a href="https://ieeexplore.ieee.org/author/37089021960">Dr. Pujing Lin</a></p>
+    </div>
+  </article>
+
+  <article class="experience-card">
+    <div class="experience-logo"><img src="../images/zju_logo.png" alt="Zhejiang University logo"></div>
+    <div class="experience-body">
+      <span class="experience-date">Jul. 2020 – Aug. 2020</span>
+      <h3>Robotics &amp; Machine Intelligence Lab</h3>
+      <p class="experience-role">Undergraduate Research Intern · Zhejiang University</p>
+      <p>Locomotion of legged robots.</p>
+      <p class="item-note">Advisor: <a href="https://person.zju.edu.cn/en/0011353">Prof. Qiuguo Zhu</a> · Mentor: <a href="https://wang-zhicheng.github.io/">Dr. Zhicheng Wang</a></p>
+    </div>
+  </article>
 </div>
 
-<div style="display: flex; align-items: center; margin-bottom: 10px;">
-    <img src="../images/rm_logo.png" alt="RM Logo" style="width: 100px; height: auto; margin-right: 20px;">
-    <div style="margin: 0;">
-        <h3 style="margin: 0;"><a href="https://www.robomaster.com/en-US" style="text-decoration: none; color: inherit;">ROBOMASTER</a>, Shenzhen Dajiang Innovation Technology Co., Ltd</h3>
-        <p style="margin: 0;">Developer, <em>Sep. 2020 - Aug. 2021</em></p>
-        <p style="margin: 0;">Focus: Electrical design and embedded algorithm development of engineering robots</p>
-        <p style="margin: 0;">Mentor: <a href="https://ieeexplore.ieee.org/author/37089021960" target="_blank">Dr. Pujing Lin</a></p>
+<span class="anchor" id="professional-experience"></span>
+# Professional Experience
+
+<p class="section-intro">Selected industry-grade robotic products that I have led or helped develop.</p>
+
+<div class="project-grid">
+  <article class="project-card">
+    <div class="project-brand"><img src="../images/aiten.png" alt="AiTEN Robotics logo"></div>
+    <h3>Mobile Logistics Robots</h3>
+    <p class="experience-role">Electrical Engineer</p>
+    <p>Designed circuit boards, developed embedded software, and built Python backends for autonomous navigation and warehouse operations.</p>
+    <div class="project-gallery">
+      <img src="../images/aiten-tt15.png" alt="AiTEN TT15">
+      <img src="../images/aiten-ape15.png" alt="AiTEN APe15">
     </div>
+  </article>
+
+  <article class="project-card">
+    <div class="project-brand"><img src="../images/iouluo.png" alt="IOULUO logo"></div>
+    <h3>Surface Cleaning Robot</h3>
+    <p class="experience-role">Control Algorithms Intern</p>
+    <p>Developed control algorithms for autonomous cleaning of glass curtain walls and photovoltaic surfaces.</p>
+    <div class="project-gallery project-gallery--single">
+      <img src="../images/iouluo-robot.png" alt="IOULUO cleaning robot">
+    </div>
+  </article>
+
+  <article class="project-card">
+    <div class="project-brand"><img src="../images/elu.png" alt="ELU.AI logo"></div>
+    <h3>FORCE-02 Charging Robot</h3>
+    <p class="experience-role">Project Leader</p>
+    <p>Led development and control-algorithm design for automated vehicle charging and high-efficiency scheduling.</p>
+    <div class="project-gallery project-gallery--single">
+      <img src="../images/elu-robot.png" alt="ELU FORCE-02 charging robot">
+    </div>
+  </article>
 </div>
 
-<div style="display: flex; align-items: center; margin-bottom: 10px;">
-    <img src="../images/zju_logo.png" alt="School Logo" style="width: 100px; height: auto; margin-right: 20px;">
-    <div style="margin: 0;">
-        <h3 style="margin: 0;"><a href="https://www.researchgate.net/lab/Robotics-Machine-Intelligence-Lab-ZJU-Qiuguo-Zhu" style="text-decoration: none; color: inherit;">Robotics & Machine Intelligence Lab</a>, Zhejiang University</h3>
-        <p style="margin: 0;">Undergraduate Research Intern, <em>Jul. 2020 - Aug. 2020</em></p>
-        <p style="margin: 0;">Research Focus: Locomotion of legged robots</p>
-        <p style="margin: 0;">Advisor: <a href="https://person.zju.edu.cn/en/0011353" target="_blank">Prof. Qiuguo Zhu</a></p>
-        <p style="margin: 0;">Mentor: <a href="https://wang-zhicheng.github.io/" target="_blank">Dr. Zhicheng Wang</a></p>
-    </div>
+<span class="anchor" id="publications"></span>
+# Publications
+
+<div class="publication-list">
+  <article class="publication-card">
+    <div class="publication-meta"><span>2026</span><span>Construction Robotics</span></div>
+    <h3>A robot-friendly scaffolding system with passive error correction using tapered screw connectors</h3>
+    <p class="publication-authors">Pok Yin Victor Leung, Yijiang Huang, Yen-Ting Liu, Jakob Genhart, <strong>Zihao Li</strong>, Caelan Garrett, Stelian Coros</p>
+    <a class="publication-link" href="https://doi.org/10.1007/s41693-026-00191-3">DOI ↗</a>
+  </article>
+
+  <article class="publication-card">
+    <div class="publication-meta"><span>2026</span><span>arXiv</span></div>
+    <h3>Robots that Collaborate: Sequential Asymmetric Imitation for Learning Coupled Robot Policies</h3>
+    <p class="publication-authors">Yincong Chen, Ranpeng Qiu, <strong>Zihao Li</strong>, Yanan Zhou, Guoqiang Ren, Weiming Zhi</p>
+    <a class="publication-link" href="https://arxiv.org/abs/2606.16490">arXiv ↗</a>
+  </article>
+
+  <article class="publication-card">
+    <div class="publication-meta"><span>2026</span><span>arXiv</span></div>
+    <h3>TRACE: Trajectory-Routed Causal Memory for Delayed-Evidence Visuomotor Imitation</h3>
+    <p class="publication-authors"><strong>Zihao Li</strong>, Ranpeng Qiu, Yincong Chen, Guoqiang Ren, Weiming Zhi</p>
+    <a class="publication-link" href="https://arxiv.org/abs/2606.14551">arXiv ↗</a>
+  </article>
+
+  <article class="publication-card">
+    <div class="publication-meta"><span>2026</span><span>arXiv</span></div>
+    <h3>TriPilot-FF: Coordinated Whole-Body Teleoperation with Force Feedback</h3>
+    <p class="publication-authors"><strong>Zihao Li</strong>, Yanan Zhou, Ranpeng Qiu, Hangyu Wu, Guoqiang Ren, Weiming Zhi</p>
+    <a class="publication-link" href="https://arxiv.org/abs/2602.09888">arXiv ↗</a>
+  </article>
+
+  <article class="publication-card">
+    <div class="publication-meta"><span>2025</span><span>arXiv</span></div>
+    <h3>TAPOM: Task-Space Topology-Guided Motion Planning for Manipulating Elongated Object in Cluttered Environments</h3>
+    <p class="publication-authors"><strong>Zihao Li</strong>, Yiming Zhu, Zhe Zhong, Qinyuan Ren, Yijiang Huang</p>
+    <a class="publication-link" href="https://arxiv.org/abs/2511.05052">arXiv ↗</a>
+  </article>
+
+  <article class="publication-card">
+    <div class="publication-meta"><span>2025</span><span>ICCA</span></div>
+    <h3>Vision-Force Guided Robotic EV Charging: Learning-Based Localization and 6-DoF Hybrid Compliance Control for High-Precision Insertion</h3>
+    <p class="publication-authors"><strong>Zihao Li</strong>, Siqi Wang, Xiaocong Li, Yiming Zhu, Zhe Zhong, Yilin Lang, Qinyuan Ren</p>
+  </article>
+
+  <article class="publication-card">
+    <div class="publication-meta"><span>2024</span><span>IEEE TIE</span></div>
+    <h3>A Motion Control Approach for Physical Human–Robot-Environment Interaction via Operational Behaviors Inference</h3>
+    <p class="publication-authors">Yilin Lang, <strong>Zihao Li</strong>, Zhaoyang Li, Yanan Li, Qinyuan Ren</p>
+  </article>
+
+  <article class="publication-card">
+    <div class="publication-meta"><span>2024</span><span>ICML</span></div>
+    <h3>Meta-reinforcement Learning Robust to Distributional Shift via Performing Lifelong In-context Learning</h3>
+    <p class="publication-authors">Tengye Xu, <strong>Zihao Li</strong>, Zihao Li, Qinyuan Ren</p>
+  </article>
+
+  <article class="publication-card">
+    <div class="publication-meta"><span>2022</span><span>ICIEA</span></div>
+    <h3>A Head Stabilizer of a Snake Robot Crawling in Serpentine Locomotion</h3>
+    <p class="publication-authors"><strong>Zihao Li</strong>, Jiangpeng Hu, Qinyuan Ren</p>
+  </article>
 </div>
 
-# 🛠️ Professional Experience
+<p class="scholar-cta">Explore the complete and latest publication record on <a href="https://scholar.google.com/citations?user=KNMrDtcAAAAJ">Google Scholar ↗</a></p>
 
-<p align="center" style="font-family: 'Times New Roman', Times, serif; color: blue; font-weight: bold;">
-  Below is an overview of the R&amp;D work on industry-grade robotic products that I have led or participated in.
-</p>
-<!-- <div style="display: flex; align-items: center; margin-bottom: 20px;">
-    <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; margin-right: 40px; min-width: 180px; text-align: center;">
-        <a href="https://www.aitenrobot.com/" style="text-decoration: none; color: inherit;">
-            <img src="../images/aiten.png" alt="Aiten Logo" style="width: 150px; height: auto;">
-        </a>
-    </div>
-    <div style="display: flex; gap: 30px; align-items: flex-end;">
-        <div style="text-align: center;">
-            <img src="../images/aiten-tt15.png" alt="Aiten TT15" style="width: 150px; height: auto; display: block; margin-bottom: 4px;">
-            <p style="margin: 0; font-style: italic;">TT15</p>
-        </div>
-        <div style="text-align: center;">
-            <img src="../images/aiten-ape15.png" alt="Aiten APE15" style="width: 150px; height: auto; display: block; margin-bottom: 4px;">
-            <p style="margin: 0; font-size: 1em;">APe15</p>
-        </div>
-    </div>
+<span class="anchor" id="awards"></span>
+# Honors &amp; Awards
+
+<ul class="award-grid">
+  <li><strong>2nd Place</strong><span>International Design Contest (IDC RoboCon), 2022</span></li>
+  <li><strong>Arawana Scholarship</strong><span>Yihai Kerry Arawana Holdings, 2022</span></li>
+  <li><strong>First Prize</strong><span>China University Robot Competition (RoboMaster), 2021</span></li>
+  <li><strong>Hong Huang and Xiaobei Wu Scholarship</strong><span>2021</span></li>
+  <li><strong>First Prize</strong><span>Chinese Mathematics Competition, Zhejiang, 2020</span></li>
+  <li><strong>First Prize</strong><span>Zhejiang Physics Innovation Competition, 2020</span></li>
+  <li><strong>Zhejiang Provincial Government Scholarship</strong><span>2020</span></li>
+  <li><strong>Zhejiang University Scholarship</strong><span>Second Prize, 2020</span></li>
+  <li><strong>Academic Excellence Award</strong><span>Zhejiang University, 2019–2020</span></li>
+  <li><strong>Artistic and Athletic Achievement Award</strong><span>Zhejiang University, 2019–2020</span></li>
+</ul>
+
+<span class="anchor" id="hobbies"></span>
+# Beyond Research
+
+<div class="hobby-list">
+  <span>🏀 Basketball</span>
+  <span>🏸 Badminton</span>
+  <span>🏊 Swimming</span>
+  <span>🎮 Hollow Knight</span>
+  <span>🎮 God of War</span>
 </div>
-<div style="display: flex; align-items: center; margin-bottom: 20px;">
-    <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; margin-right: 40px; min-width: 180px; text-align: center;">
-        <a href="https://baike.baidu.com/item/%E6%9D%AD%E5%B7%9E%E5%9F%83%E6%AC%A7%E7%8F%9E%E6%9C%BA%E5%99%A8%E4%BA%BA%E7%A7%91%E6%8A%80%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8/61742729" style="text-decoration: none; color: inherit;">
-            <img src="../images/iouluo.png" alt="IOULUO Logo" style="width: 150px; height: auto;">
-        </a>
-    </div>
-    <div style="display: flex; align-items: center;">
-        <div style="text-align: center;">
-            <img src="../images/iouluo-robot.png" alt="iouluo robot" style="width: auto; height: 125px; display: block;">
-        </div>
-    </div>
-</div>
-<div style="display: flex; align-items: center; margin-bottom: 20px;">
-    <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; margin-right: 40px; min-width: 180px; text-align: center;">
-        <a href="https://elu-ai.com/" style="text-decoration: none; color: inherit;">
-            <img src="../images/elu.png" alt="ELU Logo" style="width: 150px; height: auto;">
-        </a>
-    </div>
-    <div style="display: flex; align-items: center;">
-        <div style="text-align: center;">
-            <img src="../images/elu-robot.png" alt="elu robot" style="width: auto; height: 125px; display: block; margin-bottom: 4px;">
-            <p style="margin: 0; font-size: 1em;">FORCE-02</p>
-        </div>
-    </div>
-</div> -->
-
-<!-- AiTEN Robotics -->
-<div style="display: flex; align-items: center; margin-bottom: 20px;">
-    <!-- 公司列（固定宽度） -->
-    <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; margin-right: 40px; width: 260px; flex-shrink: 0; text-align: center;">
-        <a href="https://www.aitenrobot.com/" style="text-decoration: none; color: inherit;">
-            <img src="../images/aiten.png" alt="Aiten Logo" style="width: 150px; height: auto;">
-        </a>
-        <p style="margin: 8px 0 0 0; font-size: 0.95em;">
-            <strong>Position:</strong> Electrical Engineer<br>
-            <strong>Main work:</strong> Designing circuit boards, developing embedded programs, and building Python backends
-        </p>
-    </div>
-    <!-- 产品列（固定宽度） -->
-    <div style="display: flex; flex-direction: column; align-items: center; width: 200px; flex-shrink: 0; margin-right: 16px;">
-        <div style="text-align: center; margin-bottom: 12px;">
-            <img src="../images/aiten-tt15.png" alt="Aiten TT15" style="width: 150px; height: auto; display: block; margin-bottom: 4px;">
-            <p style="margin: 0; font-size: 1em;">TT15</p>
-        </div>
-        <div style="text-align: center;">
-            <img src="../images/aiten-ape15.png" alt="Aiten APE15" style="width: 150px; height: auto; display: block; margin-bottom: 4px;">
-            <p style="margin: 0; font-size: 1em;">APe15</p>
-        </div>
-    </div>
-    <!-- 描述列（文本单独一栏，对齐） -->
-    <div style="display: flex; flex-direction: column; gap: 12px; flex: 1;">
-        <p style="margin: 0; font-size: 0.95em;">
-            Autonomous navigation and flexible operation; equipped with SLAM laser technology for intelligent path planning; efficient operation in warehouses and other complex industrial environments; optimizes production efficiency and reduces labor costs.
-        </p>
-        <!-- <p style="margin: 0; font-size: 0.95em;">
-            Main responsibilities: [Your main responsibilities on APe15]
-        </p> -->
-    </div>
-</div>
-<!-- IOULUO Robot -->
-<div style="display: flex; align-items: center; margin-bottom: 20px;">
-    <!-- 公司列（固定宽度） -->
-    <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; margin-right: 40px; width: 260px; flex-shrink: 0; text-align: center;">
-        <a href="https://baike.baidu.com/item/%E6%9D%AD%E5%B7%9E%E5%9F%83%E6%AC%A7%E7%8F%9E%E6%9C%BA%E5%99%A8%E4%BA%BA%E7%A7%91%E6%8A%80%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8/61742729" style="text-decoration: none; color: inherit;">
-            <img src="../images/iouluo.png" alt="IOULUO Logo" style="width: 150px; height: auto;">
-        </a>
-        <p style="margin: 8px 0 0 0; font-size: 0.95em;">
-            <strong>Position:</strong> Intern<br>
-            <strong>Main work:</strong> Developing control algorthms
-        </p>
-    </div>
-    <!-- 产品列（固定宽度） -->
-    <div style="display: flex; flex-direction: column; align-items: center; width: 200px; flex-shrink: 0; margin-right: 16px;">
-        <div style="text-align: center;">
-            <img src="../images/iouluo-robot.png" alt="iouluo robot" style="width: auto; height: 125px; display: block;">
-        </div>
-    </div>
-    <!-- 描述列 -->
-    <div style="display: flex; flex-direction: column; flex: 1;">
-        <p style="margin: 0; font-size: 0.95em;">
-            Cleaning of glass curtain walls and photovoltaic surfaces; autonomous perception with intelligent path planning and automatic obstacle avoidance.
-        </p>
-        <!-- <p style="margin: 0; font-size: 0.95em;">
-            Main responsibilities: [Your main responsibilities on IOULUO robot project]
-        </p> -->
-    </div>
-</div>
-<!-- ELU.AI -->
-<div style="display: flex; align-items: center; margin-bottom: 20px;">
-    <!-- 公司列（固定宽度） -->
-    <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; margin-right: 40px; width: 260px; flex-shrink: 0; text-align: center;">
-        <a href="https://elu-ai.com/" style="text-decoration: none; color: inherit;">
-            <img src="../images/elu.png" alt="ELU Logo" style="width: 150px; height: auto;">
-        </a>
-        <p style="margin: 8px 0 0 0; font-size: 0.95em;">
-            <strong>Position:</strong> Project leader<br>
-            <strong>Main work:</strong> Leading the development and designing control algorithms
-        </p>
-    </div>
-    <!-- 产品列（固定宽度） -->
-    <div style="display: flex; flex-direction: column; align-items: center; width: 200px; flex-shrink: 0; margin-right: 16px;">
-        <div style="text-align: center;">
-            <img src="../images/elu-robot.png" alt="elu robot" style="width: auto; height: 125px; display: block; margin-bottom: 4px;">
-            <p style="margin: 0; font-size: 1em;">FORCE-02</p>
-        </div>
-    </div>
-    <!-- 描述列 -->
-    <div style="display: flex; flex-direction: column; flex: 1;">
-        <p style="margin: 0; font-size: 0.95em;">
-            Fully automated charging process; unmanned, high-efficiency scheduling system; autonomously adapts to complex charging environments to maximize charging efficiency and resource utilization.
-        </p>
-        <!-- <p style="margin: 0; font-size: 0.95em;">
-            Main responsibilities: [Your main responsibilities on FORCE-02]
-        </p> -->
-    </div>
-</div>
-
-
-
-# 📝 Selected Publications
-
-<div style="margin-bottom: 20px; padding-bottom: 16px; border-bottom: 1px solid #e5e7eb; font-family: 'Times New Roman', Times, serif; font-size: 1.1rem;">
-    <strong style="font-size: 1.4rem;">
-        <a href="https://doi.org/10.1007/s41693-026-00191-3" target="_blank" style="text-decoration: none; color: inherit;">A robot-friendly scaffolding system with passive error correction using tapered screw connectors</a>
-    </strong><br><br>
-    <span style="font-size: 1.15rem;">Pok Yin Victor Leung, Yijiang Huang, Yen-Ting Liu, Jakob Genhart, <strong>Zihao Li</strong>, Caelan Garrett, Stelian Coros</span><br><br>
-    <em style="font-size: 1.15rem;">Construction Robotics, 2026</em>
-</div>
-
-<div style="margin-bottom: 20px; padding-bottom: 16px; border-bottom: 1px solid #e5e7eb; font-family: 'Times New Roman', Times, serif; font-size: 1.1rem;">
-    <strong style="font-size: 1.4rem;">
-        <a href="https://arxiv.org/abs/2606.16490" target="_blank" style="text-decoration: none; color: inherit;">Robots that Collaborate: Sequential Asymmetric Imitation for Learning Coupled Robot Policies</a>
-    </strong><br><br>
-    <span style="font-size: 1.15rem;">Yincong Chen, Ranpeng Qiu, <strong>Zihao Li</strong>, Yanan Zhou, Guoqiang Ren, Weiming Zhi</span><br><br>
-    <em style="font-size: 1.15rem;">arXiv preprint arXiv:2606.16490, 2026</em>
-</div>
-
-<div style="margin-bottom: 20px; padding-bottom: 16px; border-bottom: 1px solid #e5e7eb; font-family: 'Times New Roman', Times, serif; font-size: 1.1rem;">
-    <strong style="font-size: 1.4rem;">
-        <a href="https://arxiv.org/abs/2606.14551" target="_blank" style="text-decoration: none; color: inherit;">TRACE: Trajectory-Routed Causal Memory for Delayed-Evidence Visuomotor Imitation</a>
-    </strong><br><br>
-    <span style="font-size: 1.15rem;"><strong>Zihao Li</strong>, Ranpeng Qiu, Yincong Chen, Guoqiang Ren, Weiming Zhi</span><br><br>
-    <em style="font-size: 1.15rem;">arXiv preprint arXiv:2606.14551, 2026</em>
-</div>
-
-<div style="margin-bottom: 20px; padding-bottom: 16px; border-bottom: 1px solid #e5e7eb; font-family: 'Times New Roman', Times, serif; font-size: 1.1rem;">
-    <strong style="font-size: 1.4rem;">
-        <a href="https://arxiv.org/abs/2602.09888" target="_blank" style="text-decoration: none; color: inherit;">TriPilot-FF: Coordinated Whole-Body Teleoperation with Force Feedback</a>
-    </strong><br><br>
-    <span style="font-size: 1.15rem;"><strong>Zihao Li</strong>, Yanan Zhou, Ranpeng Qiu, Hangyu Wu, Guoqiang Ren, Weiming Zhi</span><br><br>
-    <em style="font-size: 1.15rem;">arXiv preprint arXiv:2602.09888, 2026</em>
-</div>
-
-<div style="margin-bottom: 20px; padding-bottom: 16px; border-bottom: 1px solid #e5e7eb; font-family: 'Times New Roman', Times, serif; font-size: 1.1rem;">
-    <strong style="font-size: 1.4rem;">
-        <a href="https://arxiv.org/abs/2511.05052" target="_blank" style="text-decoration: none; color: inherit;">TAPOM: Task-Space Topology-Guided Motion Planning for Manipulating Elongated Object in Cluttered Environments</a>
-    </strong><br><br>
-    <span style="font-size: 1.15rem;"><strong>Zihao Li</strong>, Yiming Zhu, Zhe Zhong, Qinyuan Ren, Yijiang Huang</span><br><br>
-    <em style="font-size: 1.15rem;">arXiv preprint arXiv:2511.05052, 2025</em>
-</div>
-
-
-<div style="display: flex; align-items: center; margin-bottom: 16px;">
-    <img src="../images/icca.png"
-         alt="Pub 1"
-         style="width: 350px; height: auto; margin-right: 16px;">
-    <div style="font-family: 'Times New Roman', Times, serif; font-size: 1.1rem;">
-        <strong style="font-size: 1.4rem;">
-            Vision-Force Guided Robotic EV Charging: Learning-Based Localization and 6-DoF Hybrid Compliance Control for High-Precision Insertion
-        </strong><br><br>
-        <span style="font-size: 1.15rem;">
-            <strong>Zihao Li</strong>, Siqi Wang, Xiaocong Li, Yiming Zhu, Zhe Zhong, Yilin Lang, Qinyuan Ren
-        </span><br><br>
-        <em style="font-size: 1.15rem;">
-            IEEE 19th International Conference on Control & Automation (ICCA), 2025
-        </em>
-    </div>
-</div>
-
-<div style="display: flex; align-items: center; margin-bottom: 16px;">
-    <img src="../images/tie.png"
-         alt="Pub 1"
-         style="width: 350px; height: auto; margin-right: 16px;">
-    <div style="font-family: 'Times New Roman', Times, serif; font-size: 1.1rem;">
-        <strong style="font-size: 1.4rem;">
-            A Motion Control Approach for Physical Human–Robot-Environment Interaction via Operational Behaviors Inference
-        </strong><br><br>
-        <span style="font-size: 1.15rem;">
-            Yilin Lang, <strong>Zihao Li</strong>, Zhaoyang Li, Yanan Li, Qinyuan Ren
-        </span><br><br>
-        <em style="font-size: 1.15rem;">
-            IEEE Transactions on Industrial Electronics, 2024
-        </em>
-    </div>
-</div>
-
-<div style="display: flex; align-items: center; margin-bottom: 16px;">
-    <img src="../images/icml.png"
-         alt="Pub 1"
-         style="width: 350px; height: auto; margin-right: 16px;">
-    <div style="font-family: 'Times New Roman', Times, serif; font-size: 1.1rem;">
-        <strong style="font-size: 1.4rem;">
-            Meta-reinforcement Learning Robust to Distributional Shift via Performing Lifelong In-context Learning
-        </strong><br><br>
-        <span style="font-size: 1.15rem;">
-            Tengye Xu, <strong>Zihao Li</strong>, Zihao Li, Qinyuan Ren
-        </span><br><br>
-        <em style="font-size: 1.15rem;">
-            Forty-first International Conference on Machine Learning, 2024
-        </em>
-    </div>
-</div>
-
-<div style="display: flex; align-items: center; margin-bottom: 16px;">
-    <img src="../images/iciea.png"
-         alt="Pub 1"
-         style="width: 350px; height: auto; margin-right: 16px;">
-    <div style="font-family: 'Times New Roman', Times, serif; font-size: 1.1rem;">
-        <strong style="font-size: 1.4rem;">
-            A Head Stabilizer of A Snake Robot Crawling in Serpentine Locomotion
-        </strong><br><br>
-        <span style="font-size: 1.15rem;">
-            <strong>Zihao Li</strong>, Jiangpeng Hu, Qinyuan Ren
-        </span><br><br>
-        <em style="font-size: 1.15rem;">
-            IEEE 17th Conference on Industrial Electronics and Applications (ICIEA), 2022
-        </em>
-    </div>
-</div>
-
-**For more details, please visit: [Zihao Li](https://scholar.google.com/citations?user=KNMrDtcAAAAJ)**
-
-# 🏆 Honors and Awards
-- The 2nd winner of the International Design Contest (IDC RoboCon), *Aug. 2022*
-- Arawana's Scholarship of Yihai Kerry Arawana Holdings Co., Ltd, *2022*
-- Frist prize of China Univeristy Robot Competition (ROBOMASTER), *Aug. 2021*
-- Hong Huang and Xiaobei Wu's Scholarship, *2021*
-- Frist prize of Chinese Mathematics Competition (CMC) in Zhejiang Province, *Dec. 2020*
-- Frist prize of Zhejiang Physics Innovation Competition, *Dec. 2020*
-- Zhejiang Provincial Government Scholarship, *2020*
-- Zhejiang University Scholarship - Second Prize, *2020*
-- Zhejiang University Academic Excellence Award, *2019 - 2020*
-- Zhejiang University Artistic and Athletic Achievement Award, *2019 - 2020*
-
-# 🎽 Specialties and Hobbies
-- I love basketball🏀, badminton🏸, swimming🏊‍ and so much more.
-- I enjoy video games like Hollow Knight and God of War.
