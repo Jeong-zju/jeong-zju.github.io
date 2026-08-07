@@ -17,19 +17,19 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-I am currently a PhD student in Computer Science at [The University of Sydney](https://www.sydney.edu.au/), advised by [Prof. Weiming (William) Zhi](https://www.weimingzhi.com/). I am passionate about robotics, with a focus on making robots robust in dynamic, unstructured environments. My research combines control, planning, and reinforcement learning to enable autonomous systems that work reliably in the real world.
+I am currently a PhD student in Computer Science at [The University of Sydney](https://www.sydney.edu.au/), advised by [Prof. Weiming (William) Zhi](https://www.weimingzhi.com/). I am passionate about robot manipulation and embodied intelligence, with a focus on enabling robots to perceive, reason, and act in complex real-world environments. My research explores Vision-Language-Action (VLA) models, multimodal learning, imitation learning, and reinforcement learning to develop generalizable robot policies.
 
-My work emphasizes cross-disciplinary collaboration, including my internship at ETH Zurich's [Computational Robotics Lab](https://crl.ethz.ch/index.html) (CRL) with [Dr. Yijiang Huang](https://yijiangh.github.io/). I thrive in environments that mix mechanical design, control, and AI, and I'm passionate about mentoring juniors and fostering inclusive academic spaces. Through my PhD, I aim to advance reliable robotic systems for dynamic, unstructured environments.
+My work emphasizes cross-disciplinary collaboration, including my internship at ETH Zurich's [Computational Robotics Lab](https://crl.ethz.ch/index.html) (CRL) with [Dr. Yijiang Huang](https://yijiangh.github.io/). I thrive in environments that mix mechanical design, control, and AI, and I'm passionate about mentoring juniors and fostering inclusive academic spaces. Through my PhD, I aim to develop generalizable and adaptive embodied agents for real-world manipulation.
 
 Feel free to contact me!
 
 # 📚 Research Interests
-My current research focuses on developing reliable robotic systems capable of operating in cluttered environments and adapting to changes in real-time. Specifically, I am interested in the intersection of:
-- 🤖 **Robotics**: &nbsp; Autonomous manipulation, task-and-motion planning, mobile robots, legged robots
-- 🏗️ **Control Systems**: &nbsp; Hybrid force-position control, human-robot interaction
-- 🧠 **Machine Learning**: &nbsp; Reinforcement learning, imitation learning, data-driven control
+My current research focuses on robot manipulation and embodied intelligence, with an emphasis on learning generalizable robot policies from multimodal data. Specifically, I am interested in:
+- 🤖 **Robot Manipulation**: &nbsp; Dexterous and mobile manipulation, long-horizon tasks, task-and-motion planning
+- 🧠 **Embodied Intelligence**: &nbsp; Visuomotor policy learning, imitation and reinforcement learning, generalization and adaptation
+- 🌐 **Vision-Language-Action Models**: &nbsp; Multimodal representation learning, language-conditioned control, foundation models for robotics
 
-I aim to advance the field by developing robots that can understand and adapt to dynamic environments, including human-robot interaction in assistive living, sports, and construction applications.
+I aim to build embodied agents that can understand multimodal instructions, reason about their environments, and perform complex manipulation tasks robustly in the real world.
 
 # 🎓 Education
 - **PhD in Computer Science**, [School of Computer Science](https://www.sydney.edu.au/engineering/schools/school-of-computer-science.html), [The University of Sydney](https://www.sydney.edu.au/), Sydney, Australia, Advisor: [Prof. Weiming (William) Zhi](https://www.weimingzhi.com/). (*Jul. 2026 - Present*)
