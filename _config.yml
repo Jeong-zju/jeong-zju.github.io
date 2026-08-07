@@ -7,7 +7,7 @@
 
 # Site Settings
 title                    : "Zihao Li (李子豪)"
-description              : "M.S. Student @ ZJU CSE"
+description              : "PhD Student @ The University of Sydney"
 repository               : "jeong-zju/jeong-zju.github.io"
 google_scholar_stats_use_cdn : false
 
@@ -23,8 +23,8 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 author:
   name             : "Zihao Li (李子豪)"
   avatar           : "images/lzh.png"
-  bio              : "Zhejiang University"
-  location         : # "Notre Dame, IN"
+  bio              : "The University of Sydney"
+  location         : "Sydney, Australia"
   employer         : 
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=KNMrDtcAAAAJ"
