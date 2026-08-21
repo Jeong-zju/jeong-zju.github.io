@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
-  <a class="skip" href="#main">Skip to content</a><div class="noise" aria-hidden="true"></div><div class="cursor-glow" aria-hidden="true"></div>
+  <a class="skip" href="#main">Skip to content</a><div class="noise" aria-hidden="true"></div><div class="cursor-glow" aria-hidden="true"></div><div class="cursor-hud" aria-hidden="true"><i></i><b></b></div>
   <header class="header" data-header>
     <a class="brand" href="#top" aria-label="Zihao Li, home"><svg viewBox="0 0 40 40"><path d="M9 10h22L10 30h21M30 10v20"/></svg><span>Zihao Li</span></a>
     <nav class="nav" aria-label="Primary"><a href="#research">Research</a><a href="#experience">Experience</a><a href="#publications">Publications</a><a href="#contact">Contact</a></nav>
@@ -21,12 +21,14 @@
     <nav class="mobile-nav" id="mobile-nav" hidden><a href="#research">Research</a><a href="#experience">Experience</a><a href="#publications">Publications</a><a href="#contact">Contact</a></nav>
   </header>
   <main id="main">
-    <section class="hero" id="top"><canvas id="signal-field" aria-hidden="true"></canvas><div class="hero-shade"></div><div class="grid"></div>
+    <section class="hero" id="top" data-robot-workspace><canvas id="signal-field" aria-hidden="true"></canvas><div class="hero-shade"></div><div class="grid"></div>
       <div class="hero-inner shell">
         <p class="eyebrow reveal" style="--d:.1s"><i></i>PhD Researcher · Sydney, Australia</p>
         <h1 aria-label="Intelligence, in motion."><span><b>Intelligence,</b></span><span class="offset"><b>in <em>motion.</em></b></span></h1>
         <div class="hero-foot reveal" style="--d:.7s"><p>I’m <strong>Zihao Li</strong>, a robotics researcher building systems that perceive, reason, and act in the physical world.</p><a class="round" href="#research" aria-label="Explore research">↓</a></div>
       </div>
+      <div class="robot-console" aria-hidden="true"><p><span>LIVE CONTROL SURFACE</span><b data-arm-status>TRACKING TARGET</b></p><div><i></i><span>MOVE TO STEER</span><span>CLICK TO PLAN</span></div></div>
+      <p class="sr" aria-live="polite" data-arm-announcement>Interactive robot workspace. Move the pointer to direct the robot arm. Click to set a planned target.</p>
       <div class="hero-index"><span>PERCEPTION</span><b>01</b><span>REASONING</span><b>02</b><span>ACTION</span><b>03</b></div>
     </section>
 
