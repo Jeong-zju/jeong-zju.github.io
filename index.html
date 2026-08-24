@@ -1,76 +1,269 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="theme-color" content="#090b0a"><meta name="color-scheme" content="dark">
-  <title>Zihao Li — Embodied Intelligence & Robotics</title>
-  <meta name="description" content="Zihao Li is a PhD researcher at the University of Sydney building intelligent robots for complex, real-world environments.">
-  <meta name="author" content="Zihao Li"><meta name="robots" content="index, follow, max-image-preview:large">
-  <link rel="canonical" href="https://zihaoli.dev/"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="manifest" href="/site.webmanifest">
-  <meta property="og:type" content="profile"><meta property="og:url" content="https://zihaoli.dev/"><meta property="og:title" content="Zihao Li — Embodied Intelligence & Robotics"><meta property="og:description" content="Researching robot manipulation, embodied intelligence, and vision-language-action models."><meta property="og:image" content="https://zihaoli.dev/assets/og.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="Zihao Li — Intelligence, in motion.">
-  <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Zihao Li — Embodied Intelligence & Robotics"><meta name="twitter:description" content="Building intelligent robots for the real world."><meta name="twitter:image" content="https://zihaoli.dev/assets/og.png">
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Zihao Li","alternateName":"李子豪","url":"https://zihaoli.dev/","image":"https://zihaoli.dev/assets/zihao-li.webp","jobTitle":"PhD Researcher in Computer Science","affiliation":{"@type":"CollegeOrUniversity","name":"The University of Sydney"},"sameAs":["https://github.com/jeong-zju","https://scholar.google.com/citations?user=KNMrDtcAAAAJ"],"knowsAbout":["Robot Manipulation","Embodied Intelligence","Vision-Language-Action Models"]}</script>
-  <link rel="stylesheet" href="/styles.css">
-</head>
-<body>
-  <a class="skip" href="#main">Skip to content</a><div class="noise" aria-hidden="true"></div><div class="cursor-glow" aria-hidden="true"></div><div class="cursor-hud" aria-hidden="true"><i></i><b></b></div>
-  <header class="header" data-header>
-    <a class="brand" href="#top" aria-label="Zihao Li, home"><svg viewBox="0 0 40 40"><path d="M9 10h22L10 30h21M30 10v20"/></svg><span>Zihao Li</span></a>
-    <nav class="nav" aria-label="Primary"><a href="#research">Research</a><a href="#experience">Experience</a><a href="#publications">Publications</a><a href="#contact">Contact</a></nav>
-    <button class="menu" aria-expanded="false" aria-controls="mobile-nav"><b class="sr">Open menu</b><i></i><i></i></button>
-    <nav class="mobile-nav" id="mobile-nav" hidden><a href="#research">Research</a><a href="#experience">Experience</a><a href="#publications">Publications</a><a href="#contact">Contact</a></nav>
-  </header>
-  <main id="main">
-    <section class="hero" id="top" data-robot-workspace><canvas id="signal-field" aria-hidden="true"></canvas><div class="hero-shade"></div><div class="grid"></div>
-      <div class="hero-inner shell">
-        <p class="eyebrow reveal" style="--d:.1s"><i></i>PhD Researcher · Sydney, Australia</p>
-        <h1 aria-label="Intelligence, in motion."><span><b>Intelligence,</b></span><span class="offset"><b>in <em>motion.</em></b></span></h1>
-        <div class="hero-foot reveal" style="--d:.7s"><p>I’m <strong>Zihao Li</strong>, a robotics researcher building systems that perceive, reason, and act in the physical world.</p><a class="round" href="#research" aria-label="Explore research">↓</a></div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#fff" />
+    <title>Zihao Li — Collective Robot Intelligence</title>
+    <meta
+      name="description"
+      content="Zihao Li researches belief-driven collective intelligence, embodied AI, and coordinated robot learning."
+    />
+    <link rel="canonical" href="https://zihaoli.dev/" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/styles.css?v=20260824-10" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-bg"><i></i><i></i></div>
+      <nav>
+        <a href="#research" aria-label="Research"
+          ><svg viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="5" cy="12" r="2" />
+            <circle cx="18" cy="6" r="2" />
+            <circle cx="18" cy="18" r="2" />
+            <path d="m7 11 9-4M7 13l9 4" /></svg
+          ><span>Research</span></a
+        ><a href="#publications" aria-label="Publications"
+          ><svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M6 3h9l4 4v14H6zM15 3v5h4M9 12h7M9 16h7" /></svg
+          ><span>Publications</span></a
+        >
+      </nav>
+      <a class="brand" href="#top" aria-label="Zihao Li home"
+        ><span class="brand-symbol"><i></i><i></i><i></i></span
+        ><strong>ZIHAO LI</strong></a
+      >
+      <div class="header-actions">
+        <a href="/blogs/" aria-label="Blogs"
+          ><svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M5 19h4L19 9l-4-4L5 15zM13 7l4 4" /></svg
+          ><span>Blogs</span></a
+        ><a
+          class="contact-pill"
+          href="mailto:lzh_jeong@zju.edu.cn"
+          aria-label="Contact"
+          ><svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M3 6h18v13H3zM3 7l9 7 9-7" /></svg
+          ><span>Contact ↗</span></a
+        >
       </div>
-      <div class="robot-console" aria-hidden="true"><p><span>LIVE CONTROL SURFACE</span><b data-arm-status>TRACKING TARGET</b></p><div><i></i><span>MOVE TO STEER</span><span>CLICK TO PLAN</span></div></div>
-      <p class="sr" aria-live="polite" data-arm-announcement>Interactive robot workspace. Move the pointer to direct the robot arm. Click to set a planned target.</p>
-      <div class="hero-index"><span>PERCEPTION</span><b>01</b><span>REASONING</span><b>02</b><span>ACTION</span><b>03</b></div>
-    </section>
+    </header>
+    <main id="top">
+      <section class="hero">
+        <div class="hero-spacer"></div>
+        <div class="hero-sticky">
+          <div class="hero-text" data-hero-text>
+            <h1><span>Building belief for</span> robots that think together</h1>
+          </div>
+          <div class="video-wrap" data-video-wrap>
+            <div class="hero-video">
+              <video autoplay muted loop playsinline preload="metadata">
+                <source
+                  src="/assets/belief-field.mp4"
+                  type="video/mp4"
+                /></video
+              ><canvas id="swarm-film" aria-hidden="true"></canvas>
+              <div class="video-ui">
+                <span>COLLECTIVE INTELLIGENCE</span
+                ><span data-progress>00 / 24</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-    <section class="section shell" id="research">
-      <div class="label scroll-in"><b>01</b><span>Research direction</span></div>
-      <div class="intro"><h2 class="scroll-in">From pixels and words<br>to <em>purposeful action.</em></h2><div class="copy scroll-in"><p>My research sits at the intersection of <strong>robot manipulation</strong>, <strong>embodied intelligence</strong>, and <strong>multimodal learning</strong>. I develop generalizable robot policies for complex, long-horizon tasks.</p><p>I’m currently a Computer Science PhD student at <a href="https://www.sydney.edu.au/" target="_blank" rel="noreferrer">The University of Sydney</a>, advised by <a href="https://www.weimingzhi.com/" target="_blank" rel="noreferrer">Prof. Weiming (William) Zhi</a>.</p></div></div>
-      <div class="research-grid">
-        <article class="research-card scroll-in"><header><span>01 / 03</span><b>M↔A</b></header><div class="visual arm"><i></i><i></i><i></i><b></b></div><h3>Robot Manipulation</h3><p>Dexterous and mobile manipulation, long-horizon tasks, and task-and-motion planning.</p></article>
-        <article class="research-card scroll-in" style="--d:.1s"><header><span>02 / 03</span><b>E²I</b></header><div class="visual orbit"><i></i><i></i><b></b></div><h3>Embodied Intelligence</h3><p>Visuomotor policy learning, imitation and reinforcement learning, generalization, and adaptation.</p></article>
-        <article class="research-card scroll-in" style="--d:.2s"><header><span>03 / 03</span><b>V·L·A</b></header><div class="visual nodes"><i></i><i></i><i></i><b></b><b></b></div><h3>Vision–Language–Action</h3><p>Multimodal representations, language-conditioned control, and foundation models for robotics.</p></article>
+      <section class="overview" id="research">
+        <div class="overview-media">
+          <div class="swarm-visual" aria-hidden="true">
+            <span></span><span></span><span></span><span></span><span></span
+            ><span></span><i></i><i></i><i></i><i></i>
+          </div>
+        </div>
+        <div class="overview-copy reveal">
+          <p class="tag">Overview</p>
+          <h2>
+            <span>Bringing </span>shared belief<span>
+              into the physical world</span
+            >
+          </h2>
+          <p>
+            Robots rarely see the same world at the same time. I build learning
+            systems that let embodied agents preserve uncertain evidence,
+            exchange useful beliefs, and coordinate action across long-horizon
+            tasks.
+          </p>
+        </div>
+      </section>
+
+      <section class="thesis">
+        <div class="thesis-grid">
+          <article class="thesis-title reveal">
+            <p class="tag">My Thesis</p>
+            <h2>Robot intelligence should be <em>collective.</em></h2>
+          </article>
+          <article class="tile tile-a">
+            <div class="tile-art rings"></div>
+            <h3>
+              A useful belief captures what an agent knows, what it doubts, and
+              what another robot needs.
+            </h3>
+          </article>
+          <article class="tile tile-b">
+            <div class="tile-art routes"></div>
+            <h3>
+              Coordination emerges when local observations become shared intent.
+            </h3>
+          </article>
+          <article class="tile tile-c">
+            <div class="tile-art pulse"></div>
+            <h3>
+              Learning must remain grounded when evidence arrives late,
+              partially, or not at all.
+            </h3>
+          </article>
+        </div>
+      </section>
+
+      <p class="bridge reveal">
+        I develop the representations, policies, and physical systems needed to
+        turn this thesis into real robot behavior.
+      </p>
+      <section class="feature reveal">
+        <div class="feature-copy">
+          <div class="orbit-icon"><i></i><i></i><i></i></div>
+          <h2>Multi-Robot<br />Coordination</h2>
+          <p>
+            Coupled policies and shared representations for heterogeneous robots
+            working toward a common physical objective.
+          </p>
+        </div>
+        <div class="feature-media media-one">
+          <span>01</span><b>SHARED<br />INTENT</b>
+        </div>
+      </section>
+      <section class="feature reverse reveal">
+        <div class="feature-copy">
+          <div class="orbit-icon"><i></i><i></i><i></i></div>
+          <h2>Embodied<br />Intelligence</h2>
+          <p>
+            Visuomotor learning, imitation, adaptation, and long-horizon
+            reasoning in unstructured environments.
+          </p>
+        </div>
+        <div class="feature-media media-two">
+          <span>02</span><b>PERCEIVE<br />REASON<br />ACT</b>
+        </div>
+      </section>
+      <section class="feature reveal">
+        <div class="feature-copy">
+          <div class="orbit-icon"><i></i><i></i><i></i></div>
+          <h2>Belief-Driven<br />Robot Learning</h2>
+          <p>
+            Memory and representation learning for delayed evidence, partial
+            observability, and reliable action.
+          </p>
+        </div>
+        <div class="feature-media media-three">
+          <span>03</span><b>UPDATE<br />BELIEF</b>
+        </div>
+      </section>
+
+      <section class="publications" id="publications">
+        <p class="tag">Selected publications</p>
+        <h2><span>Research in</span> action</h2>
+        <div class="pub-grid">
+          <a
+            href="https://arxiv.org/abs/2606.14551"
+            target="_blank"
+            rel="noreferrer"
+            ><span>2026 · TRACE</span>
+            <h3>
+              Trajectory-Routed Causal Memory for Delayed-Evidence Visuomotor
+              Imitation
+            </h3>
+            <b>↗</b></a
+          ><a
+            href="https://arxiv.org/abs/2602.09888"
+            target="_blank"
+            rel="noreferrer"
+            ><span>2026 · TriPilot-FF</span>
+            <h3>Coordinated Whole-Body Teleoperation with Force Feedback</h3>
+            <b>↗</b></a
+          ><a
+            href="https://arxiv.org/abs/2606.16490"
+            target="_blank"
+            rel="noreferrer"
+            ><span>2026 · COLLABORATIVE ROBOTS</span>
+            <h3>Sequential Asymmetric Imitation for Coupled Robot Policies</h3>
+            <b>↗</b></a
+          >
+        </div>
+        <a
+          class="scholar"
+          href="https://scholar.google.com/citations?user=KNMrDtcAAAAJ"
+          target="_blank"
+          rel="noreferrer"
+          >View all publications ↗</a
+        >
+      </section>
+
+      <section class="bio">
+        <div class="bio-image">
+          <img
+            src="/assets/zihao-li.webp"
+            alt="Portrait of Zihao Li"
+            width="900"
+            height="900"
+            loading="lazy"
+          />
+        </div>
+        <div class="bio-copy reveal">
+          <p class="tag">About</p>
+          <h2>
+            <span>I am Zihao Li,</span> a PhD researcher in Computer Science at
+            the University of Sydney.
+          </h2>
+          <p>
+            My work spans robot manipulation, embodied intelligence,
+            vision-language-action models, and multi-agent learning. Previously,
+            I worked with the Computational Robotics Lab at ETH Zürich and
+            studied at Zhejiang University.
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-logo">
+        <span class="brand-symbol"><i></i><i></i><i></i></span
+        ><strong>ZIHAO LI</strong>
       </div>
-    </section>
-
-    <section class="statement section"><div class="marquee"><div><span>PERCEIVE</span><i></i><span>REASON</span><i></i><span>ACT</span><i></i><span>PERCEIVE</span><i></i><span>REASON</span><i></i><span>ACT</span><i></i></div></div><div class="statement-inner shell scroll-in"><p class="mono">CURRENT THESIS VECTOR</p><blockquote>How can robots preserve what matters, ignore what doesn’t, and coordinate action when evidence arrives <em>late?</em></blockquote></div></section>
-
-    <section class="section experience shell" id="experience">
-      <div class="label scroll-in"><b>02</b><span>Trajectory</span></div><div class="section-head scroll-in"><h2>Experience & education</h2><p>A path through mechanical systems, control, planning, and embodied AI.</p></div>
-      <div class="timeline">
-        <article class="scroll-in"><time>2026 — NOW</time><div><h3>The University of Sydney</h3><p>PhD in Computer Science · Advisor: Prof. Weiming Zhi</p></div><span>SYDNEY, AU</span></article>
-        <article class="scroll-in"><time>2025 — NOW</time><div><h3>Zeno AI</h3><p>Embodied AI Researcher · Whole-body teleoperation and embodied AI</p></div><span>RESEARCH</span></article>
-        <article class="scroll-in"><time>2024 — 2026</time><div><h3>Computational Robotics Lab · ETH Zurich</h3><p>Research Intern · Task-and-motion planning for autonomous scaffolding assembly</p></div><span>ZÜRICH, CH</span></article>
-        <article class="scroll-in"><time>MASTER’S</time><div><h3>Zhejiang University</h3><p>Control Science and Engineering · Multimodal perception and control for manipulation</p></div><span>HANGZHOU, CN</span></article>
-        <article class="scroll-in"><time>BACHELOR’S</time><div><h3>Zhejiang University</h3><p>Mechatronics Engineering & Automation · Chu Kochen Honors Program</p></div><span>HANGZHOU, CN</span></article>
+      <p>
+        <span>Building robots with</span> the intelligence to believe and act
+        together.
+      </p>
+      <div class="footer-links">
+        <div>
+          <small>Explore</small><a href="#research">Research</a
+          ><a href="#publications">Publications</a><a href="/blogs/">Blogs</a>
+        </div>
+        <div>
+          <small>Follow</small
+          ><a
+            href="https://github.com/jeong-zju"
+            target="_blank"
+            rel="noreferrer"
+            >GitHub</a
+          ><a
+            href="https://scholar.google.com/citations?user=KNMrDtcAAAAJ"
+            target="_blank"
+            rel="noreferrer"
+            >Scholar</a
+          ><a href="mailto:lzh_jeong@zju.edu.cn">Email</a>
+        </div>
       </div>
-    </section>
-
-    <section class="section publications shell" id="publications">
-      <div class="label scroll-in"><b>03</b><span>Selected publications</span></div><div class="section-head scroll-in"><h2>Ideas in print</h2><a class="text-link" href="https://scholar.google.com/citations?user=KNMrDtcAAAAJ" target="_blank" rel="noreferrer">Full record on Scholar ↗</a></div>
-      <div class="pub-list">
-        <a class="pub scroll-in" href="https://arxiv.org/abs/2606.14551" target="_blank" rel="noreferrer"><b>01</b><div><p><span>2026</span><span>ARXIV</span><span>FIRST AUTHOR</span></p><h3>TRACE: Trajectory-Routed Causal Memory for Delayed-Evidence Visuomotor Imitation</h3><small>Zihao Li, Ranpeng Qiu, Yincong Chen, Guoqiang Ren, Weiming Zhi</small></div><i>↗</i></a>
-        <a class="pub scroll-in" href="https://arxiv.org/abs/2602.09888" target="_blank" rel="noreferrer"><b>02</b><div><p><span>2026</span><span>ARXIV</span><span>FIRST AUTHOR</span></p><h3>TriPilot-FF: Coordinated Whole-Body Teleoperation with Force Feedback</h3><small>Zihao Li, Yanan Zhou, Ranpeng Qiu, Hangyu Wu, Guoqiang Ren, Weiming Zhi</small></div><i>↗</i></a>
-        <a class="pub scroll-in" href="https://arxiv.org/abs/2511.05052" target="_blank" rel="noreferrer"><b>03</b><div><p><span>2025</span><span>ARXIV</span><span>FIRST AUTHOR</span></p><h3>TAPOM: Task-Space Topology-Guided Motion Planning for Manipulating Elongated Objects</h3><small>Zihao Li, Yiming Zhu, Zhe Zhong, Qinyuan Ren, Yijiang Huang</small></div><i>↗</i></a>
-        <a class="pub scroll-in" href="https://doi.org/10.1007/s41693-026-00191-3" target="_blank" rel="noreferrer"><b>04</b><div><p><span>2026</span><span>CONSTRUCTION ROBOTICS</span></p><h3>A Robot-Friendly Scaffolding System with Passive Error Correction</h3><small>Pok Yin Victor Leung, Yijiang Huang, Yen-Ting Liu, Jakob Genhart, Zihao Li, et al.</small></div><i>↗</i></a>
-        <a class="pub scroll-in" href="https://arxiv.org/abs/2606.16490" target="_blank" rel="noreferrer"><b>05</b><div><p><span>2026</span><span>ARXIV</span></p><h3>Robots that Collaborate: Sequential Asymmetric Imitation for Coupled Robot Policies</h3><small>Yincong Chen, Ranpeng Qiu, Zihao Li, Yanan Zhou, Guoqiang Ren, Weiming Zhi</small></div><i>↗</i></a>
-      </div>
-      <details class="archive scroll-in"><summary>More publications <span></span></summary><div><article><span>2025 · ICCA</span><h3>Vision-Force Guided Robotic EV Charging</h3></article><article><span>2024 · IEEE TIE</span><h3>Motion Control for Physical Human–Robot–Environment Interaction</h3></article><article><span>2024 · ICML</span><h3>Meta-RL Robust to Distributional Shift via Lifelong In-context Learning</h3></article><article><span>2022 · ICIEA</span><h3>A Head Stabilizer of a Snake Robot in Serpentine Locomotion</h3></article></div></details>
-    </section>
-
-    <section class="profile section shell"><div class="portrait scroll-in"><img src="/assets/zihao-li.webp" width="900" height="900" loading="lazy" alt="Portrait of Zihao Li"><span>ZL / 2026</span></div><div class="profile-copy scroll-in"><div class="label"><b>04</b><span>Off the trajectory</span></div><h2>Still curious<br>after hours.</h2><p>When I’m not thinking about robots, you’ll find me playing basketball or badminton, swimming, or exploring the worlds of Hollow Knight and God of War.</p><div class="tags"><span>BASKETBALL</span><span>BADMINTON</span><span>SWIMMING</span><span>GAMES</span></div></div></section>
-
-    <section class="contact section" id="contact"><canvas id="contact-field" aria-hidden="true"></canvas><div class="contact-inner shell scroll-in"><p class="mono">RESEARCH · COLLABORATION · CONVERSATION</p><h2>Let’s move an idea<br><em>into the world.</em></h2><a href="mailto:lzh_jeong@zju.edu.cn"><span>lzh_jeong@zju.edu.cn</span><span>↗</span></a></div></section>
-  </main>
-  <footer class="footer shell"><div class="footer-mark">ZL<span>.</span></div><div class="footer-links"><a href="https://github.com/jeong-zju" target="_blank" rel="noreferrer">GitHub ↗</a><a href="https://scholar.google.com/citations?user=KNMrDtcAAAAJ" target="_blank" rel="noreferrer">Scholar ↗</a><a href="#top">Back to top ↑</a></div><p>© <span data-year>2026</span> Zihao Li. Built for the open web.</p></footer>
-  <script src="/script.js" defer></script>
-</body></html>
+      <small>© <span data-year>2026</span> Zihao Li</small>
+    </footer>
+    <script src="/script.js?v=20260824-11" defer></script>
+  </body>
+</html>
