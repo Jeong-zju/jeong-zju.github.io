@@ -266,13 +266,11 @@ footer p span {
   object-fit: cover;
 }
 .hero-video video {
-  filter: contrast(0.82) brightness(1.5) invert(1);
-  opacity: 0.78;
+  filter: none;
+  opacity: 1;
 }
 .hero-video canvas {
-  z-index: 1;
-  opacity: 0.28;
-  mix-blend-mode: multiply;
+  display: none;
 }
 .video-ui {
   position: absolute;
@@ -296,11 +294,11 @@ footer p span {
 .overview-media {
   position: absolute;
   inset: 0;
-  background: radial-gradient(circle at 25% 50%, #f4f2ec, #aaa9a3 42%, #5d615e);
+  background: url("/assets/zeno_v0_night.webp?v=20260824-1") center / cover
+    no-repeat;
 }
 .swarm-visual {
-  position: absolute;
-  inset: 0;
+  display: none;
 }
 .swarm-visual span {
   position: absolute;
