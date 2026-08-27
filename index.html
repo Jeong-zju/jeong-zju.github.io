@@ -4,14 +4,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta name="theme-color" content="#fff" />
-    <title>Zihao Li — Collective Robot Intelligence</title>
+    <title>Zihao Li — Collaborative Physical Intelligence</title>
     <meta
       name="description"
-      content="Zihao Li researches belief-driven collective intelligence, embodied AI, and coordinated robot learning."
+      content="Zihao Li develops scalable decentralized robot learning systems that coordinate through contact, remember long interactions, and anticipate how each action changes what the team can do."
     />
+    <meta property="og:title" content="Zihao Li — Collaborative Physical Intelligence" />
+    <meta
+      property="og:description"
+      content="From capable robots to capable teams: scalable decentralized learning for coordination, memory, prediction, and recovery."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://zihaoli.dev/" />
+    <meta property="og:image" content="https://zihaoli.dev/assets/og.svg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Zihao Li — Collaborative Physical Intelligence" />
+    <meta
+      name="twitter:description"
+      content="Scalable decentralized robot learning for teams that coordinate through contact and keep going."
+    />
+    <meta name="twitter:image" content="https://zihaoli.dev/assets/og.svg" />
     <link rel="canonical" href="https://zihaoli.dev/" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="/styles.css?v=20260825-2" />
+    <link rel="stylesheet" href="/styles.css?v=20260827-12" />
   </head>
   <body>
     <header class="header">
@@ -54,7 +69,7 @@
         <div class="hero-spacer"></div>
         <div class="hero-sticky">
           <div class="hero-text" data-hero-text>
-            <h1><span>Building belief for</span> robots that think together</h1>
+            <h1><span>From capable robots to</span> capable teams</h1>
           </div>
           <div class="video-wrap" data-video-wrap>
             <div class="hero-video">
@@ -65,8 +80,7 @@
                 /></video
               ><canvas id="swarm-film" aria-hidden="true"></canvas>
               <div class="video-ui">
-                <span>COLLECTIVE INTELLIGENCE</span
-                ><span data-progress>00 / 24</span>
+                <span>COLLABORATIVE ROBOT LEARNING</span>
               </div>
             </div>
           </div>
@@ -74,110 +88,150 @@
       </section>
 
       <section class="overview" id="research">
-        <div class="overview-media">
-          <div class="swarm-visual" aria-hidden="true">
-            <span></span><span></span><span></span><span></span><span></span
-            ><span></span><i></i><i></i><i></i><i></i>
-          </div>
-        </div>
-        <div class="overview-copy reveal">
-          <p class="tag">Overview</p>
+        <div class="overview-copy">
+          <p class="tag">The problem</p>
           <h2>
-            <span>Bringing </span>shared belief<span>
-              into the physical world</span
-            >
+            <span>Every new agent</span> changes the problem
           </h2>
           <p>
-            Robots rarely see the same world at the same time. I build learning
-            systems that let embodied agents preserve uncertain evidence,
-            exchange useful beliefs, and coordinate action across long-horizon
-            tasks.
+            A team can be full of capable robots and still fail together. My
+            work asks how embodied agents can read one another through motion,
+            contact, and shared objects, then adapt as each action reshapes the
+            possibilities available to the rest of the team.
           </p>
+          <div class="overview-rule" aria-hidden="true"></div>
+          <p class="overview-note">DECENTRALIZED · EMBODIED · CONTINGENT</p>
         </div>
+        <figure class="overview-media">
+          <div class="overview-frame">
+            <img
+              class="overview-image"
+              src="/assets/zeno_v0_night.webp?v=20260827-2"
+              alt="A robot preparing a shared bed-making task in a city apartment"
+              loading="lazy"
+            />
+          </div>
+          <figcaption>Shared workspace, changing state</figcaption>
+        </figure>
       </section>
 
       <section class="thesis">
         <div class="thesis-grid">
           <article class="thesis-title reveal">
-            <p class="tag">My Thesis</p>
-            <h2>Robot intelligence should be <em>collective.</em></h2>
+            <p class="tag">Research thesis</p>
+            <h2>The interaction is the unit of <em>intelligence.</em></h2>
           </article>
-          <article class="tile tile-a">
-            <div class="tile-art rings"></div>
-            <h3>
-              A useful belief captures what an agent knows, what it doubts, and
-              what another robot needs.
-            </h3>
+          <article class="tile tile-a reveal">
+            <div class="tile-art rings">
+              <img
+                src="/assets/team-observation.jpg?v=20260827-1"
+                alt="A team of Zeno robots coordinating from local views"
+                loading="lazy"
+              />
+            </div>
+            <div class="tile-copy">
+              <p class="tile-kicker">LOCAL VIEWS / TEAM STATE</p>
+              <h3>
+                One 3B model runs independently on every robot at 30 Hz, using
+                local observations and history rather than a central policy or
+                privileged team state. Adding an agent does not require a
+                larger centralized action space.
+              </h3>
+            </div>
           </article>
-          <article class="tile tile-b">
-            <div class="tile-art routes"></div>
-            <h3>
-              Coordination emerges when local observations become shared intent.
-            </h3>
+          <article class="tile tile-b reveal">
+            <div class="tile-art routes">
+              <img
+                src="/assets/long-horizon.jpg?v=20260827-1"
+                alt="A Zeno robot continuing a long-horizon household task"
+                loading="lazy"
+              />
+            </div>
+            <div class="tile-copy">
+              <p class="tile-kicker">CONTINUITY / LONG-HORIZON EXECUTION</p>
+              <h3>
+                In evaluation, one policy runs for more than ten minutes across
+                eight collaborative subtasks—without task resets or policy
+                switching.
+              </h3>
+            </div>
           </article>
-          <article class="tile tile-c">
-            <div class="tile-art pulse"></div>
-            <h3>
-              Learning must remain grounded when evidence arrives late,
-              partially, or not at all.
-            </h3>
+          <article class="tile tile-c reveal">
+            <div class="tile-art pulse">
+              <img
+                src="/assets/shared-sheet.jpg?v=20260827-1"
+                alt="Two Zeno robots jointly manipulating a sheet"
+                loading="lazy"
+              />
+            </div>
+            <div class="tile-copy">
+              <p class="tile-kicker">CONTACT / PARTNER RESPONSE</p>
+              <h3>
+                Across held-out collaborative decisions, predictive
+                introspection selects the action leading to better partner
+                behavior in 87% of cases, versus 61% without lookahead.
+              </h3>
+            </div>
           </article>
         </div>
       </section>
 
       <p class="bridge reveal">
-        I develop the representations, policies, and physical systems needed to
-        turn this thesis into real robot behavior.
+        I build policies that can read the interaction, carry its history
+        forward, and choose actions that leave the team with better options.
       </p>
       <section class="feature reveal">
         <div class="feature-copy">
           <div class="orbit-icon"><i></i><i></i><i></i></div>
-          <h2>Multi-Robot<br />Coordination</h2>
+          <h2>Partner-Contingent<br />Control</h2>
           <p>
-            Coupled policies and shared representations for heterogeneous robots
-            working toward a common physical objective.
+            When a team shares objects and workspaces, timing becomes part of
+            dexterity. I train decentralized whole-body policies to wait,
+            yield, hold, regrasp, and resume as teammates and contacts evolve.
           </p>
         </div>
         <div class="feature-media media-one">
-          <span>01</span><b>SHARED<br />INTENT</b>
+          <b>WAIT<br />YIELD<br />COMMIT</b>
         </div>
       </section>
       <section class="feature reverse reveal">
         <div class="feature-copy">
           <div class="orbit-icon"><i></i><i></i><i></i></div>
-          <h2>Embodied<br />Intelligence</h2>
+          <h2>Memory for<br />Continuity</h2>
           <p>
-            Visuomotor learning, imitation, adaptation, and long-horizon
-            reasoning in unstructured environments.
+            The current image is not the current task state. Causal memory
+            preserves the events, failures, object changes, and partner actions
+            that remain consequential after they disappear from view.
           </p>
         </div>
         <div class="feature-media media-two">
-          <span>02</span><b>PERCEIVE<br />REASON<br />ACT</b>
+          <b>REMEMBER<br />WHAT<br />MATTERS</b>
         </div>
       </section>
       <section class="feature reveal">
         <div class="feature-copy">
           <div class="orbit-icon"><i></i><i></i><i></i></div>
-          <h2>Belief-Driven<br />Robot Learning</h2>
+          <h2>Response-Aware<br />Action</h2>
           <p>
-            Memory and representation learning for delayed evidence, partial
-            observability, and reliable action.
+            CARE asks not only what an action does directly, but how the team
+            is likely to respond. It scores alternatives in one pass and keeps
+            the default when the evidence for change is insufficient.
           </p>
         </div>
         <div class="feature-media media-three">
-          <span>03</span><b>UPDATE<br />BELIEF</b>
+          <b>BEFORE<br />WE<br />ACT</b>
         </div>
       </section>
 
       <section class="publications" id="publications">
-        <p class="tag">Selected publications</p>
-        <h2><span>Research in</span> action</h2>
+        <p class="tag">Selected work</p>
+        <h2><span>Methods for</span> teams that keep going</h2>
         <div class="pub-grid">
           <a
             href="https://arxiv.org/abs/2606.14551"
             target="_blank"
             rel="noreferrer"
-            ><span>2026 · TRACE</span>
+            ><span>2026 · LONG-HORIZON MEMORY</span>
             <h3>
               Trajectory-Routed Causal Memory for Delayed-Evidence Visuomotor
               Imitation
@@ -187,14 +241,14 @@
             href="https://arxiv.org/abs/2602.09888"
             target="_blank"
             rel="noreferrer"
-            ><span>2026 · TriPilot-FF</span>
+            ><span>2026 · FORCE-AWARE TELEOPERATION</span>
             <h3>Coordinated Whole-Body Teleoperation with Force Feedback</h3>
             <b>↗</b></a
           ><a
             href="https://arxiv.org/abs/2606.16490"
             target="_blank"
             rel="noreferrer"
-            ><span>2026 · COLLABORATIVE ROBOTS</span>
+            ><span>2026 · COUPLED ROBOT POLICIES</span>
             <h3>Sequential Asymmetric Imitation for Coupled Robot Policies</h3>
             <b>↗</b></a
           >
@@ -204,7 +258,7 @@
           href="https://scholar.google.com/citations?user=KNMrDtcAAAAJ"
           target="_blank"
           rel="noreferrer"
-          >View all publications ↗</a
+          >Explore the full research record ↗</a
         >
       </section>
 
@@ -221,14 +275,16 @@
         <div class="bio-copy reveal">
           <p class="tag">About</p>
           <h2>
-            <span>I am Zihao Li,</span> a PhD researcher in Computer Science at
-            the University of Sydney.
+            <span>I am Zihao Li,</span> a PhD researcher building physical
+            intelligence for robots that share the world.
           </h2>
           <p>
-            My work spans robot manipulation, embodied intelligence,
-            vision-language-action models, and multi-agent learning. Previously,
-            I worked with the Computational Robotics Lab at ETH Zürich and
-            studied at Zhejiang University.
+            At the University of Sydney, I work across multi-robot policy
+            learning, long-horizon memory, predictive action selection, and
+            force-aware whole-body manipulation. Previously, I worked with the
+            Computational Robotics Lab at ETH Zürich and studied at Zhejiang
+            University. Across these problems, I return to one question: how do
+            individually capable robots become capable teammates?
           </p>
         </div>
       </section>
@@ -239,8 +295,8 @@
         ><strong>ZIHAO LI</strong>
       </div>
       <p>
-        <span>Building robots with</span> the intelligence to believe and act
-        together.
+        <span>Not just robots that can act.</span> Robots that know how to act
+        together—and keep going.
       </p>
       <div class="footer-links">
         <div>
@@ -264,6 +320,6 @@
       </div>
       <small>© <span data-year>2026</span> Zihao Li</small>
     </footer>
-    <script src="/script.js?v=20260825-1" defer></script>
+    <script src="/script.js?v=20260827-4" defer></script>
   </body>
 </html>

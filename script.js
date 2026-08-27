@@ -6,7 +6,6 @@
     hero = document.querySelector(".hero"),
     heroText = document.querySelector("[data-hero-text]"),
     videoBox = document.querySelector(".hero-video"),
-    progressLabel = document.querySelector("[data-progress]"),
     header = document.querySelector(".header"),
     brand = document.querySelector(".brand"),
     canvas = document.querySelector("#swarm-film"),
@@ -102,12 +101,28 @@
     header.style.setProperty("--icon-shift", `${-27 + navEase * 27}px`);
     header.style.setProperty("--label-opacity", String(1 - navEase));
     header.style.setProperty("--label-width", `${120 * (1 - navEase)}px`);
-    if (progressLabel)
-      progressLabel.textContent = `${String(Math.round(p * 24)).padStart(2, "0")} / 24`;
   };
   addEventListener("scroll", update, { passive: true });
   addEventListener("resize", update);
   update();
+  const overview = document.querySelector(".overview");
+  if (overview) {
+    if (reduced || !("IntersectionObserver" in window))
+      overview.classList.add("is-active");
+    else {
+      const overviewObserver = new IntersectionObserver(
+        ([entry]) => {
+          if (entry.isIntersecting) {
+            overview.classList.add("is-active");
+          } else {
+            overview.classList.remove("is-active");
+          }
+        },
+        { threshold: 0.28 },
+      );
+      overviewObserver.observe(overview);
+    }
+  }
   const reveals = document.querySelectorAll(".reveal");
   if (reduced || !("IntersectionObserver" in window))
     reveals.forEach((x) => x.classList.add("visible"));
@@ -117,7 +132,8 @@
         entries.forEach((e) => {
           if (e.isIntersecting) {
             e.target.classList.add("visible");
-            io.unobserve(e.target);
+          } else {
+            e.target.classList.remove("visible");
           }
         }),
       { threshold: 0.13 },

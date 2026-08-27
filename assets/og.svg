@@ -3,9 +3,9 @@
   <rect width="1200" height="630" fill="#090b0a"/><rect width="1200" height="630" fill="url(#grid)"/><circle cx="940" cy="295" r="310" fill="url(#glow)"/>
   <g fill="none" stroke="#c8ff62" stroke-width="1.5" opacity=".8"><path d="M620 345c74-125 121 100 193-10s119 41 225-70"/><circle cx="620" cy="345" r="5" fill="#c8ff62"/><circle cx="1038" cy="265" r="5" fill="#c8ff62"/></g>
   <g fill="#c8ff62"><circle cx="710" cy="212" r="2"/><circle cx="777" cy="386" r="3"/><circle cx="910" cy="173" r="2"/><circle cx="1060" cy="408" r="2"/></g>
-  <text x="70" y="82" fill="#c8ff62" font-family="monospace" font-size="15" letter-spacing="3">EMBODIED INTELLIGENCE · ROBOTICS</text>
+  <text x="70" y="82" fill="#c8ff62" font-family="monospace" font-size="15" letter-spacing="3">COLLABORATIVE PHYSICAL INTELLIGENCE</text>
   <text x="65" y="290" fill="#eef1e9" font-family="Arial, sans-serif" font-size="112" font-weight="300" letter-spacing="-7">Zihao Li</text>
-  <text x="70" y="375" fill="#929b91" font-family="Arial, sans-serif" font-size="35" font-weight="300" letter-spacing="-1">Intelligence, in motion.</text>
+  <text x="70" y="375" fill="#929b91" font-family="Arial, sans-serif" font-size="35" font-weight="300" letter-spacing="-1">From capable robots to capable teams.</text>
   <text x="70" y="555" fill="#7d867c" font-family="monospace" font-size="15" letter-spacing="2">ZIHAOLI.DEV</text>
   <path d="M1116 52h28l-27 25h27m-2-25v25" fill="none" stroke="#c8ff62" stroke-width="2"/>
 </svg>
