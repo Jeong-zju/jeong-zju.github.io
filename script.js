@@ -106,39 +106,31 @@
   addEventListener("resize", update);
   update();
   const overview = document.querySelector(".overview");
-  if (overview) {
-    if (reduced || !("IntersectionObserver" in window))
-      overview.classList.add("is-active");
-    else {
-      const overviewObserver = new IntersectionObserver(
-        ([entry]) => {
-          if (entry.isIntersecting) {
-            overview.classList.add("is-active");
-          } else {
-            overview.classList.remove("is-active");
-          }
-        },
-        { threshold: 0.28 },
-      );
-      overviewObserver.observe(overview);
-    }
-  }
   const reveals = document.querySelectorAll(".reveal");
-  if (reduced || !("IntersectionObserver" in window))
-    reveals.forEach((x) => x.classList.add("visible"));
-  else {
-    const io = new IntersectionObserver(
-      (entries) =>
-        entries.forEach((e) => {
-          if (e.isIntersecting) {
-            e.target.classList.add("visible");
-          } else {
-            e.target.classList.remove("visible");
-          }
-        }),
-      { threshold: 0.13 },
-    );
-    reveals.forEach((x) => io.observe(x));
+  const syncScrollAnimations = () => {
+    const vh = innerHeight;
+    if (overview) {
+      const rect = overview.getBoundingClientRect();
+      const inSafeZone = rect.top < vh * 0.84 && rect.bottom > vh * 0.16;
+      const farAway = rect.bottom < -vh * 0.24 || rect.top > vh * 1.24;
+      if (inSafeZone) overview.classList.add("is-active");
+      else if (farAway) overview.classList.remove("is-active");
+    }
+    reveals.forEach((element) => {
+      const rect = element.getBoundingClientRect();
+      const inSafeZone = rect.top < vh * 0.86 && rect.bottom > vh * 0.14;
+      const farAway = rect.bottom < -vh * 0.24 || rect.top > vh * 1.24;
+      if (inSafeZone) element.classList.add("visible");
+      else if (farAway) element.classList.remove("visible");
+    });
+  };
+  if (reduced) {
+    if (overview) overview.classList.add("is-active");
+    reveals.forEach((element) => element.classList.add("visible"));
+  } else {
+    addEventListener("scroll", syncScrollAnimations, { passive: true });
+    addEventListener("resize", syncScrollAnimations);
+    syncScrollAnimations();
   }
   const projectVideos = document.querySelectorAll(".project-video video");
   if (projectVideos.length && "IntersectionObserver" in window) {
