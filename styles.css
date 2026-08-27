@@ -973,6 +973,106 @@ footer p span {
   color: #fff;
   text-align: center;
 }
+/* Project history: a quiet editorial timeline with the evidence kept in motion. */
+.projects {
+  padding: 148px 7vw 156px;
+  background: #f4f1eb;
+  color: #191919;
+}
+.projects-head {
+  max-width: 780px;
+  margin: 0 auto 86px;
+  text-align: center;
+}
+.projects-head h2 {
+  margin: 18px 0 22px;
+  font-size: clamp(42px, 5vw, 70px);
+  line-height: 0.98;
+  font-weight: 300;
+  letter-spacing: -0.055em;
+}
+.projects-head h2 em { color: var(--orange); font-style: normal; }
+.projects-head > p:last-child {
+  max-width: 620px;
+  margin: auto;
+  color: #605b54;
+  font-size: 18px;
+  line-height: 1.55;
+  font-weight: 300;
+}
+.project-list {
+  max-width: 1280px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.project-card {
+  display: grid;
+  grid-template-columns: 3fr 5fr;
+  aspect-ratio: 128 / 45;
+  align-items: stretch;
+  background: #fff;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 12px 34px rgba(35, 30, 24, 0.08);
+}
+.project-card-reverse {
+  grid-template-columns: 5fr 3fr;
+}
+.project-card-reverse .project-copy { order: 2; }
+.project-card-reverse .project-video { order: 1; }
+.project-copy {
+  padding: 42px clamp(28px, 4vw, 58px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.project-year {
+  color: var(--orange);
+  font: 10px/1.3 GeistMono;
+  letter-spacing: 0.09em;
+}
+.project-copy h3 {
+  margin: 16px 0 18px;
+  font-size: clamp(32px, 3.2vw, 48px);
+  line-height: 0.98;
+  font-weight: 300;
+  letter-spacing: -0.045em;
+}
+.project-copy > p:not(.project-year) {
+  max-width: 410px;
+  color: #69645d;
+  font-size: 16px;
+  line-height: 1.55;
+  font-weight: 300;
+}
+.project-copy a {
+  width: fit-content;
+  margin-top: 28px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #bcb5aa;
+  color: #36322d;
+  font: 11px GeistMono;
+  letter-spacing: 0.04em;
+  transition: color 0.25s, border-color 0.25s;
+}
+.project-copy a:hover { color: var(--orange); border-color: var(--orange); }
+.project-video {
+  width: 100%;
+  height: auto;
+  min-height: 0;
+  align-self: center;
+  background: transparent;
+  overflow: hidden;
+}
+.project-video video {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+}
 .publications h2 {
   margin: 18px 0 55px;
   font-size: 48px;
@@ -1087,6 +1187,35 @@ footer > small {
   opacity: 1;
   transform: none;
 }
+.project-card.reveal {
+  transform: translateY(70px) scale(0.985);
+  transition: opacity 0.9s ease, transform 1s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.project-card.reveal.visible { transform: none; }
+.project-card:nth-child(2) { transition-delay: 0.1s; }
+.project-card:nth-child(3) { transition-delay: 0.2s; }
+@media (max-width: 1200px) {
+  .project-card,
+  .project-card-reverse {
+    display: flex;
+    flex-direction: column;
+    aspect-ratio: auto;
+  }
+  .project-card-reverse .project-copy,
+  .project-card-reverse .project-video {
+    order: initial;
+  }
+  .project-copy {
+    height: 430px;
+    min-height: 430px;
+    flex: 0 0 430px;
+  }
+  .project-video {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+  }
+}
 @media (max-width: 768px) {
   .header {
     left: 16px;
@@ -1192,6 +1321,39 @@ footer > small {
     font-size: 27px;
     line-height: 37px;
   }
+  .projects {
+    padding: 92px 5vw 100px;
+  }
+  .projects-head {
+    margin-bottom: 52px;
+    text-align: left;
+  }
+  .projects-head h2 {
+    font-size: clamp(40px, 11vw, 56px);
+  }
+  .projects-head > p:last-child {
+    font-size: 16px;
+  }
+  .project-list { gap: 12px; }
+  .project-card,
+  .project-card-reverse {
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+    aspect-ratio: auto;
+  }
+  .project-card-reverse .project-copy,
+  .project-card-reverse .project-video {
+    order: initial;
+  }
+  .project-copy {
+    height: 430px;
+    min-height: 430px;
+    flex: 0 0 430px;
+    padding: 30px 24px 34px;
+  }
+  .project-copy h3 { font-size: 38px; }
+  .project-video { width: 100%; min-height: 0; height: auto; aspect-ratio: 16 / 9; }
   .feature,
   .feature.reverse {
     margin-bottom: 40px;

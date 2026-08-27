@@ -26,7 +26,7 @@
     <meta name="twitter:image" content="https://zihaoli.dev/assets/og.svg" />
     <link rel="canonical" href="https://zihaoli.dev/" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="/styles.css?v=20260827-12" />
+    <link rel="stylesheet" href="/styles.css?v=20260827-20" />
   </head>
   <body>
     <header class="header">
@@ -177,49 +177,76 @@
       </section>
 
       <p class="bridge reveal">
-        I build policies that can read the interaction, carry its history
-        forward, and choose actions that leave the team with better options.
+        This position emerged through projects that made coordination visible—as
+        forces between bodies, choices shared by partners, and evidence carried
+        through time.
       </p>
-      <section class="feature reveal">
-        <div class="feature-copy">
-          <div class="orbit-icon"><i></i><i></i><i></i></div>
-          <h2>Partner-Contingent<br />Control</h2>
+      <section class="projects" id="projects">
+        <div class="projects-head reveal">
+          <p class="tag">Project history</p>
+          <h2>Three ways of teaching a robot to stay <em>with</em> the task.</h2>
           <p>
-            When a team shares objects and workspaces, timing becomes part of
-            dexterity. I train decentralized whole-body policies to wait,
-            yield, hold, regrasp, and resume as teammates and contacts evolve.
+            My projects move from coordinating coupled bodies, to preserving
+            evidence across time, to giving a human better physical feedback.
+            The common thread is simple: intelligence is measured by what a
+            robot helps the whole interaction do next.
           </p>
         </div>
-        <div class="feature-media media-one">
-          <b>WAIT<br />YIELD<br />COMMIT</b>
-        </div>
-      </section>
-      <section class="feature reverse reveal">
-        <div class="feature-copy">
-          <div class="orbit-icon"><i></i><i></i><i></i></div>
-          <h2>Memory for<br />Continuity</h2>
-          <p>
-            The current image is not the current task state. Causal memory
-            preserves the events, failures, object changes, and partner actions
-            that remain consequential after they disappear from view.
-          </p>
-        </div>
-        <div class="feature-media media-two">
-          <b>REMEMBER<br />WHAT<br />MATTERS</b>
-        </div>
-      </section>
-      <section class="feature reveal">
-        <div class="feature-copy">
-          <div class="orbit-icon"><i></i><i></i><i></i></div>
-          <h2>Response-Aware<br />Action</h2>
-          <p>
-            CARE asks not only what an action does directly, but how the team
-            is likely to respond. It scores alternatives in one pass and keeps
-            the default when the evidence for change is insufficient.
-          </p>
-        </div>
-        <div class="feature-media media-three">
-          <b>BEFORE<br />WE<br />ACT</b>
+        <div class="project-list">
+          <article class="project-card reveal">
+            <div class="project-copy">
+              <p class="project-year">2026 · COUPLED ROBOT POLICIES</p>
+              <h3>Sequential<br />Asymmetric Imitation</h3>
+              <p>
+                A single-teleoperator curriculum turns local demonstrations into
+                a pair of policies that can stay synchronized while carrying a
+                shared object. The partner is learned as part of the task—not
+                treated as noise around it.
+              </p>
+              <a href="https://cyc0429.github.io/sai-project-page/" target="_blank" rel="noreferrer">View project ↗</a>
+            </div>
+            <div class="project-video">
+              <video autoplay muted loop playsinline preload="metadata" poster="/assets/projects/sai-bed-spread.jpg?v=20260827-2" aria-label="Two robots spreading a bed sheet together">
+                <source src="/assets/projects/sai-bed-spread.mp4?v=20260827-2" type="video/mp4" />
+              </video>
+            </div>
+          </article>
+          <article class="project-card project-card-reverse reveal">
+            <div class="project-copy">
+              <p class="project-year">2026 · LONG-HORIZON MEMORY</p>
+              <h3>TRACE</h3>
+              <p>
+                When the useful clue disappears from view, a trajectory-routed
+                causal memory brings it back at the right branch. TRACE lets a
+                policy carry delayed evidence forward instead of starting the
+                task over.
+              </p>
+              <a href="https://jeong-zju.github.io/trace/" target="_blank" rel="noreferrer">View project ↗</a>
+            </div>
+            <div class="project-video">
+              <video autoplay muted loop playsinline preload="metadata" poster="/assets/projects/trace-book-desk.jpg?v=20260827-2" aria-label="A mobile robot approaching a desk during a long-horizon task">
+                <source src="/assets/projects/trace-book-desk.mp4?v=20260827-2" type="video/mp4" />
+              </video>
+            </div>
+          </article>
+          <article class="project-card reveal">
+            <div class="project-copy">
+              <p class="project-year">2026 · FORCE-AWARE TELEOPERATION</p>
+              <h3>TriPilot-FF</h3>
+              <p>
+                Whole-body teleoperation becomes a co-pilot: a foot-operated
+                base channel, lidar-driven haptic resistance, and arm-side force
+                reflection help a person read contact and reposition before the
+                robot runs out of reach.
+              </p>
+              <a href="https://jeong-zju.github.io/RSS-TriPilot-FF-Page/" target="_blank" rel="noreferrer">View project ↗</a>
+            </div>
+            <div class="project-video">
+              <video autoplay muted loop playsinline preload="metadata" poster="/assets/projects/tripilot-laundry.jpg?v=20260827-2" aria-label="A mobile manipulator transporting laundry with force-aware control">
+                <source src="/assets/projects/tripilot-laundry.mp4?v=20260827-2" type="video/mp4" />
+              </video>
+            </div>
+          </article>
         </div>
       </section>
 
@@ -320,6 +347,6 @@
       </div>
       <small>© <span data-year>2026</span> Zihao Li</small>
     </footer>
-    <script src="/script.js?v=20260827-4" defer></script>
+    <script src="/script.js?v=20260827-5" defer></script>
   </body>
 </html>

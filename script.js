@@ -140,4 +140,16 @@
     );
     reveals.forEach((x) => io.observe(x));
   }
+  const projectVideos = document.querySelectorAll(".project-video video");
+  if (projectVideos.length && "IntersectionObserver" in window) {
+    const videoObserver = new IntersectionObserver(
+      (entries) =>
+        entries.forEach(({ target, isIntersecting }) => {
+          if (isIntersecting) target.play().catch(() => {});
+          else target.pause();
+        }),
+      { threshold: 0.18, rootMargin: "120px 0px" },
+    );
+    projectVideos.forEach((video) => videoObserver.observe(video));
+  }
 })();
