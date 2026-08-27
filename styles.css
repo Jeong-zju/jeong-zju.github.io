@@ -968,10 +968,46 @@ footer p span {
     linear-gradient(155deg, #eeeae3, #9b9b94);
 }
 .publications {
-  padding: 100px 5rem 120px;
-  background: #000;
-  color: #fff;
+  position: relative;
+  padding: 150px var(--pad) 136px;
+  background: #111;
+  color: #f7f4ee;
+  overflow: hidden;
+}
+.publications::before {
+  content: "";
+  position: absolute;
+  width: 42vw;
+  height: 42vw;
+  top: -24vw;
+  right: -12vw;
+  border: 1px solid rgba(255, 126, 0, 0.22);
+  border-radius: 50%;
+  box-shadow: 0 0 0 70px rgba(255, 126, 0, 0.035), 0 0 0 140px rgba(255, 126, 0, 0.02);
+  pointer-events: none;
+}
+.publications-head {
+  position: relative;
+  z-index: 1;
+  max-width: 760px;
+  margin: 0 auto 72px;
   text-align: center;
+}
+.publications-head .tag { color: var(--orange); }
+.publications-head h2 {
+  margin: 17px 0 22px;
+  font-size: clamp(42px, 5.8vw, 76px);
+  line-height: 0.98;
+  font-weight: 300;
+  letter-spacing: -0.06em;
+}
+.publications-head > p:last-child {
+  max-width: 650px;
+  margin: auto;
+  color: #a9a49c;
+  font-size: 17px;
+  line-height: 1.55;
+  font-weight: 300;
 }
 /* Project history: a quiet editorial timeline with the evidence kept in motion. */
 .projects {
@@ -1073,54 +1109,90 @@ footer p span {
   aspect-ratio: 16 / 9;
   object-fit: contain;
 }
-.publications h2 {
-  margin: 18px 0 55px;
-  font-size: 48px;
-  line-height: 56px;
-  font-weight: 300;
-}
 .pub-grid {
+  position: relative;
+  z-index: 1;
   max-width: 1280px;
   margin: auto;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 14px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
   text-align: left;
 }
 .pub-grid a {
   position: relative;
-  min-height: 410px;
-  padding: 28px;
-  border-radius: 12px;
-  background: #151515;
-  transition: 0.3s;
+  min-height: 540px;
+  display: flex;
+  flex-direction: column;
+  padding: 0 30px 27px;
+  border: 1px solid #2f2f2d;
+  border-radius: 16px;
+  background: #1a1a19;
+  overflow: hidden;
+  transition: transform 0.35s ease, border-color 0.35s ease, background 0.35s ease;
 }
 .pub-grid a:hover {
-  background: #262626;
-  transform: translateY(-5px);
+  border-color: #5b5146;
+  background: #20201e;
+  transform: translateY(-6px);
 }
-.pub-grid span {
+.pub-visual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 235px;
+  margin: 0 -30px 25px;
+  padding: 18px;
+  background: #e8e3da;
+  border-bottom: 1px solid #373532;
+}
+.pub-visual img {
+  display: block;
+  width: 100%;
+  height: 198px;
+  object-fit: contain;
+  mix-blend-mode: multiply;
+  transition: transform 0.45s ease;
+}
+.pub-grid a:hover .pub-visual img { transform: scale(1.025); }
+.pub-grid span.pub-meta {
   color: var(--orange);
   font: 11px GeistMono;
+  letter-spacing: 0.09em;
 }
 .pub-grid h3 {
-  margin-top: 140px;
-  font-size: 25px;
-  line-height: 32px;
+  margin: 13px 0 11px;
+  max-width: 500px;
+  font-size: clamp(23px, 2.15vw, 31px);
+  line-height: 1.08;
+  font-weight: 300;
+  letter-spacing: -0.035em;
+}
+.pub-grid p {
+  max-width: 470px;
+  color: #a9a49c;
+  font-size: 15px;
+  line-height: 1.45;
   font-weight: 300;
 }
 .pub-grid b {
-  position: absolute;
-  right: 28px;
-  bottom: 25px;
-  font-size: 22px;
+  margin-top: auto;
+  padding-top: 22px;
+  color: #f7f4ee;
+  font: 11px GeistMono;
+  letter-spacing: 0.05em;
+  font-weight: 400;
 }
 .scholar {
-  display: inline-block;
-  margin-top: 42px;
+  display: block;
+  width: fit-content;
+  margin: 42px auto 0;
   padding: 12px 20px;
   border: 1px solid #555;
   border-radius: 99px;
+  color: #e8e3da;
+  font: 11px GeistMono;
+  letter-spacing: 0.04em;
 }
 .bio {
   max-width: 1440px;
@@ -1383,16 +1455,21 @@ footer > small {
     font-size: 44px;
   }
   .publications {
-    padding: 80px 5vw;
+    padding: 92px 5vw 100px;
   }
   .pub-grid {
     grid-template-columns: 1fr;
   }
   .pub-grid a {
-    min-height: 310px;
+    min-height: 500px;
+    padding-inline: 24px;
   }
-  .pub-grid h3 {
-    margin-top: 90px;
+  .pub-visual {
+    min-height: 215px;
+    margin-inline: -24px;
+  }
+  .pub-visual img {
+    height: 178px;
   }
   .bio {
     padding: 75px 5vw;

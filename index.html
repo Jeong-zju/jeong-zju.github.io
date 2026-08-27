@@ -26,7 +26,7 @@
     <meta name="twitter:image" content="https://zihaoli.dev/assets/og.svg" />
     <link rel="canonical" href="https://zihaoli.dev/" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="/styles.css?v=20260827-20" />
+    <link rel="stylesheet" href="/styles.css?v=20260827-21" />
   </head>
   <body>
     <header class="header">
@@ -251,33 +251,76 @@
       </section>
 
       <section class="publications" id="publications">
-        <p class="tag">Selected work</p>
-        <h2><span>Methods for</span> teams that keep going</h2>
+        <div class="publications-head reveal">
+          <p class="tag">Selected works</p>
+          <h2><span>Six views of</span> physical intelligence</h2>
+          <p>
+            From coupled robot policies to human–robot–environment interaction,
+            these works follow one question: how can a machine use context,
+            contact, and structure to choose what should happen next?
+          </p>
+        </div>
         <div class="pub-grid">
           <a
-            href="https://arxiv.org/abs/2606.14551"
-            target="_blank"
-            rel="noreferrer"
-            ><span>2026 · LONG-HORIZON MEMORY</span>
-            <h3>
-              Trajectory-Routed Causal Memory for Delayed-Evidence Visuomotor
-              Imitation
-            </h3>
-            <b>↗</b></a
-          ><a
-            href="https://arxiv.org/abs/2602.09888"
-            target="_blank"
-            rel="noreferrer"
-            ><span>2026 · FORCE-AWARE TELEOPERATION</span>
-            <h3>Coordinated Whole-Body Teleoperation with Force Feedback</h3>
-            <b>↗</b></a
-          ><a
+            class="pub-card reveal"
             href="https://arxiv.org/abs/2606.16490"
             target="_blank"
             rel="noreferrer"
-            ><span>2026 · COUPLED ROBOT POLICIES</span>
-            <h3>Sequential Asymmetric Imitation for Coupled Robot Policies</h3>
-            <b>↗</b></a
+            ><span class="pub-visual"><img src="/assets/publications/sai-curriculum.jpg?v=20260827-1" alt="Three-stage SAI curriculum for learning coupled robot policies" loading="lazy" /></span>
+            <span class="pub-meta">2026 · COLLABORATIVE POLICIES</span>
+            <h3>Robots that Collaborate: Sequential Asymmetric Imitation</h3>
+            <p>Learning to wait, yield, and recover as a partner changes the task.</p>
+            <b>Read paper ↗</b></a
+          ><a
+            class="pub-card reveal"
+            href="https://arxiv.org/abs/2606.14551"
+            target="_blank"
+            rel="noreferrer"
+            ><span class="pub-visual"><img src="/assets/publications/trace-memory.jpg?v=20260827-1" alt="TRACE memory recovering an early visual cue at a later branch" loading="lazy" /></span>
+            <span class="pub-meta">2026 · LONG-HORIZON MEMORY</span>
+            <h3>TRACE: Trajectory-Routed Causal Memory</h3>
+            <p>Carrying evidence forward when the clue has already left the scene.</p>
+            <b>Read paper ↗</b></a
+          ><a
+            class="pub-card reveal"
+            href="https://arxiv.org/abs/2602.09888"
+            target="_blank"
+            rel="noreferrer"
+            ><span class="pub-visual"><img src="/assets/publications/tripilot-system.jpg?v=20260827-1" alt="TriPilot-FF whole-body teleoperation system with force feedback" loading="lazy" /></span>
+            <span class="pub-meta">2026 · FORCE-AWARE TELEOPERATION</span>
+            <h3>TriPilot-FF: Coordinated Whole-Body Teleoperation</h3>
+            <p>Giving hands and feet a shared language for contact, reach, and motion.</p>
+            <b>Read paper ↗</b></a
+          ><a
+            class="pub-card reveal"
+            href="https://arxiv.org/abs/2511.05052"
+            target="_blank"
+            rel="noreferrer"
+            ><span class="pub-visual"><img src="/assets/publications/tapom-planning.jpg?v=20260827-1" alt="TAPOM task-space topology-guided planning across cluttered scenes" loading="lazy" /></span>
+            <span class="pub-meta">2025 · MOTION PLANNING</span>
+            <h3>TAPOM: Task-Space Topology-Guided Planning</h3>
+            <p>Finding the passage before searching the high-dimensional motion space.</p>
+            <b>Read paper ↗</b></a
+          ><a
+            class="pub-card reveal"
+            href="https://doi.org/10.1007/s41693-026-00191-3"
+            target="_blank"
+            rel="noreferrer"
+            ><span class="pub-visual"><img src="/assets/publications/scaffolding-connector.jpg?v=20260827-1" alt="Robot-friendly scaffolding connector with passive error correction" loading="lazy" /></span>
+            <span class="pub-meta">2026 · ROBOTIC ASSEMBLY</span>
+            <h3>Robot-Friendly Scaffolding with Passive Error Correction</h3>
+            <p>A tapered connector turns imperfect alignment into a reliable assembly step.</p>
+            <b>Read paper ↗</b></a
+          ><a
+            class="pub-card reveal"
+            href="https://doi.org/10.1109/tie.2024.3447741"
+            target="_blank"
+            rel="noreferrer"
+            ><span class="pub-visual"><img src="/assets/publications/phrei-control.jpg?v=20260827-1" alt="Human, robot, and environment loop for operational behavior inference" loading="lazy" /></span>
+            <span class="pub-meta">2025 · PHYSICAL HRI</span>
+            <h3>Operational Behaviors Inference for Physical HREI</h3>
+            <p>Predicting human intent while optimizing motion around real contact.</p>
+            <b>Read paper ↗</b></a
           >
         </div>
         <a
