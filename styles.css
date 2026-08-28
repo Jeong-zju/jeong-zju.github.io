@@ -1197,19 +1197,21 @@ footer p span {
   letter-spacing: 0.04em;
 }
 .bio {
-  max-width: 1240px;
+  width: min(100%, 1320px);
   margin: auto;
-  padding: 132px 5rem 140px;
+  padding: clamp(92px, 9vw, 132px) var(--pad) clamp(100px, 9.5vw, 140px);
   display: grid;
-  grid-template-columns: minmax(250px, 0.8fr) minmax(0, 1.2fr);
-  gap: clamp(64px, 8vw, 126px);
+  grid-template-columns: minmax(280px, 420px) minmax(0, 650px);
+  justify-content: center;
+  gap: clamp(54px, 7vw, 112px);
   align-items: center;
 }
 .bio-image {
   position: relative;
   isolation: isolate;
-  width: min(100%, 440px);
-  justify-self: end;
+  width: min(100%, 420px);
+  min-width: 0;
+  justify-self: center;
   margin: 0;
 }
 .bio-image::before {
@@ -1227,18 +1229,25 @@ footer p span {
   pointer-events: none;
 }
 .bio-image picture {
-  display: block;
-}
-.bio-image img {
   position: relative;
-  z-index: 1;
   display: block;
   width: 100%;
-  aspect-ratio: 4 / 5;
-  object-fit: cover;
-  object-position: center 58%;
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
   border-radius: 18px;
+  background: #e3ded6;
   box-shadow: 0 24px 64px rgba(39, 34, 27, 0.16);
+}
+.bio-image img {
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  object-fit: cover;
+  object-position: center center;
 }
 .bio-image figcaption {
   position: relative;
@@ -1380,6 +1389,12 @@ footer > small {
 .project-card.reveal.visible { transform: none; }
 .project-card:nth-child(2) { transition-delay: 0.1s; }
 .project-card:nth-child(3) { transition-delay: 0.2s; }
+@media (max-width: 1080px) {
+  .bio {
+    grid-template-columns: minmax(250px, 340px) minmax(0, 1fr);
+    gap: clamp(42px, 6vw, 68px);
+  }
+}
 @media (max-width: 1200px) {
   .project-card,
   .project-card-reverse {
@@ -1400,6 +1415,19 @@ footer > small {
     width: 100%;
     height: auto;
     aspect-ratio: 16 / 9;
+  }
+}
+@media (max-width: 860px) {
+  .bio {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 54px;
+  }
+  .bio-image {
+    width: min(100%, 380px);
+    justify-self: start;
+  }
+  .bio-copy {
+    width: min(100%, 680px);
   }
 }
 @media (max-width: 768px) {
@@ -1588,7 +1616,7 @@ footer > small {
     gap: 46px;
   }
   .bio-image {
-    width: min(82vw, 380px);
+    width: min(88vw, 360px);
     justify-self: start;
   }
   .bio h2 {
@@ -1609,6 +1637,24 @@ footer > small {
   footer > p {
     font-size: 32px;
     line-height: 40px;
+  }
+}
+@media (max-width: 480px) {
+  .bio {
+    padding-top: 64px;
+    padding-bottom: 72px;
+  }
+  .bio-image {
+    width: min(88vw, 330px);
+  }
+  .bio-image::before {
+    width: 68px;
+    height: 68px;
+    top: -12px;
+    left: -12px;
+  }
+  .bio-image figcaption {
+    font-size: 9px;
   }
 }
 @media (prefers-reduced-motion: reduce) {
