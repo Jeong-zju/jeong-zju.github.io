@@ -1119,7 +1119,7 @@ footer p span {
   gap: 18px;
   text-align: left;
 }
-.pub-grid a {
+.pub-grid > .pub-card {
   position: relative;
   min-height: 540px;
   display: flex;
@@ -1131,7 +1131,7 @@ footer p span {
   overflow: hidden;
   transition: transform 0.35s ease, border-color 0.35s ease, background 0.35s ease;
 }
-.pub-grid a:hover {
+.pub-grid > .pub-card:hover {
   border-color: #5b5146;
   background: #20201e;
   transform: translateY(-6px);
@@ -1153,6 +1153,9 @@ footer p span {
   height: 100%;
   object-fit: contain;
   object-position: center center;
+}
+.pub-grid > a:not(.pub-card) {
+  display: none !important;
 }
 .pub-grid span.pub-meta {
   color: var(--orange);
@@ -1459,7 +1462,7 @@ footer > small {
   .pub-grid {
     grid-template-columns: 1fr;
   }
-  .pub-grid a {
+  .pub-grid > .pub-card {
     min-height: 500px;
     padding-inline: 24px;
   }
