@@ -1153,7 +1153,6 @@ footer p span {
   height: 198px;
   object-fit: contain;
   object-position: center center;
-  mix-blend-mode: multiply;
   transition: transform 0.45s ease;
 }
 .pub-grid a:hover .pub-visual img { transform: scale(1.025); }
