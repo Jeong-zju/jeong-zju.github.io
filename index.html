@@ -26,7 +26,7 @@
     <meta name="twitter:image" content="https://zihaoli.dev/assets/og.svg" />
     <link rel="canonical" href="https://zihaoli.dev/" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="/styles.css?v=20260828-3" />
+    <link rel="stylesheet" href="/styles.css?v=20260829-1" />
   </head>
   <body>
     <header class="header">
@@ -332,30 +332,44 @@
         >
       </section>
 
-      <section class="bio">
-        <div class="bio-image">
-          <img
-            src="/assets/zihao-li.webp"
-            alt="Portrait of Zihao Li"
-            width="900"
-            height="900"
-            loading="lazy"
-          />
-        </div>
+      <section class="bio" id="about">
+        <figure class="bio-image reveal">
+          <picture>
+            <source srcset="/assets/photo-home.webp?v=20260829-1" type="image/webp" />
+            <img
+              src="/assets/photo.jpg?v=20260829-1"
+              alt="Zihao Li holding a lamb in front of snow-capped mountains"
+              width="3024"
+              height="4032"
+              loading="lazy"
+            />
+          </picture>
+          <figcaption><span>ZIHAO LI</span><span>PHYSICAL AI · 2026</span></figcaption>
+        </figure>
         <div class="bio-copy reveal">
           <p class="tag">About</p>
           <h2>
-            <span>I am Zihao Li,</span> a PhD researcher building physical
-            intelligence for robots that share the world.
+            <span>I am Zihao Li,</span> building physical intelligence—and the
+            team behind it.
           </h2>
-          <p>
-            At the University of Sydney, I work across multi-robot policy
-            learning, long-horizon memory, predictive action selection, and
-            force-aware whole-body manipulation. Previously, I worked with the
-            Computational Robotics Lab at ETH Zürich and studied at Zhejiang
-            University. Across these problems, I return to one question: how do
-            individually capable robots become capable teammates?
-          </p>
+          <div class="bio-facts" aria-label="Current roles and education">
+            <p class="bio-fact">
+              <span class="bio-index">01</span>
+              <span>Founding Member of <a class="bio-link" href="https://www.zenobot.ai/" target="_blank" rel="noreferrer">ZENO AI</a>.</span>
+            </p>
+            <p class="bio-fact">
+              <span class="bio-index">02</span>
+              <span>PhD student of <a class="bio-link" href="https://www.weimingzhi.com/" target="_blank" rel="noreferrer">William Zhi</a> at the <a class="bio-link" href="https://aus.bot/" target="_blank" rel="noreferrer">PAIR Lab</a>, University of Sydney.</span>
+            </p>
+            <p class="bio-fact">
+              <span class="bio-index">03</span>
+              <span>Graduate of the Interdisciplinary Innovation Platform, Chu Kochen Honors College, Zhejiang University.</span>
+            </p>
+            <p class="bio-fact">
+              <span class="bio-index">04</span>
+              <span>Master's graduate of the College of Control Science and Engineering, Zhejiang University.</span>
+            </p>
+          </div>
         </div>
       </section>
     </main>

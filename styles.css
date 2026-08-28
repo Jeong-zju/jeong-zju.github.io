@@ -1197,31 +1197,143 @@ footer p span {
   letter-spacing: 0.04em;
 }
 .bio {
-  max-width: 1440px;
+  max-width: 1240px;
   margin: auto;
-  padding: 100px 5rem;
+  padding: 132px 5rem 140px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 8vw;
+  grid-template-columns: minmax(250px, 0.8fr) minmax(0, 1.2fr);
+  gap: clamp(64px, 8vw, 126px);
   align-items: center;
 }
+.bio-image {
+  position: relative;
+  isolation: isolate;
+  width: min(100%, 440px);
+  justify-self: end;
+  margin: 0;
+}
+.bio-image::before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  width: 88px;
+  height: 88px;
+  top: -16px;
+  left: -16px;
+  border-top: 1px solid var(--orange);
+  border-left: 1px solid var(--orange);
+  border-radius: 18px 0 0;
+  opacity: 0.7;
+  pointer-events: none;
+}
+.bio-image picture {
+  display: block;
+}
 .bio-image img {
+  position: relative;
+  z-index: 1;
+  display: block;
   width: 100%;
-  aspect-ratio: 1;
+  aspect-ratio: 4 / 5;
   object-fit: cover;
-  border-radius: 16px;
-  filter: grayscale(1);
+  object-position: center 58%;
+  border-radius: 18px;
+  box-shadow: 0 24px 64px rgba(39, 34, 27, 0.16);
+}
+.bio-image figcaption {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 13px 2px 0;
+  color: #7b766f;
+  font: 10px/1.4 GeistMono;
+  letter-spacing: 0.07em;
 }
 .bio h2 {
-  margin: 16px 0 28px;
-  font-size: 40px;
-  line-height: 48px;
+  max-width: 660px;
+  margin: 18px 0 34px;
+  font-size: clamp(38px, 4vw, 58px);
+  line-height: 1.04;
   font-weight: 300;
+  letter-spacing: -0.05em;
 }
-.bio-copy > p:last-child {
-  color: #666;
-  font-size: 19px;
-  line-height: 30px;
+.bio-facts {
+  border-top: 1px solid #d8d3cb;
+}
+.bio-fact {
+  display: grid;
+  grid-template-columns: 34px 1fr;
+  gap: 12px;
+  padding: 17px 0 18px;
+  border-bottom: 1px solid #d8d3cb;
+  color: #57534d;
+  font-size: 17px;
+  line-height: 1.55;
+  font-weight: 300;
+  transition: color 0.25s ease, transform 0.25s ease;
+}
+.bio-fact:hover {
+  color: #191919;
+  transform: translateX(6px);
+}
+.bio-index {
+  padding-top: 5px;
+  color: #9b958c;
+  font: 10px/1 GeistMono;
+  letter-spacing: 0.08em;
+  transition: color 0.25s ease;
+}
+.bio-fact:hover .bio-index {
+  color: var(--orange);
+}
+.bio-link {
+  position: relative;
+  isolation: isolate;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  margin: 0 1px;
+  padding: 0 7px 1px;
+  color: #181818;
+  font-weight: 500;
+  white-space: nowrap;
+  transition: color 0.25s ease, transform 0.25s ease;
+}
+.bio-link::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 2px 0 1px;
+  border: 1px solid rgba(255, 126, 0, 0.35);
+  border-radius: 6px;
+  background: rgba(255, 126, 0, 0.08);
+  transform: skewX(-4deg);
+  transition: background 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+.bio-link::after {
+  content: "↗";
+  color: var(--orange);
+  font: 500 10px/1 GeistMono;
+  transition: color 0.25s ease, transform 0.25s ease;
+}
+.bio-link:hover,
+.bio-link:focus-visible {
+  color: #fff;
+  transform: translateY(-1px);
+  outline: none;
+}
+.bio-link:hover::before,
+.bio-link:focus-visible::before {
+  border-color: var(--orange);
+  background: var(--orange);
+  box-shadow: 0 7px 22px rgba(255, 126, 0, 0.24);
+}
+.bio-link:hover::after,
+.bio-link:focus-visible::after {
+  color: #fff;
+  transform: translate(2px, -2px);
 }
 footer {
   padding: 80px 7vw 30px;
@@ -1473,10 +1585,23 @@ footer > small {
   .bio {
     padding: 75px 5vw;
     grid-template-columns: 1fr;
+    gap: 46px;
+  }
+  .bio-image {
+    width: min(82vw, 380px);
+    justify-self: start;
   }
   .bio h2 {
-    font-size: 32px;
-    line-height: 40px;
+    font-size: clamp(36px, 10vw, 48px);
+    line-height: 1.04;
+  }
+  .bio-fact {
+    grid-template-columns: 28px 1fr;
+    gap: 8px;
+    font-size: 16px;
+  }
+  .bio-link {
+    white-space: normal;
   }
   .footer-links {
     margin-left: 0;
@@ -1514,6 +1639,12 @@ footer > small {
     transition: none !important;
   }
   .overview-frame::after { display: none; }
+  .bio-fact,
+  .bio-link,
+  .bio-link::before,
+  .bio-link::after {
+    transition: none;
+  }
 }
 
 @media (max-width: 768px) {
