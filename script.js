@@ -59,7 +59,10 @@
   const update = () => {
     if (innerWidth <= 768) {
       videoBox.style.width = "100%";
+      videoBox.style.maxWidth = "100%";
       videoBox.style.borderRadius = "24px";
+      heroText.style.opacity = "1";
+      heroText.style.transform = "none";
       // The compact mobile header stays as one continuous island. Reset the
       // desktop split variables as well so a resize from a scrolled desktop
       // viewport cannot leave two stale islands behind.
@@ -74,8 +77,11 @@
       brand.style.setProperty("--brand-pointer", "auto");
       return;
     }
-    const rect = hero.getBoundingClientRect(),
-      travel = Math.max(1, hero.offsetHeight - innerHeight),
+    const compactHero = innerWidth <= 980,
+      rect = hero.getBoundingClientRect(),
+      travel = compactHero
+        ? Math.max(240, hero.offsetHeight * 0.65)
+        : Math.max(1, hero.offsetHeight - innerHeight),
       p = Math.max(0, Math.min(1, -rect.top / travel)),
       ease = p * p * (3 - 2 * p),
       nav = Math.max(0, Math.min(1, p / 0.72)),
@@ -88,11 +94,19 @@
       extra = innerWidth - base;
     header.style.setProperty("--collapse", navEase);
     header.style.setProperty("--split", Math.min(1, navEase * 1.35));
-    heroText.style.opacity = String(1 - Math.min(1, p * 2.2));
-    heroText.style.transform = `translateY(${-Math.min(1, p * 2.2) * 64}px)`;
-    videoBox.style.width = `${base + extra * ease}px`;
-    videoBox.style.maxWidth = "none";
-    videoBox.style.borderRadius = `${24 * (1 - ease)}px`;
+    if (compactHero) {
+      heroText.style.opacity = "1";
+      heroText.style.transform = "none";
+      videoBox.style.width = "100%";
+      videoBox.style.maxWidth = "100%";
+      videoBox.style.borderRadius = "24px";
+    } else {
+      heroText.style.opacity = String(1 - Math.min(1, p * 2.2));
+      heroText.style.transform = `translateY(${-Math.min(1, p * 2.2) * 64}px)`;
+      videoBox.style.width = `${base + extra * ease}px`;
+      videoBox.style.maxWidth = "none";
+      videoBox.style.borderRadius = `${24 * (1 - ease)}px`;
+    }
     brand.style.setProperty(
       "--brand-opacity",
       String(1 - Math.min(1, nav * 1.7)),
