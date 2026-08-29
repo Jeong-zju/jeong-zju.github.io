@@ -107,7 +107,8 @@ a {
   left: var(--right-island-center, 88%);
 }
 .header nav a,
-.header-actions a {
+.header-actions a,
+.language-toggle {
   min-width: 38px;
   height: 38px;
   padding: 0 calc(9px * (1 - var(--collapse, 0)));
@@ -119,6 +120,22 @@ a {
   border-radius: 0;
   background: transparent;
   box-shadow: none;
+}
+.language-toggle {
+  flex: 0 0 auto;
+  min-width: 48px;
+  padding: 0 8px;
+  border: 1px solid rgba(0, 0, 0, 0.18);
+  border-radius: 99px;
+  color: #191919;
+  font: 500 12px/1 GeistMono, monospace;
+  cursor: pointer;
+}
+.language-toggle:hover,
+.language-toggle:focus-visible {
+  border-color: var(--orange);
+  color: var(--orange);
+  outline: none;
 }
 .header nav svg,
 .header-actions svg {
@@ -135,13 +152,18 @@ a {
   will-change: opacity, transform, margin;
 }
 .header nav a span,
-.header-actions a span {
+.header-actions a span,
+.language-toggle span {
   display: inline-block;
   max-width: var(--label-width, 120px);
   opacity: var(--label-opacity, 1);
   overflow: hidden;
   white-space: nowrap;
   will-change: max-width, opacity;
+}
+.language-toggle span {
+  max-width: none;
+  opacity: 1;
 }
 .contact-pill {
   border-radius: 99px !important;
@@ -1442,6 +1464,25 @@ footer > small {
   }
   .header-actions a:first-child {
     display: none;
+  }
+  .header .header-actions {
+    right: 8px;
+    left: auto;
+    gap: 8px;
+    transform: none;
+  }
+  .header-actions .contact-pill span {
+    display: none;
+  }
+  .header-actions .contact-pill svg {
+    margin-right: 0;
+    opacity: 1;
+    transform: none;
+  }
+  .language-toggle {
+    min-width: 52px;
+    padding: 0 7px;
+    font-size: 11px;
   }
   .brand strong {
     display: none;
