@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-language="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
@@ -7,12 +7,12 @@
     <title>Zihao Li — Collaborative Physical Intelligence</title>
     <meta
       name="description"
-      content="Zihao Li develops scalable decentralized robot learning systems that coordinate through contact, remember long interactions, and anticipate how each action changes what the team can do."
+      content="Zihao Li studies how embodied agents coordinate through motion and contact, carry task-relevant memory across time, and recover when the physical world changes."
     />
     <meta property="og:title" content="Zihao Li — Collaborative Physical Intelligence" />
     <meta
       property="og:description"
-      content="From capable robots to capable teams: scalable decentralized learning for coordination, memory, prediction, and recovery."
+      content="From individual skills to teams that can keep going: research on collaborative physical intelligence."
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://zihaoli.dev/" />
@@ -21,12 +21,12 @@
     <meta name="twitter:title" content="Zihao Li — Collaborative Physical Intelligence" />
     <meta
       name="twitter:description"
-      content="Scalable decentralized robot learning for teams that coordinate through contact and keep going."
+      content="Research on physical intelligence that can coordinate, remember, anticipate, and recover."
     />
     <meta name="twitter:image" content="https://zihaoli.dev/assets/og.svg" />
     <link rel="canonical" href="https://zihaoli.dev/" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="/styles.css?v=20260829-3" />
+    <link rel="stylesheet" href="/styles.css?v=20260829-6" />
   </head>
   <body>
     <header class="header">
@@ -94,16 +94,16 @@
         <div class="overview-copy">
           <p class="tag">The problem</p>
           <h2>
-            <span>Every new agent</span> changes the problem
+            <span>A second robot changes</span> what the first can do.
           </h2>
           <p>
-            A team can be full of capable robots and still fail together. My
-            work asks how embodied agents can read one another through motion,
-            contact, and shared objects, then adapt as each action reshapes the
-            possibilities available to the rest of the team.
+            Put two capable robots on the same physical task and capability does
+            not simply add. Timing, contact, and motion from one robot change
+            what the other can do next. I study how embodied agents read those
+            changes and keep the joint task moving.
           </p>
           <div class="overview-rule" aria-hidden="true"></div>
-          <p class="overview-note">DECENTRALIZED · EMBODIED · CONTINGENT</p>
+          <p class="overview-note">RELATIONAL · PERSISTENT · RECOVERABLE</p>
         </div>
         <figure class="overview-media">
           <div class="overview-frame">
@@ -133,12 +133,11 @@
               />
             </div>
             <div class="tile-copy">
-              <p class="tile-kicker">LOCAL VIEWS / TEAM STATE</p>
+              <p class="tile-kicker">THE WORLD AS INTERFACE</p>
               <h3>
-                One 3B model runs independently on every robot at 30 Hz, using
-                local observations and history rather than a central policy or
-                privileged team state. Adding an agent does not require a
-                larger centralized action space.
+                The same 3B model runs on each robot at 30 Hz. No central
+                conductor, no privileged partner state: motion, object
+                response, and contact become the interface.
               </h3>
             </div>
           </article>
@@ -151,11 +150,11 @@
               />
             </div>
             <div class="tile-copy">
-              <p class="tile-kicker">CONTINUITY / LONG-HORIZON EXECUTION</p>
+              <p class="tile-kicker">THE PAST STAYS IN THE STATE</p>
               <h3>
-                In evaluation, one policy runs for more than ten minutes across
-                eight collaborative subtasks—without task resets or policy
-                switching.
+                A compact interaction memory lets one policy carry evidence
+                across eight subtasks and more than ten minutes—without resets
+                or policy switching.
               </h3>
             </div>
           </article>
@@ -168,31 +167,27 @@
               />
             </div>
             <div class="tile-copy">
-              <p class="tile-kicker">CONTACT / PARTNER RESPONSE</p>
+              <p class="tile-kicker">IMAGINE BEFORE CONTACT</p>
               <h3>
-                Across held-out collaborative decisions, predictive
-                introspection selects the action leading to better partner
-                behavior in 87% of cases, versus 61% without lookahead.
+                Before committing, predictive introspection asks what an action
+                will make possible for a partner. It selects the action leading
+                to better partner behavior in 87% of cases, versus 61% without
+                lookahead.
               </h3>
             </div>
           </article>
         </div>
       </section>
 
-      <p class="bridge reveal">
-        This position emerged through projects that made coordination visible—as
-        forces between bodies, choices shared by partners, and evidence carried
-        through time.
-      </p>
       <section class="projects" id="projects">
         <div class="projects-head reveal">
-          <p class="tag">Project history</p>
-          <h2>Building the conditions for robots to work <em>together.</em></h2>
+          <p class="tag">Research in motion</p>
+          <h2>A good action preserves <em>good futures.</em></h2>
           <p>
-            My research moves across coupled manipulation, long-horizon memory,
-            and force-aware teleoperation. Together, these projects support my
-            central claim: capable agents become a capable team only when they
-            can read how each action changes what the others can do next.
+            The studies highlighted here are entry points into a broader,
+            ongoing research program. Across robot learning, memory, planning,
+            and physical interaction, I ask how agents can make progress without
+            closing off what they—or their partners—need next.
           </p>
         </div>
         <div class="project-list">
@@ -201,10 +196,10 @@
               <p class="project-year">2026 · COUPLED ROBOT POLICIES</p>
               <h3>Sequential<br />Asymmetric Imitation</h3>
               <p>
-                A single-teleoperator curriculum turns local demonstrations into
-                a pair of policies that can stay synchronized while carrying a
-                shared object. The partner is learned as part of the task—not
-                treated as noise around it.
+                Two robots can each know how to carry a sheet and still fail
+                together. Sequential Asymmetric Imitation turns single-robot
+                demonstrations into policies that learn to wait, yield, and
+                recover as a partner changes the task.
               </p>
               <a href="https://cyc0429.github.io/sai-project-page/" target="_blank" rel="noreferrer">View project ↗</a>
             </div>
@@ -219,10 +214,10 @@
               <p class="project-year">2026 · LONG-HORIZON MEMORY</p>
               <h3>TRACE</h3>
               <p>
-                When the useful clue disappears from view, a trajectory-routed
-                causal memory brings it back at the right branch. TRACE lets a
-                policy carry delayed evidence forward instead of starting the
-                task over.
+                A useful clue can disappear from view long before a task is
+                done. TRACE preserves causal evidence and routes it back at the
+                branch where it matters, so a long-horizon policy can continue
+                instead of starting over.
               </p>
               <a href="https://jeong-zju.github.io/trace/" target="_blank" rel="noreferrer">View project ↗</a>
             </div>
@@ -237,10 +232,10 @@
               <p class="project-year">2026 · FORCE-AWARE TELEOPERATION</p>
               <h3>TriPilot-FF</h3>
               <p>
-                Whole-body teleoperation becomes a co-pilot: a foot-operated
-                base channel, lidar-driven haptic resistance, and arm-side force
-                reflection help a person read contact and reposition before the
-                robot runs out of reach.
+                When a person works through a robot, contact is information.
+                TriPilot-FF gives hands and feet a shared interface for reach,
+                resistance, and repositioning—so the operator can feel what the
+                robot cannot say.
               </p>
               <a href="https://jeong-zju.github.io/RSS-TriPilot-FF-Page/" target="_blank" rel="noreferrer">View project ↗</a>
             </div>
@@ -255,12 +250,13 @@
 
       <section class="publications" id="publications">
         <div class="publications-head reveal">
-          <p class="tag">Selected works</p>
-          <h2><span>The evidence behind</span> the claim</h2>
+          <p class="tag">Selected research</p>
+          <h2><span>The question</span> keeps widening.</h2>
           <p>
-            These papers trace the same argument from different scales:
-            coordination is shaped by context, contact, and the structure of
-            the interaction—not by isolated action alone.
+            From motion planning and human contact to memory and multi-robot
+            interaction, these papers follow one question: how can a robot act
+            without losing sight of what—or who—its next action affects? These
+            are selected works; the full research history is on Scholar.
           </p>
         </div>
         <div class="pub-grid">
@@ -352,25 +348,25 @@
         <div class="bio-copy reveal">
           <p class="tag">About</p>
           <h2>
-            <span>I am Zihao Li,</span> building physical intelligence—and the
-            team behind it.
+            <span>I am Zihao Li,</span> building physical intelligence that works
+            together—and keeps going
           </h2>
           <div class="bio-facts" aria-label="Current roles and education">
             <p class="bio-fact">
               <span class="bio-index">01</span>
-              <span>Founding Researcher of <a class="bio-link" href="https://www.zenobot.ai/" target="_blank" rel="noreferrer">ZENO AI</a>.</span>
+              <span>Founding Researcher of <a class="bio-link" href="https://www.zenobot.ai/" target="_blank" rel="noreferrer">ZENO AI</a></span>
             </p>
             <p class="bio-fact">
               <span class="bio-index">02</span>
-              <span>PhD student of <a class="bio-link" href="https://www.weimingzhi.com/" target="_blank" rel="noreferrer">William Zhi</a> at the <a class="bio-link" href="https://aus.bot/" target="_blank" rel="noreferrer">PAIR Lab</a>, University of Sydney.</span>
+              <span>PhD student of <a class="bio-link" href="https://www.weimingzhi.com/" target="_blank" rel="noreferrer">William Zhi</a> at the <a class="bio-link" href="https://aus.bot/" target="_blank" rel="noreferrer">PAIR Lab</a>, University of Sydney</span>
             </p>
             <p class="bio-fact">
               <span class="bio-index">03</span>
-              <span>Graduate of the Interdisciplinary Innovation Platform, Chu Kochen Honors College, Zhejiang University.</span>
+              <span>Master's graduate of the College of Control Science and Engineering, Zhejiang University</span>
             </p>
             <p class="bio-fact">
               <span class="bio-index">04</span>
-              <span>Master's graduate of the College of Control Science and Engineering, Zhejiang University.</span>
+              <span>Graduate of the <span class="bio-highlight">Interdisciplinary Innovation Platform, Chu Kochen Honors College</span>, Zhejiang University</span>
             </p>
           </div>
         </div>
@@ -407,6 +403,6 @@
       </div>
       <small>© <span data-year>2026</span> Zihao Li</small>
     </footer>
-    <script src="/script.js?v=20260829-2" defer></script>
+    <script src="/script.js?v=20260829-6" defer></script>
   </body>
 </html>

@@ -31,6 +31,22 @@ body {
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
 }
+/* Chinese needs phrase-aware wrapping: browsers may otherwise leave a single
+   ideograph on the final line even when a more even break is available. */
+html[data-language="zh"] :where(p, h1, h2, h3) {
+  line-break: strict;
+  word-break: auto-phrase;
+  overflow-wrap: normal;
+}
+html[data-language="zh"] :where(p, .bio-fact > span:last-child) {
+  text-wrap: pretty;
+}
+html[data-language="zh"] :where(h1, h2, h3) {
+  text-wrap: balance;
+}
+.no-orphan {
+  white-space: nowrap;
+}
 a {
   color: inherit;
   text-decoration: none;
@@ -81,11 +97,13 @@ a {
 }
 .header-bg i:first-child {
   left: 0;
+  width: var(--left-island-width, var(--island-width, 50%));
   border-radius: 16px var(--inner-radius, 0px) var(--inner-radius, 0px) 16px;
   border-right: 0;
 }
 .header-bg i:last-child {
   right: 0;
+  width: var(--right-island-width, var(--island-width, 50%));
   border-radius: var(--inner-radius, 0px) 16px 16px var(--inner-radius, 0px);
   border-left: 0;
 }
@@ -270,11 +288,11 @@ a {
   letter-spacing: -0.035em;
   white-space: nowrap;
 }
-.hero h1 span,
-.overview h2 span,
-.publications h2 span,
-.bio h2 span,
-footer p span {
+.hero h1 > span:not(.no-orphan),
+.overview h2 > span:not(.no-orphan),
+.publications h2 > span:not(.no-orphan),
+.bio h2 > span:not(.no-orphan),
+footer p > span:not(.no-orphan) {
   opacity: 0.5;
 }
 .video-wrap {
@@ -581,7 +599,7 @@ footer p span {
   text-wrap: balance;
   text-shadow: 0 2px 22px rgba(0, 0, 0, 0.26);
 }
-.overview h2 span {
+.overview h2 > span:not(.no-orphan) {
   opacity: 0.64;
 }
 .overview-copy > p:last-child {
@@ -646,7 +664,7 @@ footer p span {
   text-wrap: balance;
   text-shadow: none;
 }
-.overview h2 span { opacity: 0.42; }
+.overview h2 > span:not(.no-orphan) { opacity: 0.42; }
 .overview .overview-copy > p:nth-of-type(2) {
   max-width: 490px;
   padding: 0;
@@ -890,15 +908,6 @@ footer p span {
       transparent 72px
     ),
     radial-gradient(circle at 68% 42%, #aaa, #292927);
-}
-.bridge {
-  max-width: 1150px;
-  margin: 0 auto;
-  padding: 110px var(--pad);
-  font-size: 40px;
-  line-height: 52px;
-  font-weight: 300;
-  text-align: center;
 }
 .feature {
   max-width: 1440px;
@@ -1364,6 +1373,17 @@ footer p span {
   font: 500 10px/1 GeistMono;
   transition: color 0.25s ease, transform 0.25s ease;
 }
+.bio-highlight {
+  padding: 0 3px 1px;
+  color: #181818;
+  font-weight: 550;
+  background: linear-gradient(
+    transparent 58%,
+    rgba(255, 126, 0, 0.2) 58%
+  );
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
 .bio-link:hover,
 .bio-link:focus-visible {
   color: #fff;
@@ -1545,7 +1565,7 @@ footer > small {
     line-height: 28px;
     white-space: normal;
   }
-  .hero h1 span {
+  .hero h1 > span:not(.no-orphan) {
     display: block;
   }
   .video-wrap {
@@ -1611,10 +1631,6 @@ footer > small {
   .thesis-title h2 {
     font-size: 32px;
     line-height: 40px;
-  }
-  .bridge {
-    font-size: 27px;
-    line-height: 37px;
   }
   .projects {
     padding: 92px 5vw 100px;
@@ -1711,6 +1727,15 @@ footer > small {
   }
   .bio-link {
     white-space: normal;
+  }
+  html[data-language="zh"] .overview h2 {
+    font-size: clamp(38px, 11vw, 52px);
+  }
+  html[data-language="zh"] .projects-head h2 {
+    font-size: clamp(38px, 10.5vw, 52px);
+  }
+  html[data-language="zh"] .bio h2 {
+    font-size: clamp(35px, 9.5vw, 46px);
   }
   .footer-links {
     margin-left: 0;
