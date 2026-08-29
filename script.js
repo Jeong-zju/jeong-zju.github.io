@@ -7,6 +7,7 @@
     heroText = document.querySelector("[data-hero-text]"),
     videoBox = document.querySelector(".hero-video"),
     header = document.querySelector(".header"),
+    headerActions = document.querySelector(".header-actions"),
     brand = document.querySelector(".brand"),
     canvas = document.querySelector("#swarm-film"),
     ctx = canvas.getContext("2d"),
@@ -86,9 +87,6 @@
     );
     brand.style.setProperty("--brand-scale", String(1 - navEase * 0.72));
     brand.style.setProperty("--brand-pointer", nav > 0.7 ? "none" : "auto");
-    header.style.setProperty("--island-width", `${50 - navEase * 40}%`);
-    header.style.setProperty("--left-island-center", `${12 - navEase * 7}%`);
-    header.style.setProperty("--right-island-center", `${88 + navEase * 7}%`);
     const islandPixels = header.clientWidth * (0.5 - navEase * 0.4);
     const targetGap = Math.max(7, islandPixels / 3 - 38);
     header.style.setProperty(
@@ -101,6 +99,25 @@
     header.style.setProperty("--icon-shift", `${-27 + navEase * 27}px`);
     header.style.setProperty("--label-opacity", String(1 - navEase));
     header.style.setProperty("--label-width", `${120 * (1 - navEase)}px`);
+    // Size and center the two glass islands around the actual control groups.
+    // The right group now includes the language toggle, so a fixed 10% island
+    // would clip or leave that control floating outside the glass at the end
+    // of the scroll animation.
+    const actionWidth = headerActions ? headerActions.offsetWidth : 0;
+    const collapsedIslandWidth = Math.max(
+      15,
+      Math.min(36, ((actionWidth + 28) / header.clientWidth) * 100),
+    );
+    const islandWidth = 50 - navEase * (50 - collapsedIslandWidth);
+    header.style.setProperty("--island-width", `${islandWidth}%`);
+    header.style.setProperty(
+      "--left-island-center",
+      `${12 + navEase * (islandWidth / 2 - 12)}%`,
+    );
+    header.style.setProperty(
+      "--right-island-center",
+      `${88 + navEase * (100 - islandWidth / 2 - 88)}%`,
+    );
   };
   addEventListener("scroll", update, { passive: true });
   addEventListener("resize", update);
