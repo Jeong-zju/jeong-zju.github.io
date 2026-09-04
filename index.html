@@ -26,7 +26,7 @@
     <meta name="twitter:image" content="https://zihaoli.dev/assets/og.svg" />
     <link rel="canonical" href="https://zihaoli.dev/" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="/styles.css?v=20260829-7" />
+    <link rel="stylesheet" href="/styles.css?v=20260904-7" />
   </head>
   <body>
     <header class="header">
@@ -78,12 +78,12 @@
             <div class="hero-video">
               <video autoplay muted loop playsinline preload="auto">
                 <source
-                  src="/assets/zeno_home_collaboration.mp4?v=20260825-1"
+                  src="/assets/hero-intro.mp4?v=20260904-1"
                   type="video/mp4"
                 /></video
               ><canvas id="swarm-film" aria-hidden="true"></canvas>
               <div class="video-ui">
-                <span>COLLABORATIVE ROBOT LEARNING</span>
+                <span>ZENO-1 · COLLABORATIVE INTELLIGENCE</span>
               </div>
             </div>
           </div>
@@ -107,12 +107,18 @@
         </div>
         <figure class="overview-media">
           <div class="overview-frame">
-            <img
+            <video
               class="overview-image"
-              src="/assets/zeno_v0_night.webp?v=20260827-2"
-              alt="A robot preparing a shared bed-making task in a city apartment"
-              loading="lazy"
-            />
+              autoplay
+              muted
+              loop
+              playsinline
+              preload="metadata"
+              poster="/assets/zeno_v0_night.webp?v=20260827-2"
+              aria-label="Two robots handing off a task at a door"
+            >
+              <source src="/assets/overview-handoff.mp4?v=20260904-2" type="video/mp4" />
+            </video>
           </div>
           <figcaption>Shared workspace, changing state</figcaption>
         </figure>
@@ -126,11 +132,17 @@
           </article>
           <article class="tile tile-a reveal">
             <div class="tile-art rings">
-              <img
-                src="/assets/team-observation.jpg?v=20260827-1"
-                alt="A team of Zeno robots coordinating from local views"
-                loading="lazy"
-              />
+              <video
+                autoplay
+                muted
+                loop
+                playsinline
+                preload="metadata"
+                poster="/assets/team-observation.jpg?v=20260827-1"
+                aria-label="Three Zeno robots making a bed with no central conductor"
+              >
+                <source src="/assets/tile-decentralized.mp4?v=20260904-1" type="video/mp4" />
+              </video>
             </div>
             <div class="tile-copy">
               <p class="tile-kicker">THE WORLD AS INTERFACE</p>
@@ -143,11 +155,17 @@
           </article>
           <article class="tile tile-b reveal">
             <div class="tile-art routes">
-              <img
-                src="/assets/long-horizon.jpg?v=20260827-1"
-                alt="A Zeno robot continuing a long-horizon household task"
-                loading="lazy"
-              />
+              <video
+                autoplay
+                muted
+                loop
+                playsinline
+                preload="metadata"
+                poster="/assets/long-horizon.jpg?v=20260827-1"
+                aria-label="A Zeno robot moving between subtasks across a long-horizon run"
+              >
+                <source src="/assets/tile-long-horizon.mp4?v=20260904-1" type="video/mp4" />
+              </video>
             </div>
             <div class="tile-copy">
               <p class="tile-kicker">THE PAST STAYS IN THE STATE</p>
@@ -160,11 +178,17 @@
           </article>
           <article class="tile tile-c reveal">
             <div class="tile-art pulse">
-              <img
-                src="/assets/shared-sheet.jpg?v=20260827-1"
-                alt="Two Zeno robots jointly manipulating a sheet"
-                loading="lazy"
-              />
+              <video
+                autoplay
+                muted
+                loop
+                playsinline
+                preload="metadata"
+                poster="/assets/shared-sheet.jpg?v=20260827-1"
+                aria-label="Two Zeno robots jointly spreading and smoothing a bed sheet"
+              >
+                <source src="/assets/tile-shared-sheet.mp4?v=20260904-1" type="video/mp4" />
+              </video>
             </div>
             <div class="tile-copy">
               <p class="tile-kicker">IMAGINE BEFORE CONTACT</p>
@@ -179,6 +203,55 @@
         </div>
       </section>
 
+      <section class="moments" id="moments">
+        <div class="moments-head reveal">
+          <p class="tag">Zeno-1 in practice</p>
+          <h2>The same idea, tested against <em>a hundred ordinary tasks.</em></h2>
+          <p>
+            Every clip below runs on Zeno-1, the collaborative-intelligence
+            architecture I proposed and now lead at ZENO AI.
+            <a
+              class="moments-link"
+              href="/blogs/zeno-1-collaborative-intelligence/"
+              >Read the Zeno-1 report ↗</a
+            >
+          </p>
+        </div>
+        <div class="carousel" data-carousel>
+          <div class="moment-grid carousel-track">
+            <article class="moment-card">
+              <video autoplay muted loop playsinline preload="metadata" poster="/assets/moments/moment-trash.jpg?v=20260904-2" aria-label="Two robots handing off a task at a trash bin">
+                <source src="/assets/moment-trash.mp4?v=20260904-2" type="video/mp4" />
+              </video>
+              <p class="moment-kicker">SHARED PASSAGE</p>
+              <p class="moment-caption">One robot's path is the other's constraint, read live instead of scheduled around.</p>
+            </article>
+            <article class="moment-card">
+              <video autoplay muted loop playsinline preload="metadata" poster="/assets/moments/moment-pants.jpg?v=20260904-2" aria-label="Two robots passing a hanger with clothing between them">
+                <source src="/assets/moment-pants.mp4?v=20260904-2" type="video/mp4" />
+              </video>
+              <p class="moment-kicker">SHARED LOAD</p>
+              <p class="moment-caption">Let go too early and the task restarts. The tension itself is the coordination signal.</p>
+            </article>
+            <article class="moment-card">
+              <video autoplay muted loop playsinline preload="metadata" poster="/assets/moments/moment-litter.jpg?v=20260904-2" aria-label="Two robots sharing roles around a litter box task">
+                <source src="/assets/moment-litter.mp4?v=20260904-2" type="video/mp4" />
+              </video>
+              <p class="moment-kicker">ROLES, NOT ASSIGNMENTS</p>
+              <p class="moment-caption">Neither robot is told to scoop or to hold. The role is inferred from what the other has already started.</p>
+            </article>
+            <article class="moment-card">
+              <video autoplay muted loop playsinline preload="metadata" poster="/assets/moments/moment-vacuum.jpg?v=20260904-2" aria-label="Two robots sealing a vacuum storage bag together">
+                <source src="/assets/moment-vacuum.mp4?v=20260904-2" type="video/mp4" />
+              </video>
+              <p class="moment-kicker">SEQUENCE FROM STATE</p>
+              <p class="moment-caption">The bag can't be sealed while a partner is still filling it — Zeno-1 waits on the world, not on a message.</p>
+            </article>
+          </div>
+        </div>
+        <div class="carousel-dots" data-carousel-dots aria-label="Moments"></div>
+      </section>
+
       <section class="projects" id="projects">
         <div class="projects-head reveal">
           <p class="tag">Research in motion</p>
@@ -190,62 +263,65 @@
             closing off what they—or their partners—need next.
           </p>
         </div>
-        <div class="project-list">
-          <article class="project-card reveal">
-            <div class="project-copy">
-              <p class="project-year">2026 · COUPLED ROBOT POLICIES</p>
-              <h3>Sequential<br />Asymmetric Imitation</h3>
-              <p>
-                Two robots can each know how to carry a sheet and still fail
-                together. Sequential Asymmetric Imitation turns single-robot
-                demonstrations into policies that learn to wait, yield, and
-                recover as a partner changes the task.
-              </p>
-              <a href="https://cyc0429.github.io/sai-project-page/" target="_blank" rel="noreferrer">View project ↗</a>
-            </div>
-            <div class="project-video">
-              <video autoplay muted loop playsinline preload="metadata" poster="/assets/projects/sai-bed-spread.jpg?v=20260827-2" aria-label="Two robots spreading a bed sheet together">
-                <source src="/assets/projects/sai-bed-spread.mp4?v=20260827-2" type="video/mp4" />
-              </video>
-            </div>
-          </article>
-          <article class="project-card project-card-reverse reveal">
-            <div class="project-copy">
-              <p class="project-year">2026 · LONG-HORIZON MEMORY</p>
-              <h3>TRACE</h3>
-              <p>
-                A useful clue can disappear from view long before a task is
-                done. TRACE preserves causal evidence and routes it back at the
-                branch where it matters, so a long-horizon policy can continue
-                instead of starting over.
-              </p>
-              <a href="https://jeong-zju.github.io/trace/" target="_blank" rel="noreferrer">View project ↗</a>
-            </div>
-            <div class="project-video">
-              <video autoplay muted loop playsinline preload="metadata" poster="/assets/projects/trace-book-desk.jpg?v=20260827-2" aria-label="A mobile robot approaching a desk during a long-horizon task">
-                <source src="/assets/projects/trace-book-desk.mp4?v=20260827-2" type="video/mp4" />
-              </video>
-            </div>
-          </article>
-          <article class="project-card reveal">
-            <div class="project-copy">
-              <p class="project-year">2026 · FORCE-AWARE TELEOPERATION</p>
-              <h3>TriPilot-FF</h3>
-              <p>
-                When a person works through a robot, contact is information.
-                TriPilot-FF gives hands and feet a shared interface for reach,
-                resistance, and repositioning—so the operator can feel what the
-                robot cannot say.
-              </p>
-              <a href="https://jeong-zju.github.io/RSS-TriPilot-FF-Page/" target="_blank" rel="noreferrer">View project ↗</a>
-            </div>
-            <div class="project-video">
-              <video autoplay muted loop playsinline preload="metadata" poster="/assets/projects/tripilot-laundry.jpg?v=20260827-2" aria-label="A mobile manipulator transporting laundry with force-aware control">
-                <source src="/assets/projects/tripilot-laundry.mp4?v=20260827-2" type="video/mp4" />
-              </video>
-            </div>
-          </article>
+        <div class="carousel" data-carousel>
+          <div class="project-list carousel-track">
+            <article class="project-card">
+              <div class="project-copy">
+                <p class="project-year">2026 · COUPLED ROBOT POLICIES</p>
+                <h3>Sequential<br />Asymmetric Imitation</h3>
+                <p>
+                  Two robots can each know how to carry a sheet and still fail
+                  together. Sequential Asymmetric Imitation turns single-robot
+                  demonstrations into policies that learn to wait, yield, and
+                  recover as a partner changes the task.
+                </p>
+                <a href="https://cyc0429.github.io/sai-project-page/" target="_blank" rel="noreferrer">View project ↗</a>
+              </div>
+              <div class="project-video">
+                <video autoplay muted loop playsinline preload="metadata" poster="/assets/projects/sai-bed-spread.jpg?v=20260827-2" aria-label="Two robots spreading a bed sheet together">
+                  <source src="/assets/projects/sai-bed-spread.mp4?v=20260827-2" type="video/mp4" />
+                </video>
+              </div>
+            </article>
+            <article class="project-card project-card-reverse">
+              <div class="project-copy">
+                <p class="project-year">2026 · LONG-HORIZON MEMORY</p>
+                <h3>TRACE</h3>
+                <p>
+                  A useful clue can disappear from view long before a task is
+                  done. TRACE preserves causal evidence and routes it back at the
+                  branch where it matters, so a long-horizon policy can continue
+                  instead of starting over.
+                </p>
+                <a href="https://jeong-zju.github.io/trace/" target="_blank" rel="noreferrer">View project ↗</a>
+              </div>
+              <div class="project-video">
+                <video autoplay muted loop playsinline preload="metadata" poster="/assets/projects/trace-book-desk.jpg?v=20260827-2" aria-label="A mobile robot approaching a desk during a long-horizon task">
+                  <source src="/assets/projects/trace-book-desk.mp4?v=20260827-2" type="video/mp4" />
+                </video>
+              </div>
+            </article>
+            <article class="project-card">
+              <div class="project-copy">
+                <p class="project-year">2026 · FORCE-AWARE TELEOPERATION</p>
+                <h3>TriPilot-FF</h3>
+                <p>
+                  When a person works through a robot, contact is information.
+                  TriPilot-FF gives hands and feet a shared interface for reach,
+                  resistance, and repositioning—so the operator can feel what the
+                  robot cannot say.
+                </p>
+                <a href="https://jeong-zju.github.io/RSS-TriPilot-FF-Page/" target="_blank" rel="noreferrer">View project ↗</a>
+              </div>
+              <div class="project-video">
+                <video autoplay muted loop playsinline preload="metadata" poster="/assets/projects/tripilot-laundry.jpg?v=20260827-2" aria-label="A mobile manipulator transporting laundry with force-aware control">
+                  <source src="/assets/projects/tripilot-laundry.mp4?v=20260827-2" type="video/mp4" />
+                </video>
+              </div>
+            </article>
+          </div>
         </div>
+        <div class="carousel-dots" data-carousel-dots aria-label="Projects"></div>
       </section>
 
       <section class="publications" id="publications">
@@ -259,9 +335,10 @@
             are selected works; the full research history is on Scholar.
           </p>
         </div>
-        <div class="pub-grid">
+        <div class="carousel" data-carousel>
+          <div class="pub-grid carousel-track">
           <a
-            class="pub-card reveal"
+            class="pub-card"
             href="https://arxiv.org/abs/2606.16490"
             target="_blank"
             rel="noreferrer"
@@ -271,7 +348,7 @@
             <p>Learning to wait, yield, and recover as a partner changes the task.</p>
             <b>Read paper ↗</b></a
           ><a
-            class="pub-card reveal"
+            class="pub-card"
             href="https://arxiv.org/abs/2606.14551"
             target="_blank"
             rel="noreferrer"
@@ -281,7 +358,7 @@
             <p>Carrying evidence forward when the clue has already left the scene.</p>
             <b>Read paper ↗</b></a
           ><a
-            class="pub-card reveal"
+            class="pub-card"
             href="https://arxiv.org/abs/2602.09888"
             target="_blank"
             rel="noreferrer"
@@ -291,7 +368,7 @@
             <p>Giving hands and feet a shared language for contact, reach, and motion.</p>
             <b>Read paper ↗</b></a
           ><a
-            class="pub-card reveal"
+            class="pub-card"
             href="https://arxiv.org/abs/2511.05052"
             target="_blank"
             rel="noreferrer"
@@ -301,7 +378,7 @@
             <p>Finding the passage before searching the high-dimensional motion space.</p>
             <b>Read paper ↗</b></a
           ><a
-            class="pub-card reveal"
+            class="pub-card"
             href="https://link.springer.com/article/10.1007/s41693-026-00191-3"
             target="_blank"
             rel="noreferrer"
@@ -311,7 +388,7 @@
             <p>A tapered connector turns imperfect alignment into a reliable assembly step.</p>
             <b>Read paper ↗</b></a
           ><a
-            class="pub-card reveal"
+            class="pub-card"
             href="https://ieeexplore.ieee.org/document/10695773"
             target="_blank"
             rel="noreferrer"
@@ -321,7 +398,9 @@
             <p>Predicting human intent while optimizing motion around real contact.</p>
             <b>Read paper ↗</b></a
           >
+          </div>
         </div>
+        <div class="carousel-dots" data-carousel-dots aria-label="Publications"></div>
         <a
           class="scholar"
           href="https://scholar.google.com/citations?user=KNMrDtcAAAAJ"
@@ -358,14 +437,18 @@
             </p>
             <p class="bio-fact">
               <span class="bio-index">02</span>
-              <span>PhD student of <a class="bio-link" href="https://www.weimingzhi.com/" target="_blank" rel="noreferrer">William Zhi</a> at the <a class="bio-link" href="https://aus.bot/" target="_blank" rel="noreferrer">PAIR Lab</a>, University of Sydney</span>
+              <span>Proposer and lead researcher of <span class="bio-highlight">Zeno-1</span>, ZENO AI's collaborative physical intelligence architecture — <a class="bio-link" href="/blogs/zeno-1-collaborative-intelligence/">read the report ↗</a></span>
             </p>
             <p class="bio-fact">
               <span class="bio-index">03</span>
-              <span>Master's graduate of the College of Control Science and Engineering, Zhejiang University</span>
+              <span>PhD student of <a class="bio-link" href="https://www.weimingzhi.com/" target="_blank" rel="noreferrer">William Zhi</a> at the <a class="bio-link" href="https://aus.bot/" target="_blank" rel="noreferrer">PAIR Lab</a>, University of Sydney</span>
             </p>
             <p class="bio-fact">
               <span class="bio-index">04</span>
+              <span>Master's graduate of the College of Control Science and Engineering, Zhejiang University</span>
+            </p>
+            <p class="bio-fact">
+              <span class="bio-index">05</span>
               <span>Graduate of the <span class="bio-highlight">Interdisciplinary Innovation Platform, Chu Kochen Honors College</span>, Zhejiang University</span>
             </p>
           </div>
@@ -403,6 +486,6 @@
       </div>
       <small>© <span data-year>2026</span> Zihao Li</small>
     </footer>
-    <script src="/script.js?v=20260829-7" defer></script>
+    <script src="/script.js?v=20260904-5" defer></script>
   </body>
 </html>

@@ -205,7 +205,9 @@
     addEventListener("resize", syncScrollAnimations);
     syncScrollAnimations();
   }
-  const projectVideos = document.querySelectorAll(".project-video video");
+  const projectVideos = document.querySelectorAll(
+    ".project-video video, .overview-image, .tile-art video, .moment-card video",
+  );
   if (projectVideos.length && "IntersectionObserver" in window) {
     const videoObserver = new IntersectionObserver(
       (entries) =>
@@ -234,7 +236,7 @@
     { selector: '.header-actions a[href="/blogs/"] span', en: 'Blogs', zh: '博客' },
     { selector: '.contact-pill span', en: 'Contact ↗', zh: '联系 ↗' },
     { selector: '.hero-text h1', en: '<span>From capable robots to</span> capable teams', zh: '<span>从能独立行动的机器人</span> 到能协同的团队' },
-    { selector: '.video-ui span', en: 'COLLABORATIVE ROBOT LEARNING', zh: '协作机器人学习' },
+    { selector: '.video-ui span', en: 'ZENO-1 · COLLABORATIVE INTELLIGENCE', zh: 'ZENO-1 · 协作智能' },
     { selector: '.overview-copy .tag', en: 'The problem', zh: '问题' },
     { selector: '.overview-copy h2', en: '<span>A second robot changes</span> what the first can do.', zh: '<span>第二个机器人，会改变</span>第一个机器人能做什么。' },
     { selector: '.overview-copy h2 + p', en: 'Put two capable robots on the same physical task and capability does not simply add. Timing, contact, and motion from one robot change what the other can do next. I study how embodied agents read those changes and keep the joint task moving.', zh: '让两台能干的机器人共同完成一项物理任务，能力并不会自动相加。一个机器人的时机、接触与动作，会改变另一个机器人下一步能做什么。我研究具身智能体如何读懂这些变化，让共同任务继续推进。' },
@@ -248,6 +250,17 @@
     { selector: '.tile-b h3', en: 'A compact interaction memory lets one policy carry evidence across eight subtasks and more than ten minutes—without resets or policy switching.', zh: '紧凑的交互记忆让一个策略跨越八个子任务和十分钟以上的执行持续携带证据，无需重置任务，也无需切换策略。' },
     { selector: '.tile-c .tile-kicker', en: 'IMAGINE BEFORE CONTACT', zh: '在接触前想一步' },
     { selector: '.tile-c h3', en: 'Before committing, predictive introspection asks what an action will make possible for a partner. It selects the action leading to better partner behavior in 87% of cases, versus 61% without lookahead.', zh: '在做出动作前，预测性内省会追问：这个动作将为伙伴创造什么可能？它有 87% 的概率选出能带来更好伙伴行为的动作；没有前瞻时这一比例为 61%。' },
+    { selector: '.moments-head .tag', en: 'Zeno-1 in practice', zh: 'Zeno-1 实践' },
+    { selector: '.moments-head h2', en: 'The same idea, tested against <em>a hundred ordinary tasks.</em>', zh: '同一个理念，接受<em>上百个日常任务</em>的检验。' },
+    { selector: '.moments-head > p:last-child', en: 'Every clip below runs on Zeno-1, the collaborative-intelligence architecture I proposed and now lead at ZENO AI. <a class="moments-link" href="/blogs/zeno-1-collaborative-intelligence/">Read the Zeno-1 report ↗</a>', zh: '以下每一段视频都运行在 Zeno-1 上——这是我在 ZENO AI 提出并带领的协作智能架构。<a class="moments-link" href="/blogs/zeno-1-collaborative-intelligence/">阅读 Zeno-1 报告 ↗</a>' },
+    { selector: '.moment-card:nth-child(1) .moment-kicker', en: 'SHARED PASSAGE', zh: '共享通路' },
+    { selector: '.moment-card:nth-child(1) .moment-caption', en: "One robot's path is the other's constraint, read live instead of scheduled around.", zh: '一台机器人的路径，就是另一台的实时约束，而不是提前排好的日程。' },
+    { selector: '.moment-card:nth-child(2) .moment-kicker', en: 'SHARED LOAD', zh: '共同承重' },
+    { selector: '.moment-card:nth-child(2) .moment-caption', en: 'Let go too early and the task restarts. The tension itself is the coordination signal.', zh: '松手太早，任务就要重来。张力本身就是协同信号。' },
+    { selector: '.moment-card:nth-child(3) .moment-kicker', en: 'ROLES, NOT ASSIGNMENTS', zh: '角色，而非指派' },
+    { selector: '.moment-card:nth-child(3) .moment-caption', en: 'Neither robot is told to scoop or to hold. The role is inferred from what the other has already started.', zh: '没有谁被指定去铲、去扶。角色是从对方已经开始的动作中推断出来的。' },
+    { selector: '.moment-card:nth-child(4) .moment-kicker', en: 'SEQUENCE FROM STATE', zh: '顺序源于状态' },
+    { selector: '.moment-card:nth-child(4) .moment-caption', en: "The bag can't be sealed while a partner is still filling it — Zeno-1 waits on the world, not on a message.", zh: '袋子在伙伴还在装填时无法封口——Zeno-1 等待的是世界的状态，而不是一条消息。' },
     { selector: '.projects-head .tag', en: 'Research in motion', zh: '研究进行时' },
     { selector: '.projects-head h2', en: 'A good action preserves <em>good futures.</em>', zh: '好的动作，也要为未来<em class="no-orphan">保留选择。</em>' },
     { selector: '.projects-head > p:last-child', en: 'The studies highlighted here are entry points into a broader, ongoing research program. Across robot learning, memory, planning, and physical interaction, I ask how agents can make progress without closing off what they—or their partners—need next.', zh: '下面展示的是这项长期研究计划中的几个入口。我的工作跨越机器人学习、记忆、规划与物理交互，始终追问：智能体如何在推进任务的同时，为自己和伙伴保留下一步的选择？' },
@@ -296,9 +309,10 @@
     { selector: '.bio-copy h2', en: '<span>I am Zihao Li,</span> building physical intelligence that works together—and keeps going', zh: '<span>我是李子豪，</span>正在构建能够协同工作、持续行动的物理智能' },
     { selector: '.bio-facts', attribute: 'aria-label', en: 'Current roles and education', zh: '当前角色与教育经历' },
     { selector: '.bio-fact:nth-child(1) > span:last-child', en: 'Founding Researcher of <a class="bio-link" href="https://www.zenobot.ai/" target="_blank" rel="noreferrer">ZENO AI</a>', zh: '<a class="bio-link" href="https://www.zenobot.ai/" target="_blank" rel="noreferrer">ZENO AI</a> 创始研究员' },
-    { selector: '.bio-fact:nth-child(2) > span:last-child', en: 'PhD student of <a class="bio-link" href="https://www.weimingzhi.com/" target="_blank" rel="noreferrer">William Zhi</a> at the <a class="bio-link" href="https://aus.bot/" target="_blank" rel="noreferrer">PAIR Lab</a>, University of Sydney', zh: '悉尼大学 <a class="bio-link" href="https://aus.bot/" target="_blank" rel="noreferrer">PAIR Lab</a> <a class="bio-link" href="https://www.weimingzhi.com/" target="_blank" rel="noreferrer">William Zhi</a> 教授的博士生' },
-    { selector: '.bio-fact:nth-child(3) > span:last-child', en: "Master's graduate of the College of Control Science and Engineering, Zhejiang University", zh: '浙江大学控制科学与工程学院硕士毕业生' },
-    { selector: '.bio-fact:nth-child(4) > span:last-child', en: 'Graduate of the <span class="bio-highlight">Interdisciplinary Innovation Platform, Chu Kochen Honors College</span>, Zhejiang University', zh: '浙江大学<span class="bio-highlight">竺可桢学院交叉创新平台</span>毕业生' },
+    { selector: '.bio-fact:nth-child(2) > span:last-child', en: 'Proposer and lead researcher of <span class="bio-highlight">Zeno-1</span>, ZENO AI’s collaborative physical intelligence architecture — <a class="bio-link" href="/blogs/zeno-1-collaborative-intelligence/">read the report ↗</a>', zh: '<span class="bio-highlight">Zeno-1</span> 的提出者与首席研究员——ZENO AI 的协作物理智能架构 — <a class="bio-link" href="/blogs/zeno-1-collaborative-intelligence/">阅读报告 ↗</a>' },
+    { selector: '.bio-fact:nth-child(3) > span:last-child', en: 'PhD student of <a class="bio-link" href="https://www.weimingzhi.com/" target="_blank" rel="noreferrer">William Zhi</a> at the <a class="bio-link" href="https://aus.bot/" target="_blank" rel="noreferrer">PAIR Lab</a>, University of Sydney', zh: '悉尼大学 <a class="bio-link" href="https://aus.bot/" target="_blank" rel="noreferrer">PAIR Lab</a> <a class="bio-link" href="https://www.weimingzhi.com/" target="_blank" rel="noreferrer">William Zhi</a> 教授的博士生' },
+    { selector: '.bio-fact:nth-child(4) > span:last-child', en: "Master's graduate of the College of Control Science and Engineering, Zhejiang University", zh: '浙江大学控制科学与工程学院硕士毕业生' },
+    { selector: '.bio-fact:nth-child(5) > span:last-child', en: 'Graduate of the <span class="bio-highlight">Interdisciplinary Innovation Platform, Chu Kochen Honors College</span>, Zhejiang University', zh: '浙江大学<span class="bio-highlight">竺可桢学院交叉创新平台</span>毕业生' },
     { selector: 'footer > p', en: '<span>Not just robots that can act.</span> Robots that know how to act together—and keep going.', zh: '<span>不只是能够行动的机器人。</span> 更是懂得协同并坚持下去的机器人。' },
     { selector: '.footer-links div:nth-child(1) small', en: 'Explore', zh: '探索' },
     { selector: '.footer-links div:nth-child(1) a:nth-of-type(1)', en: 'Research', zh: '研究' },
@@ -309,10 +323,6 @@
     { selector: '.footer-links div:nth-child(2) a:nth-of-type(3)', en: 'Email', zh: '邮箱' },
   ];
   const imageAlts = [
-    ['.overview-image', 'A robot preparing a shared bed-making task in a city apartment', '城市公寓中准备共同整理床铺任务的机器人'],
-    ['.tile-a img', 'A team of Zeno robots coordinating from local views', '从局部视角进行协同的 Zeno 机器人团队'],
-    ['.tile-b img', 'A Zeno robot continuing a long-horizon household task', '持续执行长时域家庭任务的 Zeno 机器人'],
-    ['.tile-c img', 'Two Zeno robots jointly manipulating a sheet', '共同操作床单的两台 Zeno 机器人'],
     ['.bio-image img', 'Zihao Li holding a lamb in front of snow-capped mountains', '雪山前抱着小羊的李子豪'],
     ['.pub-card:nth-child(1) img', 'Three-stage SAI curriculum for learning coupled robot policies', '学习协同机器人策略的三阶段 SAI 课程'],
     ['.pub-card:nth-child(2) img', 'TRACE memory recovering an early visual cue at a later branch', 'TRACE 记忆在后续分支恢复早期视觉线索'],
@@ -322,6 +332,14 @@
     ['.pub-card:nth-child(6) img', 'Complete human, robot, and environment control loop for operational behavior inference', '用于操作行为推断的人、机器人与环境完整控制回路'],
   ];
   const mediaLabels = [
+    ['.overview-image', 'Two robots handing off a task at a door', '两台机器人在门口交接任务'],
+    ['.tile-a video', 'Three Zeno robots making a bed with no central conductor', '三台 Zeno 机器人在无中央指挥下共同铺床'],
+    ['.tile-b video', 'A Zeno robot moving between subtasks across a long-horizon run', '一台 Zeno 机器人在长时域任务中切换子任务'],
+    ['.tile-c video', 'Two Zeno robots jointly spreading and smoothing a bed sheet', '两台 Zeno 机器人共同展开并抚平床单'],
+    ['.moment-card:nth-child(1) video', 'Two robots handing off a task at a trash bin', '两台机器人在垃圾桶旁交接任务'],
+    ['.moment-card:nth-child(2) video', 'Two robots passing a hanger with clothing between them', '两台机器人相互传递挂着衣物的衣架'],
+    ['.moment-card:nth-child(3) video', 'Two robots sharing roles around a litter box task', '两台机器人在猫砂盆任务中分担角色'],
+    ['.moment-card:nth-child(4) video', 'Two robots sealing a vacuum storage bag together', '两台机器人共同封住真空收纳袋'],
     ['.project-card:nth-child(1) video', 'Two robots spreading a bed sheet together', '两台机器人共同铺开床单'],
     ['.project-card:nth-child(2) video', 'A mobile robot approaching a desk during a long-horizon task', '长时域任务中接近书桌的移动机器人'],
     ['.project-card:nth-child(3) video', 'A mobile manipulator transporting laundry with force-aware control', '使用力感知控制搬运衣物的移动操作机器人'],
@@ -409,10 +427,221 @@
     // glass island.
     requestAnimationFrame(() => window.dispatchEvent(new Event('resize')));
   };
+  const carouselReducedMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const CAROUSEL_INTERVAL = 4200;
+  const carouselRefreshers = [];
+
+  const setupCarousel = (carouselEl) => {
+    const track = carouselEl.querySelector('.carousel-track');
+    const dotsEl = carouselEl.nextElementSibling;
+    if (!track || !dotsEl || !dotsEl.hasAttribute('data-carousel-dots')) return;
+    const reals = Array.from(track.children);
+    const count = reals.length;
+    if (count < 2) return;
+
+    const dotLabel = (i) => (language === 'en' ? `Slide ${i + 1}` : `第 ${i + 1} 张`);
+    const arrowLabel = (dir) => {
+      if (language === 'en') return dir === 'prev' ? 'Previous slide' : 'Next slide';
+      return dir === 'prev' ? '上一张' : '下一张';
+    };
+
+    const stage = document.createElement('div');
+    stage.className = 'carousel-stage';
+    carouselEl.parentNode.insertBefore(stage, carouselEl);
+    stage.appendChild(carouselEl);
+
+    const makeArrow = (dir) => {
+      const btn = document.createElement('button');
+      btn.type = 'button';
+      btn.className = `carousel-arrow carousel-arrow-${dir}`;
+      btn.setAttribute('aria-label', arrowLabel(dir));
+      btn.innerHTML = dir === 'prev'
+        ? '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg>'
+        : '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>';
+      stage.appendChild(btn);
+      return btn;
+    };
+    const prevBtn = makeArrow('prev');
+    const nextBtn = makeArrow('next');
+
+    if (carouselReducedMotion) {
+      dotsEl.innerHTML = '';
+      let rmIndex = 0;
+      const rmGoTo = (i) => {
+        rmIndex = ((i % count) + count) % count;
+        reals[rmIndex].scrollIntoView({ behavior: 'auto', inline: 'start', block: 'nearest' });
+      };
+      const dots = reals.map((card, i) => {
+        const dot = document.createElement('button');
+        dot.type = 'button';
+        dot.className = 'carousel-dot';
+        dot.setAttribute('aria-label', dotLabel(i));
+        dot.addEventListener('click', () => rmGoTo(i));
+        dotsEl.appendChild(dot);
+        return dot;
+      });
+      prevBtn.addEventListener('click', () => rmGoTo(rmIndex - 1));
+      nextBtn.addEventListener('click', () => rmGoTo(rmIndex + 1));
+      carouselRefreshers.push(() => {
+        dots.forEach((dot, i) => dot.setAttribute('aria-label', dotLabel(i)));
+        prevBtn.setAttribute('aria-label', arrowLabel('prev'));
+        nextBtn.setAttribute('aria-label', arrowLabel('next'));
+      });
+      return;
+    }
+
+    const markClone = (el) => {
+      el.setAttribute('aria-hidden', 'true');
+      if (el.matches('a, button')) el.setAttribute('tabindex', '-1');
+      el.querySelectorAll('a, button').forEach((node) => node.setAttribute('tabindex', '-1'));
+    };
+
+    let cloneFirst;
+    let cloneLast;
+    const visualOrder = [];
+    const lastVisual = count + 1;
+
+    const buildClones = () => {
+      track.querySelectorAll('[data-carousel-clone]').forEach((node) => node.remove());
+      cloneFirst = reals[0].cloneNode(true);
+      cloneLast = reals[count - 1].cloneNode(true);
+      [cloneFirst, cloneLast].forEach((clone) => {
+        clone.setAttribute('data-carousel-clone', '');
+        markClone(clone);
+      });
+      cloneFirst.style.order = '1';
+      cloneLast.style.order = '-1';
+      track.appendChild(cloneFirst);
+      track.appendChild(cloneLast);
+      visualOrder[0] = cloneLast;
+      for (let i = 0; i < count; i += 1) visualOrder[i + 1] = reals[i];
+      visualOrder[lastVisual] = cloneFirst;
+    };
+    buildClones();
+
+    dotsEl.innerHTML = '';
+    const dots = reals.map((_, i) => {
+      const dot = document.createElement('button');
+      dot.type = 'button';
+      dot.className = 'carousel-dot';
+      dot.setAttribute('aria-label', dotLabel(i));
+      dot.addEventListener('click', () => {
+        goTo(i + 1);
+        restartTimer();
+      });
+      dotsEl.appendChild(dot);
+      return dot;
+    });
+
+    const realIndexOf = (visual) => ((visual - 1) % count + count) % count;
+
+    let current = 1;
+    let timer = null;
+
+    const render = (visual, instant) => {
+      const el = visualOrder[visual];
+      const stageWidth = carouselEl.offsetWidth;
+      const offset = el.offsetLeft - (stageWidth - el.offsetWidth) / 2;
+      if (instant) track.classList.add('no-transition');
+      track.style.transform = `translateX(${-offset}px)`;
+      if (instant) {
+        void track.offsetWidth;
+        track.classList.remove('no-transition');
+      }
+      visualOrder.forEach((card) => card.classList.toggle('is-active', card === el));
+      const realIndex = realIndexOf(visual);
+      dots.forEach((dot, i) => dot.classList.toggle('is-active', i === realIndex));
+    };
+
+    const goTo = (visual) => {
+      current = visual;
+      render(visual);
+      if (visual === 0 || visual === lastVisual) {
+        window.setTimeout(() => {
+          current = visual === 0 ? count : 1;
+          render(current, true);
+        }, 620);
+      }
+    };
+
+    const next = () => goTo(current + 1);
+    const prev = () => goTo(current - 1);
+    const startTimer = () => {
+      if (timer) return;
+      timer = window.setInterval(next, CAROUSEL_INTERVAL);
+    };
+    const stopTimer = () => {
+      window.clearInterval(timer);
+      timer = null;
+    };
+    const restartTimer = () => {
+      stopTimer();
+      startTimer();
+    };
+    const resumeIfVisible = () => {
+      const rect = carouselEl.getBoundingClientRect();
+      if (rect.top < innerHeight && rect.bottom > 0) startTimer();
+    };
+
+    track.addEventListener('click', (event) => {
+      const card = visualOrder.find((el) => el !== visualOrder[current] && el.contains(event.target));
+      if (!card) return;
+      event.preventDefault();
+      goTo(visualOrder.indexOf(card));
+      restartTimer();
+    });
+
+    prevBtn.addEventListener('click', () => {
+      prev();
+      restartTimer();
+    });
+    nextBtn.addEventListener('click', () => {
+      next();
+      restartTimer();
+    });
+
+    carouselEl.addEventListener('focusin', stopTimer);
+    carouselEl.addEventListener('focusout', (event) => {
+      if (!carouselEl.contains(event.relatedTarget)) startTimer();
+    });
+    carouselEl.addEventListener('pointerdown', stopTimer);
+    carouselEl.addEventListener('pointerup', resumeIfVisible);
+    carouselEl.addEventListener('pointercancel', resumeIfVisible);
+
+    if ('IntersectionObserver' in window) {
+      const io = new IntersectionObserver(
+        ([entry]) => (entry.isIntersecting ? startTimer() : stopTimer()),
+        { threshold: 0.05 },
+      );
+      io.observe(carouselEl);
+    } else {
+      startTimer();
+    }
+
+    let resizeTimer;
+    window.addEventListener('resize', () => {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(() => render(current, true), 150);
+    });
+
+    render(1, true);
+
+    carouselRefreshers.push(() => {
+      buildClones();
+      dots.forEach((dot, i) => dot.setAttribute('aria-label', dotLabel(i)));
+      prevBtn.setAttribute('aria-label', arrowLabel('prev'));
+      nextBtn.setAttribute('aria-label', arrowLabel('next'));
+      render(current, true);
+    });
+  };
+
+  document.querySelectorAll('[data-carousel]').forEach(setupCarousel);
+
   if (toggle) {
     toggle.addEventListener('click', () => {
       language = language === 'en' ? 'zh' : 'en';
       applyLanguage();
+      carouselRefreshers.forEach((refresh) => refresh());
     });
   }
   applyLanguage();
