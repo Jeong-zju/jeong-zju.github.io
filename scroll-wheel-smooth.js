@@ -25,7 +25,6 @@
     "wheel",
     (e) => {
       if (e.ctrlKey) return;
-      if (e.target.closest(".carousel")) return;
       e.preventDefault();
       target = Math.min(Math.max(target + e.deltaY, 0), maxScroll());
       if (!raf) raf = requestAnimationFrame(tick);

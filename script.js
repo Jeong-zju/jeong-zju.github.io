@@ -233,7 +233,7 @@
     reveals.forEach((element) => element.classList.add("visible"));
   }
   const projectVideos = document.querySelectorAll(
-    ".project-video video, .overview-image, .tile-art video, .moment-card video",
+    ".overview-image, .tile-art video",
   );
   if (projectVideos.length && "IntersectionObserver" in window) {
     const videoObserver = new IntersectionObserver(
@@ -466,6 +466,8 @@
     const count = reals.length;
     if (count < 2) return;
 
+    const cardVideo = (card) => card.querySelector('.project-video video, .moment-card video');
+
     const dotLabel = (i) => (language === 'en' ? `Slide ${i + 1}` : `第 ${i + 1} 张`);
     const arrowLabel = (dir) => {
       if (language === 'en') return dir === 'prev' ? 'Previous slide' : 'Next slide';
@@ -514,6 +516,20 @@
         prevBtn.setAttribute('aria-label', arrowLabel('prev'));
         nextBtn.setAttribute('aria-label', arrowLabel('next'));
       });
+      if ('IntersectionObserver' in window) {
+        const videoObserver = new IntersectionObserver(
+          (entries) =>
+            entries.forEach(({ target, isIntersecting }) => {
+              if (isIntersecting) target.play().catch(() => {});
+              else target.pause();
+            }),
+          { threshold: 0.18, rootMargin: '120px 0px' },
+        );
+        reals.forEach((card) => {
+          const video = cardVideo(card);
+          if (video) videoObserver.observe(video);
+        });
+      }
       return;
     }
 
@@ -564,6 +580,16 @@
 
     let current = 1;
     let timer = null;
+    let carouselVisible = false;
+
+    const syncVideos = () => {
+      visualOrder.forEach((card) => {
+        const video = cardVideo(card);
+        if (!video) return;
+        if (carouselVisible && card.classList.contains('is-active')) video.play().catch(() => {});
+        else video.pause();
+      });
+    };
 
     const render = (visual, instant) => {
       const el = visualOrder[visual];
@@ -578,6 +604,7 @@
       visualOrder.forEach((card) => card.classList.toggle('is-active', card === el));
       const realIndex = realIndexOf(visual);
       dots.forEach((dot, i) => dot.classList.toggle('is-active', i === realIndex));
+      syncVideos();
     };
 
     const goTo = (visual) => {
@@ -635,13 +662,32 @@
     carouselEl.addEventListener('pointerup', resumeIfVisible);
     carouselEl.addEventListener('pointercancel', resumeIfVisible);
 
+    let scrollResumeTimer = null;
+    window.addEventListener(
+      'scroll',
+      () => {
+        stopTimer();
+        clearTimeout(scrollResumeTimer);
+        scrollResumeTimer = window.setTimeout(() => {
+          if (carouselVisible) startTimer();
+        }, 600);
+      },
+      { passive: true },
+    );
+
     if ('IntersectionObserver' in window) {
       const io = new IntersectionObserver(
-        ([entry]) => (entry.isIntersecting ? startTimer() : stopTimer()),
+        ([entry]) => {
+          carouselVisible = entry.isIntersecting;
+          if (entry.isIntersecting) startTimer();
+          else stopTimer();
+          syncVideos();
+        },
         { threshold: 0.05 },
       );
       io.observe(carouselEl);
     } else {
+      carouselVisible = true;
       startTimer();
     }
 
