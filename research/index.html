@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#fff" />
+    <title>Research — Zihao Li</title>
+    <meta
+      name="description"
+      content="Research by Zihao Li on collaborative physical intelligence — the Zeno-1 architecture and projects on coupled policies, long-horizon memory, and force-aware teleoperation."
+    />
+    <meta property="og:title" content="Research — Zihao Li" />
+    <meta
+      property="og:description"
+      content="The Zeno-1 architecture and projects on coupled policies, long-horizon memory, and force-aware teleoperation."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://zihaoli.dev/research/" />
+    <meta property="og:image" content="https://zihaoli.dev/assets/publications/zeno1-report.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="canonical" href="https://zihaoli.dev/research/" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/styles.css?v=20260905-3" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-bg"><i></i><i></i></div>
+      <nav>
+        <a href="/research/" aria-label="Research"
+          ><svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M9.5 3h5M10.5 3v5.5L5.3 18.1A2 2 0 0 0 7.1 21h9.8a2 2 0 0 0 1.8-2.9L13.5 8.5V3M8.2 15.5h7.6" /></svg
+          ><span>Research</span></a
+        ><a href="/publications/" aria-label="Publications"
+          ><svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 6.8C10.1 5.3 7.4 4.7 4 4.7v13.6c3.4 0 6.1.6 8 2.1 1.9-1.5 4.6-2.1 8-2.1V4.7c-3.4 0-6.1.6-8 2.1zM12 6.8v13.6" /></svg
+          ><span>Publications</span></a
+        >
+      </nav>
+      <a class="brand" href="/" aria-label="Zihao Li home"
+        ><span class="brand-symbol"><i></i><i></i><i></i></span
+        ><strong>ZIHAO LI</strong></a
+      >
+      <div class="header-actions">
+        <a href="/blogs/" aria-label="Blogs"
+          ><svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M5 4h14v16H5zM9 8.5h6M9 12h6M9 15.5h3.5" /></svg
+          ><span>Blogs</span></a
+        ><a
+          class="contact-pill"
+          href="mailto:lzh_jeong@zju.edu.cn"
+          aria-label="Contact"
+          ><svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M3 6h18v13H3zM3 7l9 7 9-7" /></svg
+          ><span>Contact ↗</span></a
+        >
+      </div>
+    </header>
+    <main class="page-main">
+      <section class="page-hero">
+        <p class="tag">Research</p>
+        <h1>One question, pursued through robots that act together.</h1>
+        <p>
+          Across robot learning, memory, planning, and physical interaction, I
+          ask how agents can make progress without closing off what they — or
+          their partners — need next. The projects below are entry points into
+          that ongoing program.
+        </p>
+      </section>
+      <section class="entry-list" aria-label="Research projects">
+        <article class="entry">
+          <a
+            class="entry-visual"
+            href="https://zeno-3d-web.vercel.app/research/zeno-1-collaborative-intelligence"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Read the Zeno-1 technical report on ZENO AI"
+            ><img
+              src="/assets/publications/zeno1-report.jpg?v=20260904-1"
+              width="1280"
+              height="720"
+              alt="Zeno-1 collaborative intelligence architecture"
+              decoding="async"
+          /></a>
+          <div class="entry-copy">
+            <div class="entry-meta"><span>ZENO AI · Architecture</span><span>Featured</span></div>
+            <h2>
+              <a
+                href="https://zeno-3d-web.vercel.app/research/zeno-1-collaborative-intelligence"
+                target="_blank"
+                rel="noreferrer"
+                >Zeno-1: Collaborative Intelligence for Robots That Work
+                Together</a
+              >
+            </h2>
+            <p>
+              The collaborative physical intelligence architecture I proposed
+              and lead at ZENO AI — robots that read each other's state and
+              decide what to do next from what a partner has already started.
+            </p>
+            <a
+              class="entry-cta"
+              href="https://zeno-3d-web.vercel.app/research/zeno-1-collaborative-intelligence"
+              target="_blank"
+              rel="noreferrer"
+              ><span>Read report</span><span aria-hidden="true">↗</span></a
+            >
+          </div>
+        </article>
+        <article class="entry">
+          <a
+            class="entry-visual"
+            href="https://cyc0429.github.io/sai-project-page/"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="View the Sequential Asymmetric Imitation project page"
+            ><video autoplay muted loop playsinline preload="metadata" poster="/assets/projects/sai-bed-spread.jpg?v=20260827-2" aria-label="Two robots spreading a bed sheet together">
+              <source src="/assets/projects/sai-bed-spread.mp4?v=20260827-2" type="video/mp4" /></video
+          ></a>
+          <div class="entry-copy">
+            <div class="entry-meta"><span>2026 · Coupled robot policies</span><span>01</span></div>
+            <h2>
+              <a
+                href="https://cyc0429.github.io/sai-project-page/"
+                target="_blank"
+                rel="noreferrer"
+                >Sequential Asymmetric Imitation</a
+              >
+            </h2>
+            <p>
+              Two robots can each know how to carry a sheet and still fail
+              together. Sequential Asymmetric Imitation turns single-robot
+              demonstrations into policies that learn to wait, yield, and
+              recover as a partner changes the task.
+            </p>
+            <a
+              class="entry-cta"
+              href="https://cyc0429.github.io/sai-project-page/"
+              target="_blank"
+              rel="noreferrer"
+              ><span>View project</span><span aria-hidden="true">↗</span></a
+            >
+          </div>
+        </article>
+        <article class="entry">
+          <a
+            class="entry-visual"
+            href="https://jeong-zju.github.io/trace/"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="View the TRACE project page"
+            ><video autoplay muted loop playsinline preload="metadata" poster="/assets/projects/trace-book-desk.jpg?v=20260827-2" aria-label="A mobile robot approaching a desk during a long-horizon task">
+              <source src="/assets/projects/trace-book-desk.mp4?v=20260827-2" type="video/mp4" /></video
+          ></a>
+          <div class="entry-copy">
+            <div class="entry-meta"><span>2026 · Long-horizon memory</span><span>02</span></div>
+            <h2>
+              <a
+                href="https://jeong-zju.github.io/trace/"
+                target="_blank"
+                rel="noreferrer"
+                >TRACE</a
+              >
+            </h2>
+            <p>
+              A useful clue can disappear from view long before a task is done.
+              TRACE preserves causal evidence and routes it back at the branch
+              where it matters, so a long-horizon policy can continue instead
+              of starting over.
+            </p>
+            <a
+              class="entry-cta"
+              href="https://jeong-zju.github.io/trace/"
+              target="_blank"
+              rel="noreferrer"
+              ><span>View project</span><span aria-hidden="true">↗</span></a
+            >
+          </div>
+        </article>
+        <article class="entry">
+          <a
+            class="entry-visual"
+            href="https://jeong-zju.github.io/RSS-TriPilot-FF-Page/"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="View the TriPilot-FF project page"
+            ><video autoplay muted loop playsinline preload="metadata" poster="/assets/projects/tripilot-laundry.jpg?v=20260827-2" aria-label="A mobile manipulator transporting laundry with force-aware control">
+              <source src="/assets/projects/tripilot-laundry.mp4?v=20260827-2" type="video/mp4" /></video
+          ></a>
+          <div class="entry-copy">
+            <div class="entry-meta"><span>2026 · Force-aware teleoperation</span><span>03</span></div>
+            <h2>
+              <a
+                href="https://jeong-zju.github.io/RSS-TriPilot-FF-Page/"
+                target="_blank"
+                rel="noreferrer"
+                >TriPilot-FF</a
+              >
+            </h2>
+            <p>
+              When a person works through a robot, contact is information.
+              TriPilot-FF gives hands and feet a shared interface for reach,
+              resistance, and repositioning — so the operator can feel what
+              the robot cannot say.
+            </p>
+            <a
+              class="entry-cta"
+              href="https://jeong-zju.github.io/RSS-TriPilot-FF-Page/"
+              target="_blank"
+              rel="noreferrer"
+              ><span>View project</span><span aria-hidden="true">↗</span></a
+            >
+          </div>
+        </article>
+      </section>
+      <div class="page-cta">
+        <a class="pill-link" href="/publications/">Browse selected publications</a
+        ><a
+          class="pill-link"
+          href="https://scholar.google.com/citations?user=KNMrDtcAAAAJ"
+          target="_blank"
+          rel="noreferrer"
+          >Full research record on Scholar ↗</a
+        >
+      </div>
+    </main>
+    <footer>
+      <div class="footer-logo">
+        <span class="brand-symbol"><i></i><i></i><i></i></span
+        ><strong>ZIHAO LI</strong>
+      </div>
+      <p>
+        <span>Not just robots that can act.</span> Robots that know how to act
+        together—and keep going.
+      </p>
+      <div class="footer-links">
+        <div>
+          <small>Explore</small><a href="/research/">Research</a
+          ><a href="/publications/">Publications</a><a href="/blogs/">Blogs</a>
+        </div>
+        <div>
+          <small>Follow</small
+          ><a
+            href="https://github.com/jeong-zju"
+            target="_blank"
+            rel="noreferrer"
+            >GitHub</a
+          ><a
+            href="https://scholar.google.com/citations?user=KNMrDtcAAAAJ"
+            target="_blank"
+            rel="noreferrer"
+            >Scholar</a
+          ><a href="mailto:lzh_jeong@zju.edu.cn">Email</a>
+        </div>
+      </div>
+      <small>© <span data-year>2026</span> Zihao Li</small>
+    </footer>
+    <script>
+      document.querySelector("[data-year]").textContent = new Date().getFullYear();
+    </script>
+    <script src="/scroll-wheel-smooth.js?v=20260905-3" defer></script>
+  </body>
+</html>

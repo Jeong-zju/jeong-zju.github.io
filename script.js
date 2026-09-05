@@ -29,6 +29,7 @@
   };
   new ResizeObserver(resize).observe(videoBox);
   resize();
+  let canvasVisible = true;
   const draw = (t = 0) => {
     ctx.clearRect(0, 0, w, h);
     const pts = agents.map((a, i) => ({
@@ -53,9 +54,19 @@
       ctx.fillStyle = p.i % 9 === 0 ? "#ff7e00" : "#222";
       ctx.fill();
     });
-    if (!reduced) requestAnimationFrame(draw);
+    if (!reduced && canvasVisible) requestAnimationFrame(draw);
   };
   draw();
+  if (!reduced && "IntersectionObserver" in window) {
+    new IntersectionObserver(
+      ([entry]) => {
+        const wasVisible = canvasVisible;
+        canvasVisible = entry.isIntersecting;
+        if (canvasVisible && !wasVisible) requestAnimationFrame(draw);
+      },
+      { threshold: 0 },
+    ).observe(canvas);
+  }
   const update = () => {
     if (innerWidth <= 768) {
       videoBox.style.width = "100%";
@@ -175,35 +186,51 @@
     header.style.setProperty("--left-island-center", `${leftIslandCenter}%`);
     header.style.setProperty("--right-island-center", `${rightIslandCenter}%`);
   };
-  addEventListener("scroll", update, { passive: true });
+  let ticking = false;
+  const onScroll = () => {
+    if (ticking) return;
+    ticking = true;
+    requestAnimationFrame(() => {
+      update();
+      ticking = false;
+    });
+  };
+  addEventListener("scroll", onScroll, { passive: true });
   addEventListener("resize", update);
   update();
   const overview = document.querySelector(".overview");
   const reveals = document.querySelectorAll(".reveal");
-  const syncScrollAnimations = () => {
-    const vh = innerHeight;
-    if (overview) {
-      const rect = overview.getBoundingClientRect();
-      const inSafeZone = rect.top < vh * 0.84 && rect.bottom > vh * 0.16;
-      const farAway = rect.bottom < -vh * 0.24 || rect.top > vh * 1.24;
-      if (inSafeZone) overview.classList.add("is-active");
-      else if (farAway) overview.classList.remove("is-active");
-    }
-    reveals.forEach((element) => {
-      const rect = element.getBoundingClientRect();
-      const inSafeZone = rect.top < vh * 0.86 && rect.bottom > vh * 0.14;
-      const farAway = rect.bottom < -vh * 0.24 || rect.top > vh * 1.24;
-      if (inSafeZone) element.classList.add("visible");
-      else if (farAway) element.classList.remove("visible");
-    });
-  };
   if (reduced) {
     if (overview) overview.classList.add("is-active");
     reveals.forEach((element) => element.classList.add("visible"));
+  } else if ("IntersectionObserver" in window) {
+    const observeReveal = (targets, activeClass, enterMargin, exitMargin) => {
+      const enterObserver = new IntersectionObserver(
+        (entries) =>
+          entries.forEach(({ target, isIntersecting }) => {
+            if (isIntersecting) target.classList.add(activeClass);
+          }),
+        { rootMargin: enterMargin },
+      );
+      const exitObserver = new IntersectionObserver(
+        (entries) =>
+          entries.forEach(({ target, isIntersecting }) => {
+            if (!isIntersecting) target.classList.remove(activeClass);
+          }),
+        { rootMargin: exitMargin },
+      );
+      targets.forEach((el) => {
+        enterObserver.observe(el);
+        exitObserver.observe(el);
+      });
+    };
+    if (overview)
+      observeReveal([overview], "is-active", "-16% 0px -16% 0px", "24% 0px 24% 0px");
+    if (reveals.length)
+      observeReveal(Array.from(reveals), "visible", "-14% 0px -14% 0px", "24% 0px 24% 0px");
   } else {
-    addEventListener("scroll", syncScrollAnimations, { passive: true });
-    addEventListener("resize", syncScrollAnimations);
-    syncScrollAnimations();
+    if (overview) overview.classList.add("is-active");
+    reveals.forEach((element) => element.classList.add("visible"));
   }
   const projectVideos = document.querySelectorAll(
     ".project-video video, .overview-image, .tile-art video, .moment-card video",
@@ -252,7 +279,7 @@
     { selector: '.tile-c h3', en: 'Before committing, predictive introspection asks what an action will make possible for a partner. It selects the action leading to better partner behavior in 87% of cases, versus 61% without lookahead.', zh: '在做出动作前，预测性内省会追问：这个动作将为伙伴创造什么可能？它有 87% 的概率选出能带来更好伙伴行为的动作；没有前瞻时这一比例为 61%。' },
     { selector: '.moments-head .tag', en: 'Zeno-1 in practice', zh: 'Zeno-1 实践' },
     { selector: '.moments-head h2', en: 'The same idea, tested against <em>a hundred ordinary tasks.</em>', zh: '同一个理念，接受<em>上百个日常任务</em>的检验。' },
-    { selector: '.moments-head > p:last-child', en: 'Every clip below runs on Zeno-1, the collaborative-intelligence architecture I proposed and now lead at ZENO AI. <a class="moments-link" href="/blogs/zeno-1-collaborative-intelligence/">Read the Zeno-1 report ↗</a>', zh: '以下每一段视频都运行在 Zeno-1 上——这是我在 ZENO AI 提出并带领的协作智能架构。<a class="moments-link" href="/blogs/zeno-1-collaborative-intelligence/">阅读 Zeno-1 报告 ↗</a>' },
+    { selector: '.moments-head > p:last-child', en: 'Every clip below runs on Zeno-1, the collaborative-intelligence architecture I proposed and now lead at ZENO AI. <a class="moments-link" href="https://zeno-3d-web.vercel.app/research/zeno-1-collaborative-intelligence" target="_blank" rel="noreferrer">Read the Zeno-1 report ↗</a>', zh: '以下每一段视频都运行在 Zeno-1 上——这是我在 ZENO AI 提出并带领的协作智能架构。<a class="moments-link" href="https://zeno-3d-web.vercel.app/research/zeno-1-collaborative-intelligence" target="_blank" rel="noreferrer">阅读 Zeno-1 报告 ↗</a>' },
     { selector: '.moment-card:nth-child(1) .moment-kicker', en: 'SHARED PASSAGE', zh: '共享通路' },
     { selector: '.moment-card:nth-child(1) .moment-caption', en: "One robot's path is the other's constraint, read live instead of scheduled around.", zh: '一台机器人的路径，就是另一台的实时约束，而不是提前排好的日程。' },
     { selector: '.moment-card:nth-child(2) .moment-kicker', en: 'SHARED LOAD', zh: '共同承重' },
@@ -309,7 +336,7 @@
     { selector: '.bio-copy h2', en: '<span>I am Zihao Li,</span> building physical intelligence that works together—and keeps going', zh: '<span>我是李子豪，</span>正在构建能够协同工作、持续行动的物理智能' },
     { selector: '.bio-facts', attribute: 'aria-label', en: 'Current roles and education', zh: '当前角色与教育经历' },
     { selector: '.bio-fact:nth-child(1) > span:last-child', en: 'Founding Researcher of <a class="bio-link" href="https://www.zenobot.ai/" target="_blank" rel="noreferrer">ZENO AI</a>', zh: '<a class="bio-link" href="https://www.zenobot.ai/" target="_blank" rel="noreferrer">ZENO AI</a> 创始研究员' },
-    { selector: '.bio-fact:nth-child(2) > span:last-child', en: 'Proposer and lead researcher of <span class="bio-highlight">Zeno-1</span>, ZENO AI’s collaborative physical intelligence architecture — <a class="bio-link" href="/blogs/zeno-1-collaborative-intelligence/">read the report ↗</a>', zh: '<span class="bio-highlight">Zeno-1</span> 的提出者与首席研究员——ZENO AI 的协作物理智能架构 — <a class="bio-link" href="/blogs/zeno-1-collaborative-intelligence/">阅读报告 ↗</a>' },
+    { selector: '.bio-fact:nth-child(2) > span:last-child', en: 'Proposer and lead researcher of <span class="bio-highlight">Zeno-1</span>, ZENO AI’s collaborative physical intelligence architecture — <a class="bio-link" href="https://zeno-3d-web.vercel.app/research/zeno-1-collaborative-intelligence" target="_blank" rel="noreferrer">read the report ↗</a>', zh: '<span class="bio-highlight">Zeno-1</span> 的提出者与首席研究员——ZENO AI 的协作物理智能架构 — <a class="bio-link" href="https://zeno-3d-web.vercel.app/research/zeno-1-collaborative-intelligence" target="_blank" rel="noreferrer">阅读报告 ↗</a>' },
     { selector: '.bio-fact:nth-child(3) > span:last-child', en: 'PhD student of <a class="bio-link" href="https://www.weimingzhi.com/" target="_blank" rel="noreferrer">William Zhi</a> at the <a class="bio-link" href="https://aus.bot/" target="_blank" rel="noreferrer">PAIR Lab</a>, University of Sydney', zh: '悉尼大学 <a class="bio-link" href="https://aus.bot/" target="_blank" rel="noreferrer">PAIR Lab</a> <a class="bio-link" href="https://www.weimingzhi.com/" target="_blank" rel="noreferrer">William Zhi</a> 教授的博士生' },
     { selector: '.bio-fact:nth-child(4) > span:last-child', en: "Master's graduate of the College of Control Science and Engineering, Zhejiang University", zh: '浙江大学控制科学与工程学院硕士毕业生' },
     { selector: '.bio-fact:nth-child(5) > span:last-child', en: 'Graduate of the <span class="bio-highlight">Interdisciplinary Innovation Platform, Chu Kochen Honors College</span>, Zhejiang University', zh: '浙江大学<span class="bio-highlight">竺可桢学院交叉创新平台</span>毕业生' },
